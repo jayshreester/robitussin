@@ -1,0 +1,111 @@
+/*stylelint-disable*/
+/*
+** COLORS - BASIC, LINKS, BUTTONS, BORDER
+*/
+
+$body-bg: $white;
+$body-color: $color-1;
+$body-text-align: null;
+
+$primary-text-color: $color-1;
+$secondary-text-color: $color-1;
+
+$primary-headings-color: $color-1;
+$secondary-headings-color: $color-1;
+
+$primary-links-color: $color-1;
+$primary-links-background-color: none;
+$primary-links-hover-background-color: $color-3;
+$primary-links-hover-color: $white;
+$secondary-links-color: $color-1;
+$secondary-links-hover-color: $color-3;
+$tertiary-links-color: $color-1;
+$quaternary-links-color: $color-4;
+$link-text-decoration: $color-1;
+$link-text-decoration-hover: transparent;
+
+$links: (
+  top-bar-link: (
+    decoration-color-default: null,
+    decoration-color-hover: null,
+    font-color-default: $megamenu-top-bar-link-color,
+    font-color-hover: $megamenu-top-bar-link-color-hover,
+    font-size-desktop: $font-size-body,
+    font-size-mobile: $font-size-body-mobile,
+    bg-color: transparent,
+    bg-hover-color: transparent,
+    decoration-height: 0,
+    decoration-height-hover: 1px,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-1: (
+    decoration-color-default: transparent,
+    decoration-color-hover: $color-3,
+    font-color-default: $color-2,
+    font-color-hover: $color-3,
+    font-size-desktop: 18px,
+    font-size-mobile: 18px,
+    bg-color: transparent,
+    bg-hover-color: transparent,
+    decoration-height: 3,
+    decoration-height-hover: 3,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-2: (
+    decoration-color-default: $color-1,
+    decoration-color-hover: transparent,
+    font-color-default: $color-1,
+    font-color-hover: $white,
+    font-size-desktop: 22px,
+    font-size-mobile: 22px,
+    bg-color: transparent,
+    bg-hover-color: $color-1,
+    decoration-height: 0,
+    decoration-height-hover: 0,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  ),
+  link-alt-3: (
+    decoration-color-default: $color-1,
+    decoration-color-hover: $white,
+    font-color-default: $color-1,
+    font-color-hover: $white,
+    font-size-desktop: 19px,
+    font-size-mobile: 19px,
+    bg-color: transparent,
+    bg-hover-color: $color-1,
+    decoration-height: 1px,
+    decoration-height-hover: 0,
+    l-display: inline,
+    paddings: 0,
+    decoration-offset-bottom: 0,
+    decoration-linit-width: null
+  )
+);
+
+//button paddings
+$default-button-padding-mobile: 10px 15px !important;
+$default-button-padding-desktop: 10px 15px !important;
+$default-large-button-padding-mobile: 10px 15px !important;
+$default-large-button-padding-desktop: 10px 15px !important;
+$default-small-button-padding-mobile: 10px 15px !important;
+$default-small-button-padding-desktop: 10px 15px !important;
+$button-text-decoration: false;
+$button-text-decoration-hover: true;
+$default-button-text-color: $color-3;
+$button-border-size: 2px;
+$set-default-button-border-color: true;
+$default-button-border-color: $color-3;
+$button-font-weight: bold;
+
+$default-border-color: transparent;
+
+/*stylelint-enable*/

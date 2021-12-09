@@ -1,0 +1,119 @@
+/* stylelint-disable*/
+// Variables
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white: #ffffff;
+$gray-100: rgb(250, 250, 250);
+$gray-200: rgb(240, 240, 240);
+$gray-300: rgb(222, 226, 230);
+$gray-400: rgb(206, 212, 218);
+$gray-500: rgb(213, 209, 206);
+$gray-600: rgb(134, 142, 150);
+$gray-700: rgb(73, 80, 87);
+$gray-800: rgb(52, 58, 64);
+$gray-900: rgb(84, 79, 64);
+$black: #000000;
+
+$grays: ();
+$grays: map-merge(
+  (
+    'white': $white,
+    'gray-100': $gray-100,
+    'gray-200': $gray-200,
+    'gray-300': $gray-300,
+    'gray-400': $gray-400,
+    'gray-500': $gray-500,
+    'gray-600': $gray-600,
+    'gray-700': $gray-700,
+    'gray-800': $gray-800,
+    'gray-900': $gray-900,
+    'black': $black
+  ),
+  $grays
+);
+
+//--------------------------------------------------------------
+
+/*
+** BASE THEME COLORS
+*/
+$transparent: transparent;
+$color-1: #2c7941;
+$color-2: #808080;
+$color-3: #ed1d24;
+$color-4: #d54835;
+$color-5: #0056b3;
+
+$grey-1: #f7f7f7;
+$grey-2: #f8f8f8;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    '1': $color-1,
+    '2': $color-2,
+    '3': $color-3,
+    '4': $color-4,
+    '5': $color-5,
+    '6': $color-6,
+    '7': $color-7
+  ),
+  $theme-colors
+);
+
+$button-theme-colors: (
+  '1': $color-1,
+  '2': $color-2
+);
+
+$filter-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+$text-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+$background-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+$border-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+$divider-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+$filter-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+$searchbox-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+$title-theme-colors: (
+  '1': $color-1,
+  '2': $color-2,
+  '3': $color-3
+);
+
+/*stylelint-enable*/

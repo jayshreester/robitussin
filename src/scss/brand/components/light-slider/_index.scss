@@ -1,0 +1,21 @@
+.lSSlideOuter .lSPager.lSpg {
+  bottom: 12px;
+  li {
+    padding: 0 3px;
+    a {
+      background-color: $white !important;
+      border-radius: 0;
+      width: 30px;
+      height: 3px;
+      opacity: 0.5;
+      box-sizing: content-box;
+      border: none;
+      overflow: visible;
+    }
+    &.active {
+      a {
+        opacity: 1;
+      }
+    }
+  }
+}

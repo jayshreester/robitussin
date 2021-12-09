@@ -1,0 +1,28 @@
+/*
+** EXIT NOTIFICATION
+*/
+
+/* OVERLAY */
+$notification-overlay-bacground-color: $black;
+$notification-overlay-bacground-opacity: 0.5;
+
+/* INNER */
+$notification-use-shadow: true;
+$notification-border: solid $color-1 2px;
+$notification-border-radius: 5px;
+$notification-padding: 1rem;
+$notification-bacground-color: $white;
+$notification-max-width: 60%;
+$notification-max-width-mobile: 95%;
+
+/* BUTTONS */
+$notification-buttons-color-theme: color-1;
+$notification-buttons-top-offset: 2rem;
+$notification-buttons-use-rounded: true;
+$notification-buttons-use-large: true;
+$notification-buttons-position-desktop: right;
+$notification-buttons-position-mobile: center;
+$notification-buttons-spacing: 1rem;
+
+$btn-position: right;
+$btn-position-desktop: right;

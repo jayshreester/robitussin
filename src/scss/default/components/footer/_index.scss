@@ -1,0 +1,174 @@
+/*stylelint-disable*/
+@if $include-footer {
+  #footer {
+    background-color: $footer-background-color;
+
+    .footer-line {
+      height: 26px;
+      #{$start-direction}: 50%;
+      position: absolute;
+      top: -13px;
+      transform: translateX(-50% * $transform-direction);
+      width: 243px;
+    }
+
+    .follow-us-wrapper {
+      .richText-content {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    // default layout for social icons
+    .social-pages {
+      .paragraphSystem {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .icons-with-link {
+        height: $footer-icon-social-icon-size-m;
+        width: $footer-icon-social-icon-size-m;
+      }
+    }
+
+    .footer-brand-links {
+      margin-top: $space-30;
+
+      .paragraphSystem {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        flex-basis: 100%;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .richText {
+        align-items: center;
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        img {
+          height: 60px;
+          margin: 0;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .copyright {
+      .richText-content {
+        display: flex;
+        justify-content: center;
+      }
+
+      p {
+        font-size: $footer-copyright-font-size-m;
+        margin-bottom: $space-30;
+        margin-top: $space-20;
+        max-width: 82%;
+        opacity: 1;
+        text-align: center;
+      }
+    }
+
+    @media (min-width: $breakpoint-md-min) {
+      .layout-outer {
+        width: 100%;
+      }
+      // default nav links in footer
+      .list-footer {
+        ul {
+          display: flex;
+          flex-direction: $row-direction;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: $space-50;
+          width: 100%;
+
+          li {
+            margin-#{$end-direction}: $space-30;
+
+            a {
+              font-size: $footer-links-font-size-d;
+            }
+
+            &:first-child {
+              margin-top: 0;
+            }
+
+            &:last-child {
+              margin-bottom: $space-30;
+              margin-#{$end-direction}: 0;
+            }
+
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+      // default layout for social icons
+      .social-pages {
+        .icons-with-link {
+          height: $footer-icon-social-icon-size-m;
+          margin: 0 $space-5;
+          width: $footer-icon-social-icon-size-m;
+        }
+      }
+
+      .footer-brand-links {
+        > .component-content {
+          display: flex;
+          justify-content: center;
+        }
+
+        .paragraphSystem {
+          align-items: stretch;
+          flex-direction: $row-direction;
+          flex-wrap: wrap;
+          max-width: 85%;
+        }
+
+        .richText {
+          max-width: 17%;
+        }
+      }
+      // default footer divider look
+      .divider {
+        &.divider-footer {
+          display: flex;
+          justify-content: center;
+
+          .component-content {
+            background-color: $footer-divider-color;
+            height: 1px;
+            margin-bottom: $space-10;
+            margin-top: $space-15;
+            min-width: 1010px;
+            width: 70%;
+          }
+        }
+      }
+
+      .copyright {
+        p {
+          font-size: $footer-copyright-font-size-d;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    // set default text color on elements in footer
+    & * {
+      color: $footer-text-color;
+    }
+  }
+}
+/*stylelint-enable*/

@@ -1,0 +1,72 @@
+/*
+** INCLUSIONS
+*/
+
+// COMPONENTS
+$include-accordion: true;
+$include-anchor-box: true;
+$include-box: true;
+$include-breadcrumbs: true;
+$include-cards: true;
+$include-carousel: true;
+$include-carousel-common-questions: false;
+$include-default-icon: true;
+$include-divider: true;
+$include-filter: true;
+$include-jv-sharer: false;
+$include-bp-share-container: false;
+$include-footer: true;
+$include-bp-player: false;
+$include-bp-content-loader: false;
+$include-gygia-forms: false;
+
+$include-hero-banner: true;
+$include-hero-banner-enhanced-h4-v0: true;
+$include-hero-banner-enhanced-h4-v1: true;
+$include-hero-banner-h5-v0: true;
+$include-hero-banner-h5-v1: true;
+
+$include-list: true;
+$include-mega-menu: true;
+$include-quiz: false;
+$include-rich-text: true;
+$include-searchbox-results: false;
+$include-tabs: true;
+$include-titles: true;
+$include-video: false;
+$include-full-link: true;
+$include-table: false;
+$include-font-resizer: false;
+$include-bp-toggler: false;
+
+// CUSTOM & UTILITY CLASSES
+// i.e. text/border/background color utility classes
+$include-color-utility-classes: true;
+$include-blendings: false;
+
+// text
+$include-text-alignments: true;
+
+//backgrounds
+$include-sizes: true;
+$include-custom-sizes: true;
+$include-positions: true;
+$include-attachments: true;
+$include-repeats: true;
+
+//flex
+$include-flex: true;
+$include-flex-for-filter: true;
+$include-flex-justification: true;
+$include-flex-item-sizing: true;
+$include-flex-fullbox: true;
+$inlcude-flex-order: true;
+// include non predefined column sizes spacing
+$include-flex-npcss: true;
+
+//other
+$include-lineheights: true;
+$include-paddings-margins: true;
+$include-borders: true;
+$include-hide-classes: true;
+$include-width-utility-classes: true;

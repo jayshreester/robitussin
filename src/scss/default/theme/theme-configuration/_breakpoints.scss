@@ -1,0 +1,20 @@
+/*
+** BREAKPOINTS
+*/
+$breakpoint-xs-min: 360px !default;
+$breakpoint-xs-max: ($breakpoint-xs-min - 1) !default;
+$breakpoint-sm-min: 768px !default;
+$breakpoint-sm-max: ($breakpoint-sm-min - 1) !default;
+$breakpoint-md-min: 992px !default;
+$breakpoint-md-max: ($breakpoint-md-min - 1) !default;
+$breakpoint-lg-min: 1200px !default;
+$breakpoint-lg-max: ($breakpoint-lg-min - 1) !default;
+$breakpoint-xl-min: 1900px !default;
+$breakpoint-xl-max: ($breakpoint-xl-min - 1) !default;
+$breakpoints-map: (
+  'breakpoint-xs': $breakpoint-xs-min,
+  'breakpoint-sm': $breakpoint-sm-min,
+  'breakpoint-md': $breakpoint-md-min,
+  'breakpoint-lg': $breakpoint-lg-min,
+  'breakpoint-xl': $breakpoint-xl-min
+);
