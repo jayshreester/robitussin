@@ -40,14 +40,15 @@ $grays: map-merge(
 ** BASE THEME COLORS
 */
 $transparent: transparent;
-$color-1: #2c7941;
-$color-2: #808080;
-$color-3: #ed1d24;
-$color-4: #d54835;
-$color-5: #0056b3;
+$color-1: #008945;
+$color-2: #006a35;
+$color-3: #2ea85d;
+$color-4: #52cf81;
+$color-5: #edfaf2;
 
-$grey-1: #f7f7f7;
-$grey-2: #f8f8f8;
+$grey-1: #606060;
+$grey-2: #bcbcbc;
+$grey-3: #f4f6f6;
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -57,8 +58,9 @@ $theme-colors: map-merge(
     '3': $color-3,
     '4': $color-4,
     '5': $color-5,
-    '6': $color-6,
-    '7': $color-7
+    '6': $grey-1,
+    '7': $grey-2,
+    '8': $grey-3
   ),
   $theme-colors
 );
