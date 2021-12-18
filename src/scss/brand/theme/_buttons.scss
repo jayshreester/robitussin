@@ -1,0 +1,55 @@
+.btn {
+  text-decoration: none;
+  font-family: $font-family-bold;
+  font-size: $font-size-button;
+  &:hover,
+  &:focus {
+    color: $color-2;
+    text-decoration: underline;
+  }
+}
+
+.btn-primary {
+  border: $button-border-size solid $color-1;
+  color: $color-1;
+  border-radius: 99px;
+  padding: 13px 25px;
+
+  &:hover,
+  &:focus {
+    color: $white !important;
+    background-color: $color-1;
+  }
+}
+
+.btn-primary-dark {
+  border: $button-border-size solid $white;
+  color: $white;
+  border-radius: 99px;
+  padding: 13px 25px;
+
+  &:hover,
+  &:focus {
+    color: $color-4 !important;
+    background-color: $color-4;
+    border-color: $color-4;
+  }
+}
+
+.btn-secondary {
+  color: $color-1;
+
+  &:hover,
+  &:focus {
+    color: $color-2 !important;
+  }
+}
+
+.btn-secondary-dark {
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $color-4 !important;
+  }
+}

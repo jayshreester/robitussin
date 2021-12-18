@@ -29,7 +29,7 @@ $font-size-button: 16px;
 
 $font-size-h1: 60px;
 $font-size-h1-mobile: 32px;
-$font-size-h2: 323px;
+$font-size-h2: 32px;
 $font-size-h2-mobile: 28px;
 $font-size-h3: 28px;
 $font-size-h3-mobile: 24px;
@@ -40,10 +40,11 @@ $font-size-h5-mobile: 18px;
 
 //AJUST LINE HEIGHTS FOR THE THEME
 $line-height-1: 1;
-$line-height-1-2: 1.2;
-$line-height-1-4: 1.5;
-$line-height-1-8: 1.8;
-$line-height-2: 2;
+$line-height-36: 1.125;
+$line-height-34: 1.22;
+$line-height-28: 1.2;
+$line-height-24: 1.2;
+$line-height-22: 1.25;
 
 //BACKUP FOR ORIGINAL COMPONENTS
 $font-size-tiny: rem(11px);
@@ -64,5 +65,7 @@ $font-weight-h2: bold;
 $font-weight-h3: bold;
 $font-weight-h4: bold;
 $font-weight-h5: bold;
+$font-weight-p-medium: 600;
+$font-weight-p-regular: 400;
 $font-weight-anchors: $font-weight-body;
 $font-weight-breadcrumbs: $font-weight-body;
