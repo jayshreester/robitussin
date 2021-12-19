@@ -1,5 +1,5 @@
 #footer {
-  background-color: $grey-2;
+  background-color: $black;
   .list-footer {
     ul {
       margin-top: 16px;
@@ -18,7 +18,7 @@
         margin-bottom: 0 !important;
         @media (min-width: $breakpoint-md-min) {
           text-align: left;
-          margin-bottom: 23px !important;
+          margin-bottom: 33px !important;
         }
         &::before {
           display: none;
@@ -40,18 +40,27 @@
         }
         a {
           font-size: 16px;
+          font-weight: bold;
           line-height: 24px;
           &:hover {
-            color: $color-5;
+            color: $white;
           }
         }
       }
     }
   }
+  .follow-us-wrapper {
+    p {
+      font-weight: 400;
+      text-decoration: underline;
+      margin: 32px 0;
+      font-weight: $font-weight-body;
+    }
+  }
   .copyright {
     .richText-content {
       display: block;
-      border-top: 1px solid $color-1;
+      border-top: 1px solid $white;
       padding-bottom: 8px;
       p {
         &:first-of-type {

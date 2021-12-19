@@ -1,0 +1,18 @@
+.reference-hero-banner-img-btn {
+  .max-content-width {
+    position: absolute;
+    top: 139px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .banner-content {
+      h1 {
+        max-width: 394px;
+      }
+      > p {
+        max-width: 240px;
+        padding: 12px 0 24px;
+      }
+    }
+  }
+}

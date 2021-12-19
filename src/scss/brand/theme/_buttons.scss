@@ -5,7 +5,6 @@
   &:hover,
   &:focus {
     color: $color-2;
-    text-decoration: underline;
   }
 }
 
@@ -13,7 +12,7 @@
   border: $button-border-size solid $color-1;
   color: $color-1;
   border-radius: 99px;
-  padding: 13px 25px;
+  padding: 13px 25px !important;
 
   &:hover,
   &:focus {
@@ -26,7 +25,7 @@
   border: $button-border-size solid $white;
   color: $white;
   border-radius: 99px;
-  padding: 13px 25px;
+  padding: 13px 25px !important;
 
   &:hover,
   &:focus {
