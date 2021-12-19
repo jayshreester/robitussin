@@ -2,7 +2,7 @@
   background-color: $black;
   .list-footer {
     ul {
-      margin-top: 16px;
+      margin-top: 45px;
       margin-bottom: 25px;
       @media (min-width: $breakpoint-md-min) {
         margin-bottom: 16px;
@@ -55,13 +55,36 @@
       text-decoration: underline;
       margin: 32px 0;
       font-weight: $font-weight-body;
+      font-size: 16px;
     }
   }
+
+  .social-pages {
+    .icons-with-link {
+      margin: 0 13px;
+      .default-icon {
+        > a {
+          background-color: transparent;
+          img {
+            width: auto;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .divider-footer {
+    .component-content {
+      margin: 0;
+    }
+  }
+
   .copyright {
     .richText-content {
       display: block;
       border-top: 1px solid $white;
-      padding-bottom: 8px;
+      padding: 32px 0 44px;
       p {
         &:first-of-type {
           padding: 4px 0;

@@ -52,3 +52,16 @@
     color: $color-4 !important;
   }
 }
+
+a.cta-link {
+  display: block;
+  border: none;
+  color: $color-1;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $color-1;
+    text-decoration: none;
+  }
+}

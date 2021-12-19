@@ -1,0 +1,99 @@
+// home page
+.reference-content-grid-c21 {
+  background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/hero-banners/hero-banner-enhanced-h4-v0/desktop/homepage-naturals-category-bkgd-robitussin-desktop.jpg?auto=format');
+  background-position: center bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.reference-cards-block {
+  .richText {
+    margin-top: 20px;
+
+    .richText-content {
+      padding-right: 0px;
+
+      @media (min-width: $breakpoint-md-min) {
+        padding-right: 54px;
+      }
+
+      h4 {
+        font-size: $font-size-h4;
+        line-height: $line-height-24;
+        margin-bottom: $space-10;
+        @media (min-width: $breakpoint-md-min) {
+          font-size: $font-size-h4;
+          line-height: 20px;
+        }
+      }
+      p {
+        margin: 0;
+        font-size: $font-size-body-small;
+        line-height: $line-height-24;
+      }
+    }
+  }
+}
+.reference-cards-c2 {
+  .max-content-width {
+    max-width: 753px !important;
+
+    .box.first {
+      .richText {
+        h5 {
+          max-height: 200px;
+        }
+      }
+    }
+    .box.last {
+      .richText {
+        h5 {
+          max-height: 280px;
+        }
+      }
+    }
+
+    .richText {
+      margin-top: $spacer-sm;
+      p {
+        margin: 0;
+        font-size: $font-size-body-small;
+        line-height: $line-height-1;
+        margin-bottom: $space-10;
+      }
+      h5 {
+        font-weight: normal;
+        font-size: $font-size-h5;
+        line-height: $line-height-24;
+
+        @media (min-width: $breakpoint-md-min) {
+          font-size: $font-size-h5;
+          line-height: $line-height-24;
+        }
+      }
+    }
+  }
+}
+
+.reference-copy-block-c2-v0 {
+  .richText {
+    margin-bottom: $space-10;
+    p,
+    a {
+      margin: 0;
+      font-size: $font-size-body-small;
+    }
+    &.first {
+      max-width: 944px;
+    }
+    & .flex {
+      a {
+        margin-left: 2.5rem;
+        line-height: $line-height-1;
+      }
+    }
+    .pbox {
+      padding: $spacer $space-20;
+      border: $default-border-width solid $gray-300;
+    }
+  }
+}
