@@ -1,10 +1,10 @@
 html {
-  font-size: $font-size-body !important;
+  font-size: $font-size-regular !important;
 }
 body {
   p {
     color: $black;
-    font-size: $font-size-body;
+    font-size: $font-size-regular;
     line-height: $line-height-24;
     &.smalltext {
       color: $black;
