@@ -99,6 +99,7 @@
 }
 
 p {
+<<<<<<< Updated upstream
   &.article-para {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -126,6 +127,18 @@ p {
         margin: 0 2% 0 4%;
         line-height: 1.6;
       }
+=======
+  &.quote {
+    .quote_left {
+      //background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/Articles/icons/icon-article-quote-green-closed-robitussin.svg?auto=format');
+      background-image: url('C:\Users\Ramesh\Desktop\work\Indigo\Robitussin\02_Assets\Icons\icon-article-quote-green-closed-robitussin.svg?auto=format');
+      border: 1px solid red;
+      width: 550px;
+      height: 10px;
+      background-position: center bottom;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+>>>>>>> Stashed changes
     }
   }
 }
