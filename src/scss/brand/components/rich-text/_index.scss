@@ -97,3 +97,35 @@
     }
   }
 }
+
+p {
+  &.article-para {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0.5rem 0 2.5rem 0;
+  }
+  &.quote-wrapper {
+    width: 70%;
+    font-size: 1.4rem;
+    color: $color-1;
+    margin: 0 auto;
+
+    span img {
+      width: 100%;
+      height: auto;
+    }
+
+    span {
+      &.image {
+        display: inline-block;
+      }
+      &.text {
+        display: inline-block;
+        vertical-align: top;
+        width: 78%;
+        margin: 0 2% 0 4%;
+        line-height: 1.6;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+// body is used for overriding default component styles with same selecotr
+@if $include-list {
+  .richText {
+    .richText-content {
+      ul {
+        &.foot-notes {
+          list-style-type: none;
+          margin: 0 0 1rem 0;
+
+          > li {
+            list-style-type: none;
+            color: $grey-1;
+            margin: 0 0 0.7rem 0;
+            padding: 0;
+            font-size: $font-size-body-small;
+            line-height: 1;
+            &::before {
+              display: none;
+            }
+            &.list-footnote-margin {
+              margin: 2rem 0;
+            }
+
+            span {
+              &.bottom-footnote-devider {
+                border: 1px solid #606060;
+                padding: 1rem;
+              }
+              a,
+              a:hover,
+              a:visited {
+                font-size: $font-size-body-small;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
