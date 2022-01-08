@@ -71,7 +71,6 @@
   }
 }
 
-
 .reference-products-12hr-products {
   .max-content-width {
     max-width: 570px !important;
@@ -99,4 +98,77 @@
 .products-subheading {
   font-size: 18px;
   line-height: 24px;
+}
+.desktop-img {
+  display: none;
+  @media (min-width: $breakpoint-md-min) {
+    display: block;
+  }
+}
+.desktop-img {
+  display: none;
+  @media (min-width: $breakpoint-md-min) {
+    display: block;
+  }
+}
+.mobile-img {
+  display: block;
+  @media (min-width: $breakpoint-md-min) {
+    display: none;
+  }
+}
+.coupon-box {
+  .dark-green-box {
+    background: #008945;
+    .box {
+      width: 70%;
+      flex: 0 0 70%;
+    }
+    .image {
+      width: 30%;
+      flex: 0 0 30%;
+    }
+  }
+  .light-green-box {
+    background: #2ea85d;
+    .box {
+      width: 70%;
+      flex: 0 0 70%;
+    }
+    .image {
+      width: 30%;
+      flex: 0 0 30%;
+    }
+  }
+  .flex.cols-d-2 {
+    &.s-d-1 {
+      & > div > {
+        &.content {
+          gap: 0;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .btn-primary {
+    color: #fff;
+    border-color: #fff;
+  }
+  .richText-content {
+    p {
+      color: #fff;
+      font-size: 17px;
+      margin-block-start: 0;
+      @media (min-width: $breakpoint-md-min) {
+        font-size: 28px;
+      }
+      span {
+        font-size: 26px;
+        font-weight: bold;
+        @media (min-width: $breakpoint-md-min) {
+          font-size: 48px;
+        }
+      }
+    }
+  }
 }
