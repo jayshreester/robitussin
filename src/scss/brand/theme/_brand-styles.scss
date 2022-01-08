@@ -38,7 +38,7 @@
   }
 }
 // DM products
-.reference-products-Dm-Products {
+.dm-products {
   .box {
     .component {
       .section {
@@ -99,27 +99,9 @@
   font-size: 18px;
   line-height: 24px;
 }
-.desktop-img {
-  display: none;
-  @media (min-width: $breakpoint-md-min) {
-    display: block;
-  }
-}
-.desktop-img {
-  display: none;
-  @media (min-width: $breakpoint-md-min) {
-    display: block;
-  }
-}
-.mobile-img {
-  display: block;
-  @media (min-width: $breakpoint-md-min) {
-    display: none;
-  }
-}
 .coupon-box {
   .dark-green-box {
-    background: #008945;
+    background: $color-1;
     .box {
       width: 70%;
       flex: 0 0 70%;
@@ -130,7 +112,7 @@
     }
   }
   .light-green-box {
-    background: #2ea85d;
+    background: $color-3;
     .box {
       width: 70%;
       flex: 0 0 70%;
@@ -151,20 +133,21 @@
     }
   }
   .btn-primary {
-    color: #fff;
-    border-color: #fff;
+    color: $white;
+    border-color: $white;
   }
   .richText-content {
     p {
-      color: #fff;
+      color: $white;
       font-size: 17px;
+      font-weight: $font-weight-button;
       margin-block-start: 0;
       @media (min-width: $breakpoint-md-min) {
         font-size: 28px;
       }
       span {
         font-size: 26px;
-        font-weight: bold;
+        font-weight: $font-weight-button;
         @media (min-width: $breakpoint-md-min) {
           font-size: 48px;
         }
