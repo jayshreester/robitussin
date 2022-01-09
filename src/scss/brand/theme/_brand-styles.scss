@@ -30,10 +30,12 @@
     }
   }
 
-  .richText.text-center-d {
-    margin: 24px 0 43px 0;
-    p {
-      margin: 0;
+  .richText {
+    .text-center-d {
+      margin: 24px 0 43px 0;
+      p {
+        margin: 0;
+      }
     }
   }
 }
@@ -47,8 +49,8 @@
     }
   }
   .image {
-    .component-content{
-      &.left{
+    .component-content {
+      &.left {
         text-align: center;
       }
     }
@@ -61,8 +63,8 @@
     max-width: 825px !important;
   }
   .image {
-    .component-content{
-      &.left{
+    .component-content {
+      &.left {
         text-align: center;
       }
     }
@@ -74,8 +76,8 @@
     max-width: 570px !important;
   }
   .image {
-    .component-content{
-      &.left{
+    .component-content {
+      &.left {
         text-align: center;
       }
     }
