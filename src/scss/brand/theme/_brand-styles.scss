@@ -40,23 +40,18 @@
 // DM products
 .dm-products {
   .box {
-    .component {
-      .section {
+    &.component {
+      &.section {
         justify-content: center;
       }
     }
   }
-  h4 {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
-
-// CF products
-.reference-products-Cf-Products {
-  h4 {
-    font-size: 18px;
-    line-height: 22px;
+  .image {
+    .component-content{
+      &.left{
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -65,9 +60,12 @@
   .max-content-width {
     max-width: 825px !important;
   }
-  h4 {
-    font-size: 18px;
-    line-height: 22px;
+  .image {
+    .component-content{
+      &.left{
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -75,9 +73,12 @@
   .max-content-width {
     max-width: 570px !important;
   }
-  h4 {
-    font-size: 18px;
-    line-height: 22px;
+  .image {
+    .component-content{
+      &.left{
+        text-align: center;
+      }
+    }
   }
 }
 // common css
@@ -122,7 +123,18 @@
       flex: 0 0 30%;
     }
   }
-
+  .flex {
+    &.cols-d-2 {
+      &.s-d-1 > {
+        div > {
+          .content {
+            gap: 0;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
   .btn-primary {
     color: $white;
     border-color: $white;
