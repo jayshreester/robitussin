@@ -20,16 +20,16 @@
             &.list-footnote-margin {
               margin: 2rem 0;
             }
-
+            &.bottom-footnote-devider {
+              border: 1px solid #606060;
+              padding: 1rem;
+            }
             span {
-              &.bottom-footnote-devider {
-                border: 1px solid #606060;
-                padding: 1rem;
-              }
               a,
               a:hover,
               a:visited {
                 font-size: $font-size-body-small;
+                text-decoration: underline;
               }
             }
           }

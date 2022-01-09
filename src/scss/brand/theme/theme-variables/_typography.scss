@@ -20,32 +20,37 @@ $font-family-tertiary: $font-stack-tertiary;
 
 //ADJUST FONT AND HEADING SIZES FOR THE THEME
 // following 2 lines serves as a root base for size do not use rem() function with them
-$font-size-regular: 1rem;
+$font-size-regular: 16px;
+$font-size-regular19: 19.2px;
 $font-size-body: 16px;
-$font-size-body-small: 0.875rem;
+$font-size-body-small: 14px;
+$font-size-body-large: 22.4px;
 
 // for conversion to rem from (px, pt, pc, cm, mm, in) use::before
 // rem($value, $rendition:optional 'd|m|null')
 $font-size-button: 16px;
 
-$font-size-h1: 3.75rem;
-$font-size-h1-mobile: 2rem;
-$font-size-h2: 2rem;
-$font-size-h2-mobile: 1.75rem;
-$font-size-h3: 1.75rem;
-$font-size-h3-mobile: 1.5rem;
-$font-size-h4: 1.25rem;
-$font-size-h4-mobile: 1.25rem;
-$font-size-h5: 1.125rem;
-$font-size-h5-mobile: 1.125rem;
+$font-size-h1: 60px;
+$font-size-h1-mobile: 32px;
+$font-size-h2: 32px;
+$font-size-h2-mobile: 28px;
+$font-size-h3: 28px;
+$font-size-h3-mobile: 24px;
+$font-size-h4: 20px;
+$font-size-h4-mobile: 20px;
+$font-size-h5: 18px;
+$font-size-h5-mobile: 18px;
 
 //AJUST LINE HEIGHTS FOR THE THEME
 $line-height-1: 1;
-$line-height-36: 1.125;
-$line-height-34: 1.22;
+$line-height-10: 0.625;
 $line-height-28: 1.2;
 $line-height-24: 1.2;
+$line-height-36: 1.125;
+$line-height-34: 1.22;
 $line-height-22: 1.25;
+$line-height-25: 1.6;
+$line-height-28: 1.8;
 
 //BACKUP FOR ORIGINAL COMPONENTS
 $font-size-tiny: rem(11px);

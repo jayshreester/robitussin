@@ -100,18 +100,18 @@
 
 p {
   &.article-para {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: $font-size-regular19;
+    line-height: $line-height-25;
     margin: 0.5rem 0 2.5rem 0;
   }
   &.story-subtext-style {
-    font-size: 1.4rem;
-    line-height: 1.8;
+    font-size: $font-size-body-large;
+    line-height: $line-height-28;
     margin: 0.5rem 0;
   }
   &.quote-wrapper {
     width: 70%;
-    font-size: 1.4rem;
+    font-size: $font-size-body-large;
     color: $color-1;
     margin: 0 auto;
 
@@ -130,7 +130,7 @@ p {
       vertical-align: top;
       width: 78%;
       margin: 0 2% 0 4%;
-      line-height: 1.6;
+      line-height: $line-height-25;
     }
   }
 }
@@ -141,7 +141,7 @@ p {
     background-image: url('C:\Users\Ramesh\Desktop\work\Indigo\Robitussin\02_Assets\Icons\icon-article-quote-green-closed-robitussin.svg?auto=format');
     border: 1px solid red;
     width: 550px;
-    height: 10px;
+    height: $line-height-10;
     background-position: center bottom;
     background-size: 100% auto;
     background-repeat: no-repeat;
