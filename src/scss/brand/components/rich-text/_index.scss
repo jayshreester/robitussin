@@ -131,6 +131,10 @@ p {
       width: 78%;
       margin: 0 2% 0 4%;
       line-height: $line-height-25;
+
+      @media(min-width:$breakpoint-sm-min){
+        width:100%;
+      }
     }
   }
 }
