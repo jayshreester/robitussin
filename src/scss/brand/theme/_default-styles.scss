@@ -11,6 +11,12 @@ body {
       font-size: $font-size-body-small;
       line-height: $line-height-24;
     }
+    a,
+    a:hover,
+    a:visited {
+      font-size: $font-size-body-small;
+      text-decoration: underline;
+    }
   }
   .maxcontainer {
     float: none !important;

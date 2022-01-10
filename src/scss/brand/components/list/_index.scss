@@ -17,14 +17,16 @@
             &::before {
               display: none;
             }
+
             &.list-footnote-margin {
               margin: 2rem 0;
             }
+
             &.bottom-footnote-devider {
               border: 1px solid #606060;
               padding: 1rem;
             }
-            span {
+
               a,
               a:hover,
               a:visited {
