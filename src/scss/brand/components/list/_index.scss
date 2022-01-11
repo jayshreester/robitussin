@@ -13,7 +13,7 @@
             margin: 0 0 0.7rem 0;
             padding: 0;
             font-size: $font-size-body-small;
-            line-height: 1;
+            line-height: $line-height-18;
             &::before {
               display: none;
             }
@@ -27,12 +27,11 @@
               padding: 1rem;
             }
 
-              a,
-              a:hover,
-              a:visited {
-                font-size: $font-size-body-small;
-                text-decoration: underline;
-              }
+            a,
+            a:hover,
+            a:visited {
+              font-size: $font-size-body-small;
+              text-decoration: underline;
             }
           }
         }
