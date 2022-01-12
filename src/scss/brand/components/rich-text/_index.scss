@@ -141,56 +141,53 @@ p {
       line-height: $line-height-25;
 
       @media (min-width: $breakpoint-sm-min) {
-        width: 100%;
-      @media (max-width: $breakpoint-sm-max) {
         width: 78%;
       }
     }
   }
-}
 
-.article-hero-image {
-  max-width: 500px;
-}
-
-.quote {
-  .quote_left {
-    //background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/Articles/icons/icon-article-quote-green-closed-robitussin.svg?auto=format');
-    background-image: url('C:\Users\Ramesh\Desktop\work\Indigo\Robitussin\02_Assets\Icons\icon-article-quote-green-closed-robitussin.svg?auto=format');
-    border: 1px solid red;
-    width: 550px;
-    height: $line-height-10;
-    background-position: center bottom;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+  .article-hero-image {
+    max-width: 500px;
   }
-}
 
-.our-story-relief {
-  font-size: $font-size-h3;
-  line-height: $line-height-32;
-}
+  .quote {
+    .quote_left {
+      //background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/Articles/icons/icon-article-quote-green-closed-robitussin.svg?auto=format');
+      background-image: url('C:\Users\Ramesh\Desktop\work\Indigo\Robitussin\02_Assets\Icons\icon-article-quote-green-closed-robitussin.svg?auto=format');
+      border: 1px solid red;
+      width: 550px;
+      height: $line-height-10;
+      background-position: center bottom;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+  }
 
-.our-story-relief-image-desc {
-  font-size: $font-size-body-small;
-  line-height: $line-height-22;
-}
-.our-story-relief-box-title {
-  font-size: $font-size-h3;
-  line-height: $line-height-24;
-}
+  .our-story-relief {
+    font-size: $font-size-h3;
+    line-height: $line-height-32;
+  }
 
-.sub-banner-parent {
-  height: 260px;
-  background-color: #000;
-}
+  .our-story-relief-image-desc {
+    font-size: $font-size-body-small;
+    line-height: $line-height-22;
+  }
+  .our-story-relief-box-title {
+    font-size: $font-size-h3;
+    line-height: $line-height-24;
+  }
 
-.bg-sub-banner {
-  height: 380px;
-  //background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg") no-repeat 0 0;
-  background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 80;
-}
+  .sub-banner-parent {
+    height: 260px;
+    background-color: #000;
+  }
+
+  .bg-sub-banner {
+    height: 380px;
+    //background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg") no-repeat 0 0;
+    background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 80;
+  }
 }

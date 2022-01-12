@@ -32,7 +32,7 @@ import './components/accordion-preselect-hash';
 import './components/anchor-box';
 import './components/fullbox';
 //import './components/table';
-//import './components/revtrax';
+import './components/revtrax';
 import './components/forms';
 import './components/bp-sharer';
 //import './components/action-link';
