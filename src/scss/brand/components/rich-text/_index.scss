@@ -174,20 +174,70 @@ p {
   line-height: $line-height-22;
 }
 .our-story-relief-box-title {
-  font-size: $font-size-h3;
+  font-size: $font-size-h5;
   line-height: $line-height-24;
+  margin: 0;
 }
 
 .sub-banner-parent {
-  height: 260px;
-  background-color: #000;
+  @media (min-width: $breakpoint-md-min) {
+    height: 260px;
+    background-color: #000;
+    display: block;
+  }
 }
 
 .bg-sub-banner {
-  height: 380px;
-  //background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg") no-repeat 0 0;
-  background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 80;
+  height: 486px;
+  background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg-mobile.jpg');
+
+  @media (min-width: $breakpoint-md-min) {
+    height: 380px;
+    //background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg") no-repeat 0 0;
+    background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -25%;
+    left: 20%;
+  }
+}
+
+.subbanner-heading {
+  font-size: $font-size-48;
+  line-height: $line-height-1;
+  color: $white;
+  width: 100%;
+  text-align: center;
+  padding: 9% 0 0 0;
+
+  @media (min-width: $breakpoint-md-min) {
+    font-size: $font-size-70;
+    line-height: $line-height-1;
+    width: 50%;
+    margin: 3% 0 0 50%;
+    text-align: left;
+    padding: 0;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.subbanner-text {
+  font-size: $font-size-h4;
+  line-height: $line-height-22;
+  color: $white;
+  width: 100%;
+  text-align: center;
+  padding: 0 15%;
+
+  @media (min-width: $breakpoint-xm-min) {
+    font-size: $font-size-h3-mobile;
+    line-height: $line-height-22;
+    width: 48%;
+    margin: 1% 0 0 50%;
+    text-align: left;
+    padding: 0;
+  }
 }
