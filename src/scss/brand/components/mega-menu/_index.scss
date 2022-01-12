@@ -1,14 +1,111 @@
+.megamenu {
+  .searchBox input[type='text'] {
+    width: auto;
+    border-color: $gray-600;
+  }
+  .megamenu-top-bar-left,
+  .megamenu-top-bar-right {
+    > * > .paragraphSystem > * {
+      padding: 10px 0;
+      @media (min-width: $breakpoint-md-min) {
+        padding: 0;
+      }
+    }
+  }
+  .country-selected {
+    padding: 0;
+    border: none;
+  }
+  .language-selector {
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+  &-logo {
+    &::after {
+      background-color: $color-1;
+    }
+    > * {
+      /*MAIN LOGO CONTAINER*/
+      a {
+        max-width: $megamen-logo-image-mobile-width;
+        min-width: $megamen-logo-image-mobile-width;
+        width: $megamen-logo-image-mobile-width;
+        @media (min-width: $breakpoint-md-min) {
+          max-width: $megamen-logo-image-desktop-width;
+          min-width: $megamen-logo-image-desktop-width;
+          width: $megamen-logo-image-desktop-width;
+        }
+      }
+    }
+  }
+
+  .country-selected,
+  a.top-bar-link {
+    font-family: $font-family-secondary;
+    border: none;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  &-language-list {
+    &.opened {
+      height: 100vh;
+      min-height: 100vh;
+      max-height: 100vh;
+      @media (min-width: $breakpoint-md-min) {
+        height: auto;
+        min-height: auto;
+        max-height: auto;
+      }
+    }
+    * {
+      color: $color-6;
+    }
+    > .inner {
+      > * {
+        > .component {
+          > * {
+            > .paragraphSystem {
+              a {
+                font-size: $font-size-body-small;
+                padding: 10px 0;
+                &:hover {
+                  color: $color-1;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .megamenu-navigation .megamenu-main-nav {
-  background-color: var(--color-1);
-  color: #fff;
-  margin: 0;
-  width: 100%;
-  font-size: 16px;
+  @media (min-width: $breakpoint-md-min) {
+    background-color: var(--color-1);
+  }
 
   .navigation-level1 {
     .navigation-item-title {
-      &:after {
-        display: none;
+      font-family: $font-family-bold;
+      text-transform: uppercase;
+      @media (min-width: $breakpoint-md-min) {
+        text-transform: none;
+      }
+      .navigation-item-decoration {
+        border: solid $color-1;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        margin-left: 4px;
+        padding: 4px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        @media (min-width: $breakpoint-md-min) {
+          border: none;
+        }
       }
     }
   }
