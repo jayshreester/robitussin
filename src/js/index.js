@@ -17,7 +17,7 @@ import './utils/interval';
 //import './components/gigya-date-of-birth-checker';
 import './components/accordion-block';
 import './components/country-selector';
-//import './components/search-input';
+import './components/search-input';
 import './components/navigation';
 import './components/stickymenu';
 //import './components/youtube-video';
