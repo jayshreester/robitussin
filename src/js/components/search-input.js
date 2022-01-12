@@ -17,6 +17,7 @@
 
   $('.search-block .form-search button').click(function(e) {
     e.preventDefault();
+
     let $searchBlock = $(this).closest('.search-block');
     if (screen.width >= 992) {
       $searchBlock.addClass('is-open');

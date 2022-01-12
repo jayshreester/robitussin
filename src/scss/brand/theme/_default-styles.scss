@@ -11,6 +11,12 @@ body {
       font-size: $font-size-body-small;
       line-height: $line-height-24;
     }
+    a,
+    a:hover,
+    a:visited {
+      font-size: $font-size-h5;
+      text-decoration: underline;
+    }
   }
   .maxcontainer {
     float: none !important;
@@ -64,6 +70,12 @@ body {
       @media (min-width: $breakpoint-md-min) {
         font-size: $font-size-h1;
         line-height: $line-height-1;
+      }
+    }
+    &.title-h1-style2 {
+      font-size: $font-size-h3;
+      @media (min-width: $breakpoint-md-min) {
+        font-size: $font-size-h1-alt;
       }
     }
     &.title-h2-style {

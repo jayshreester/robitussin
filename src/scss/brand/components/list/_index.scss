@@ -13,24 +13,25 @@
             margin: 0 0 0.7rem 0;
             padding: 0;
             font-size: $font-size-body-small;
-            line-height: 1;
+            line-height: $line-height-18;
             &::before {
               display: none;
             }
+
             &.list-footnote-margin {
               margin: 2rem 0;
             }
+
             &.bottom-footnote-devider {
               border: 1px solid #606060;
               padding: 1rem;
             }
-            span {
-              a,
-              a:hover,
-              a:visited {
-                font-size: $font-size-body-small;
-                text-decoration: underline;
-              }
+
+            a,
+            a:hover,
+            a:visited {
+              font-size: $font-size-body-small;
+              text-decoration: underline;
             }
           }
         }
