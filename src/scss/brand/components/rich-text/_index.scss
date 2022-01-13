@@ -128,6 +128,17 @@ p {
       height: auto;
     }
   }
+  &.article-para-reference {
+    font-size: $font-size-body-small;
+
+    span {
+      color: $color-2;
+    }
+  }
+  &.article-para-reference-indent {
+    padding: 0 0 0 1em;
+    font-size: $font-size-body-small;
+  }
 
   span {
     &.image {
@@ -259,5 +270,11 @@ p {
       text-align: left;
       padding: 0;
     }
+  }
+}
+
+.image-width {
+  img {
+    width: auto;
   }
 }
