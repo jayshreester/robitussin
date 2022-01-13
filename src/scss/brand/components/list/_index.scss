@@ -57,6 +57,29 @@
               font-size: $font-size-body-small;
               text-decoration: underline;
             }
+<<<<<<< HEAD
+=======
+          }
+        }
+      }
+
+      ul {
+        &.article-para-list {
+          margin: 1.5rem 0 2rem 0;
+
+          > li {
+            color: $black;
+            margin: 0 0 0.7rem 0;
+            padding: 0 0 0 1rem;
+
+            a,
+            a:hover,
+            a:visited {
+              font-size: $font-size-h5;
+              text-decoration: underline;
+              color: $color-1;
+            }
+>>>>>>> f08184db371c14aa2dc8b6d278681f874da49bc7
           }
         }
       }
