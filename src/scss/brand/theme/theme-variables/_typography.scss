@@ -23,6 +23,7 @@ $font-family-tertiary: $font-stack-tertiary;
 $font-size-regular: 16px;
 $font-size-body: 16px;
 $font-size-body-small: 14px;
+$font-size-body-large: 24px;
 
 // for conversion to rem from (px, pt, pc, cm, mm, in) use::before
 // rem($value, $rendition:optional 'd|m|null')

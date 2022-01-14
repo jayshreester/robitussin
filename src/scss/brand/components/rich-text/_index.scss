@@ -109,7 +109,7 @@ p {
   &.article-para {
     font-size: $font-size-h5;
     line-height: $line-height-28;
-    margin: 0.5rem 0 1.5rem 0;
+    margin: 0.7rem 0 2rem 0;
   }
   &.story-subtext-style {
     font-size: $font-size-h3-mobile;
@@ -127,6 +127,17 @@ p {
       width: 100%;
       height: auto;
     }
+  }
+  &.article-para-reference {
+    font-size: $font-size-body-small;
+
+    span {
+      color: $color-2;
+    }
+  }
+  &.article-para-reference-indent {
+    padding: 0 0 0 1em;
+    font-size: $font-size-body-small;
   }
 
   span {
@@ -149,115 +160,128 @@ p {
       }
     }
   }
+}
+.article-hero-image {
+  max-width: 500px;
+}
 
-  .article-hero-image {
-    max-width: 500px;
+.quote {
+  .quote_left {
+    //background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/Articles/icons/icon-article-quote-green-closed-robitussin.svg?auto=format');
+    background-image: url('C:\Users\Ramesh\Desktop\work\Indigo\Robitussin\02_Assets\Icons\icon-article-quote-green-closed-robitussin.svg?auto=format');
+    border: 1px solid red;
+    width: 550px;
+    height: $line-height-10;
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
+}
 
-  .quote {
-    .quote_left {
-      //background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/Articles/icons/icon-article-quote-green-closed-robitussin.svg?auto=format');
-      background-image: url('C:\Users\Ramesh\Desktop\work\Indigo\Robitussin\02_Assets\Icons\icon-article-quote-green-closed-robitussin.svg?auto=format');
-      border: 1px solid red;
-      width: 550px;
-      height: $line-height-10;
-      background-position: center bottom;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
+.our-story-relief {
+  font-size: $font-size-h3;
+  line-height: $line-height-32;
+}
+
+.our-story-relief-image-desc {
+  font-size: $font-size-body-small;
+  line-height: $line-height-22;
+}
+.our-story-relief-box-title {
+  font-size: $font-size-h5;
+  font-weight: $font-family-medium;
+  line-height: 1.3;
+}
+
+.sub-banner-parent {
+  @media (min-width: $breakpoint-md-min) {
+    height: 260px;
+    background-color: $black;
+  }
+}
+
+.bg-sub-banner {
+  height: 486px;
+  //background: url('file:///C:/Users/jaysh/Downloads/story-hero-bg-mobile.jpg') no-repeat center center $color-1;
+  background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg-mobile.jpg')
+    no-repeat center center $color-1;
+  font-size: $font-size-h5;
+  line-height: $line-height-24;
+  .richText {
+    max-width: 375px;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: $breakpoint-md-min) {
+      text-align: left;
+      max-width: 100%;
     }
   }
-
-  .our-story-relief {
-    font-size: $font-size-h3;
-    line-height: $line-height-32;
-  }
-
-  .our-story-relief-image-desc {
-    font-size: $font-size-body-small;
-    line-height: $line-height-22;
-  }
-  .our-story-relief-box-title {
-    font-size: $font-size-h3;
-    line-height: $line-height-24;
-  }
-
-  .sub-banner-parent {
-    height: 260px;
-    background-color: #000;
-  }
-
-  .bg-sub-banner {
+  @media (min-width: $breakpoint-md-min) {
     height: 380px;
-    //background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg") no-repeat 0 0;
-    background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
+    background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg')
+      no-repeat 0 0;
+    //background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
+    //background-image: url('file:///C:/Users/jaysh/Downloads/story-hero-bg.jpg');
     background-repeat: no-repeat;
     position: absolute;
-    top: 80;
-    font-size: $font-size-h5;
-    line-height: $line-height-24;
-    margin: 0;
+    top: -25%;
+    left: 0;
+    right: 0;
   }
+}
 
-  .sub-banner-parent {
-    @media (min-width: $breakpoint-md-min) {
-      height: 260px;
-      background-color: #000;
-      display: block;
-    }
-  }
+.subbanner-heading {
+  font-size: $font-size-48;
+  line-height: $line-height-1;
+  color: $white;
+  width: 100%;
+  text-align: center;
+  padding: 9% 0 0 0;
 
-  .bg-sub-banner {
-    height: 486px;
-    background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg-mobile.jpg');
-
-    @media (min-width: $breakpoint-md-min) {
-      height: 380px;
-      //background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg") no-repeat 0 0;
-      background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -25%;
-      left: 20%;
-    }
-  }
-
-  .subbanner-heading {
+  @media (min-width: $breakpoint-md-min) {
     font-size: $font-size-48;
     line-height: $line-height-1;
-    color: $white;
-    width: 100%;
-    text-align: center;
-    padding: 9% 0 0 0;
-
-    @media (min-width: $breakpoint-md-min) {
-      font-size: $font-size-70;
-      line-height: $line-height-1;
-      width: 50%;
-      margin: 3% 0 0 50%;
-      text-align: left;
-      padding: 0;
-    }
-
-    span {
-      display: block;
-    }
+    width: 50%;
+    margin: 3% 0 0 50%;
+    text-align: left;
+    padding: 0;
+  }
+  @media (min-width: $breakpoint-lg-min) {
+    font-size: $font-size-70;
   }
 
-  .subbanner-text {
-    font-size: $font-size-h4;
-    line-height: $line-height-22;
-    color: $white;
-    width: 100%;
-    text-align: center;
-    padding: 0 15%;
+  span {
+    display: block;
+  }
+}
 
-    @media (min-width: $breakpoint-xm-min) {
-      font-size: $font-size-h3-mobile;
-      line-height: $line-height-22;
-      width: 48%;
-      margin: 1% 0 0 50%;
-      text-align: left;
-      padding: 0;
-    }
+.subbanner-text {
+  font-size: $font-size-h4;
+  line-height: $line-height-22;
+  color: $white;
+  width: 100%;
+  text-align: center;
+  padding: 0 15%;
+
+  @media (min-width: $breakpoint-md-min) {
+    font-size: $font-size-h3-mobile;
+    line-height: $line-height-22;
+    width: 48%;
+    margin: 1% 0 0 50%;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.image-width {
+  img {
+    width: auto;
+  }
+}
+
+.image-width-center {
+  img {
+    width: auto;
+    text-align: center;
   }
 }

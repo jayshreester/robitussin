@@ -85,6 +85,19 @@ body {
         font-size: $font-size-h2;
         line-height: $line-height-36;
       }
+      &.lineheight-low {
+        font-size: $font-size-h3-mobile;
+        line-height: $line-height-24;
+        @media (min-width: $breakpoint-md-min) {
+          font-size: $font-size-h3-mobile;
+          line-height: $line-height-22;
+        }
+        span {
+          &.h2-block {
+            display: block;
+          }
+        }
+      }
     }
     &.title-h3-style {
       font-size: $font-size-h3-mobile;

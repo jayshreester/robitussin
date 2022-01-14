@@ -65,3 +65,32 @@ a.cta-link {
     text-decoration: none;
   }
 }
+// Price spide button override
+body {
+  .ps-widget[ps-sku],
+  .ps-widget[data-ps-sku],
+  .ps-widget[ps-sku]:hover,
+  .ps-widget[data-ps-sku]:hover {
+    border-radius: 35px;
+    border: 2px solid $color-2;
+    box-sizing: border-box;
+    color: $color-2;
+
+    font-family: $font-family-bold;
+    font-size: $font-size-button;
+
+    line-height: initial;
+    padding: 12px 15px !important;
+
+    width: 124px;
+
+    > span.ps-button-label {
+      display: block !important;
+    }
+  }
+  .ps-widget[ps-sku]:hover,
+  .ps-widget[data-ps-sku]:hover {
+    background-color: $color-2;
+    color: $white;
+  }
+}

@@ -89,7 +89,7 @@
 }
 .heading-bottom:before {
   position: absolute;
-  content: "";
+  content: '';
   background: #000;
   height: 10px;
   width: 80px;
@@ -163,19 +163,6 @@
 .max-content-width {
   &.cus-max-cont-width {
     max-width: 825px !important;
-  }
-}
-
-.b1-box-tabs {
-  background-color: $gray-100;
-  padding-top: 20px;
-  @media (min-width: $breakpoint-md-min) {
-    .tabs-nav {
-      margin-bottom: 0;
-    }
-    .tabs-content {
-      padding: 25px 0 25px 0;
-    }
   }
 }
 .custom-size-h1 {

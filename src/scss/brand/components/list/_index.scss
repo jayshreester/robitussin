@@ -36,6 +36,51 @@
           }
         }
       }
+      ol {
+        &.reference-notes {
+          margin: 0 0 1rem 0;
+
+          > li {
+            color: $black;
+            margin: 0 0 0.7rem 0;
+            padding: 0 0 0 1rem;
+            font-size: $font-size-body-small;
+            line-height: $line-height-22;
+
+            span {
+              display: block;
+            }
+
+            a,
+            a:hover,
+            a:visited {
+              font-size: $font-size-body-small;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      ul,
+      ol {
+        &.article-para-list {
+          margin: 1.5rem 0 2rem 0;
+
+          > li {
+            color: $black;
+            margin: 0 0 0.7rem 0;
+            padding: 0 0 0 1rem;
+
+            a,
+            a:hover,
+            a:visited {
+              font-size: $font-size-h5;
+              text-decoration: underline;
+              color: $color-1;
+            }
+          }
+        }
+      }
     }
   }
 }
