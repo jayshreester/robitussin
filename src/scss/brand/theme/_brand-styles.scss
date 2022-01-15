@@ -165,20 +165,6 @@
     max-width: 825px !important;
   }
 }
-//<<<<<<< HEAD
-
-.b1-box-tabs {
-  background-color: $gray-100;
-  padding-top: 20px;
-  @media (min-width: $breakpoint-md-min) {
-    .tabs-nav {
-      margin-bottom: 0;
-    }
-    .tabs-content {
-      padding: 25px 0 25px 0;
-    }
-  }
-}
 .custom-size-h1 {
   font-size: 28px;
   line-height: 34px;
@@ -187,9 +173,17 @@
     line-height: 42px;
   }
 }
-/*.cta-link1 {
+.cta-link1 {
   font-size: 16px;
   line-height: 18px;
   font-weight: $font-weight-button;
   text-decoration: none;
-}*/
+}
+.cust-font-p14 {
+  font-size: 14px;
+  line-height: 20px;
+}
+.cust-font-p18 {
+  font-size: 18px;
+  line-height: 28px;
+}
