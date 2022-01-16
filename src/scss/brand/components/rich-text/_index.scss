@@ -285,3 +285,22 @@ p {
     text-align: center;
   }
 }
+
+.image-align-center {
+  text-align: center;
+}
+
+.article-table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.article-table th {
+  border: 1px solid #000000;
+  padding: 5px;
+  background: #f0f0f0;
+}
+.article-table td {
+  border: 1px solid #000000;
+  padding: 5px;
+}

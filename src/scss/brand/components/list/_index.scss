@@ -65,11 +65,13 @@
       ol {
         &.article-para-list {
           margin: 1.5rem 0 2rem 0;
+          font-size: $font-size-h5;
 
           > li {
             color: $black;
             margin: 0 0 0.7rem 0;
             padding: 0 0 0 1rem;
+            font-size: $font-size-h5;
 
             a,
             a:hover,
