@@ -89,7 +89,7 @@
 }
 .heading-bottom:before {
   position: absolute;
-  content: '';
+  content: "";
   background: #000;
   height: 10px;
   width: 80px;
@@ -174,7 +174,7 @@
   }
 }
 .cta-link1 {
-  &:hover{
+  &:hover {
     font-size: inherit;
     text-decoration: none;
     color: $color-1;
@@ -198,8 +198,12 @@
   display: inline-block;
   margin-left: 4px;
   padding: 3px;
-  transform: rotate(
--45deg);
+  transform: rotate(-45deg);
   top: -1px;
   position: relative;
+}
+.max-content-width {
+  .max-content-570 {
+    max-width: 570px !important;
+  }
 }
