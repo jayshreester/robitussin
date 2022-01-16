@@ -65,16 +65,20 @@ a.cta-link {
     text-decoration: none;
   }
 }
+[data-bv-show='rating_summary'] {
+  flex-basis: auto !important;
+}
 // Price spide button override
+
 body {
   .ps-widget[ps-sku],
   .ps-widget[data-ps-sku],
   .ps-widget[ps-sku]:hover,
   .ps-widget[data-ps-sku]:hover {
     border-radius: 35px;
-    border: 2px solid $color-2;
+    border: 2px solid $color-1;
     box-sizing: border-box;
-    color: $color-2;
+    color: $color-1;
 
     font-family: $font-family-bold;
     font-size: $font-size-button;
@@ -90,7 +94,7 @@ body {
   }
   .ps-widget[ps-sku]:hover,
   .ps-widget[data-ps-sku]:hover {
-    background-color: $color-2;
+    background-color: $color-1;
     color: $white;
   }
 }
