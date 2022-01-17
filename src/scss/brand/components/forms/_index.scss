@@ -1,1 +1,462 @@
 // body is used for overriding default component styles with same selecotr
+// body is used for overriding default component styles with same selecotr
+body {
+  .gigya-screen {
+    .gigya-required-display {
+      color: $black;
+    }
+    .gigya-label-text {
+      display: inline !important;
+    }
+    .gigya-composite-control.gigya-composite-control-submit {
+      text-align: center !important;
+      padding: 0 !important;
+    }
+    .gigya-composite-control {
+      &.gigya-composite-control-label {
+        margin-bottom: 2rem !important;
+        line-height: 23px;
+        padding-bottom: 0 !important;
+
+        label {
+          color: &black !important;
+        }
+      }
+      &.gigya-composite-control-textbox {
+        margin-bottom: 2rem !important;
+        padding-bottom: 0 !important;
+        .gigya-input-text {
+          margin-bottom: 0 !important;
+          height: 55px !important;
+        }
+      }
+    }
+    input[type='submit'] {
+      background: var(--color-1) !important;
+      border: 3px solid var(--color-1) !important;
+      color: $white !important;
+      width: auto;
+      min-width: 164px !important;
+      &:hover,
+      &:focus {
+        background: $white !important;
+        color: var(--color-1) !important;
+      }
+    }
+
+    &.portrait {
+      @media (min-width: $breakpoint-md-max) {
+        padding: 40px !important;
+        border: 1px solid #b6bdc5;
+        width: 550px !important;
+      }
+    }
+
+    form {
+      color: $black;
+      .gigya-composite-control {
+        a {
+          color: var(--color-1) !important ;
+          &:hover {
+            color: var(--color-1);
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.prepH__gigya--subtitle {
+  color: $black;
+  font-size: 0.875rem;
+  text-align: center;
+  @media (max-width: $breakpoint-md-max) {
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+}
+.gigyaraas {
+  color: $black;
+}
+
+body {
+  .prePHtabs {
+    .gigyaraas {
+      background-color: $gray-100;
+      padding: 30px 0;
+    }
+    .gigya-screen {
+      .gigya-label-text {
+        font-weight: bold !important;
+        font-family: 'Roboto', 'Helvetica Neue', arial, sans-serif !important;
+        font-size: 18px !important;
+        color: #3252a5 !important;
+        padding-bottom: 12px !important;
+      }
+      .gigya-composite-control {
+        &.gigya-composite-control-label {
+          margin-bottom: 2rem !important;
+          line-height: 23px;
+          padding-bottom: 0 !important;
+        }
+        &.gigya-composite-control-multi-choice {
+          margin-bottom: 2rem !important;
+          line-height: 23px;
+          padding-bottom: 0 !important;
+          .gigya-multi-choice-item label {
+            font-weight: bold !important;
+            font-family: 'Roboto', 'Helvetica Neue', arial, sans-serif !important;
+            font-size: 18px !important;
+            color: #3252a5 !important;
+            padding-bottom: 12px !important;
+          }
+        }
+        &.gigya-composite-control-textbox {
+          margin-bottom: 2rem !important;
+          padding-bottom: 0 !important;
+          .gigya-input-text {
+            margin-bottom: 0 !important;
+            height: 48px !important;
+            border-radius: 8px !important;
+            border: 2px solid #e3e4e7 !important;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      &.portrait {
+        @media (min-width: $breakpoint-md-max) {
+          border: 0 solid #b6bdc5;
+          width: 666px !important;
+        }
+      }
+    }
+  }
+}
+.prepH__gigya {
+  background: $gray-100;
+  padding-bottom: 4.6875rem;
+  .gigya-screen {
+    &.portrait {
+      @media (min-width: $breakpoint-md-min) {
+        padding: 0px !important;
+        border: none;
+        width: 586px !important;
+      }
+      &.mobile {
+        margin-top: 0rem;
+      }
+    }
+    .gigya-composite-control {
+      &.gigya-composite-control-textbox {
+        .gigya-input-text {
+          height: 48px !important;
+          border: 1px solid $white;
+          border-radius: 8px;
+          font-size: 1rem !important;
+        }
+      }
+      &.gigya-composite-control-label {
+        font-size: 0.875rem;
+        margin-top: -1rem;
+        @media (max-width: $breakpoint-md-max) {
+          margin-bottom: 3rem !important;
+          margin-top: 1rem;
+        }
+        a {
+          font-size: 0.875rem;
+        }
+      }
+      &.gigya-composite-control-multi-choice {
+        .gigya-multi-choice-item {
+          margin-bottom: 10px;
+          label {
+            color: $black !important;
+            font-weight: 500;
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+    .gigya-label-text {
+      display: inline !important;
+      color: $black !important;
+      font-weight: 500 !important;
+      font-size: 1.125rem !important;
+    }
+    .gigya-required-display {
+      color: $black !important;
+      padding: 0 !important;
+    }
+    .gigya-label {
+      margin-bottom: 10px;
+    }
+    input[type='submit'] {
+      background: var(--color-1) !important;
+      border: 3px solid var(--color-1) !important;
+      color: $black !important;
+      width: auto;
+      min-width: 153px !important;
+      height: 29px;
+      font-family: 'Roboto';
+      font-size: 1rem;
+      border-radius: 6px;
+      padding: 0;
+      &:hover,
+      &:focus {
+        font-weight: 500;
+      }
+    }
+    input[type='radio'],
+    input[type='checkbox'] {
+      width: 20px;
+      height: 20px;
+      margin-top: -1px;
+    }
+  }
+}
+.newsletter__gigya {
+  &.prepH__gigya {
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+    .gigya-screen {
+      &.portrait {
+        width: auto !important;
+        max-width: 821px;
+      }
+      .gigya-composite-control-metadata {
+        &:nth-child(4) + label {
+          display: none;
+        }
+      }
+      .gigya-composite-control {
+        &.gigya-composite-control-label {
+          padding: 0 5%;
+          line-height: 18px;
+        }
+      }
+      .gigya-clear + label {
+        padding: 0 !important;
+        font-size: 0.75rem !important;
+        line-height: 16px !important;
+        display: none;
+        @media (max-width: $breakpoint-md-max) {
+          margin-top: -2.3rem;
+        }
+      }
+      input[type='submit'] {
+        margin-bottom: 4rem;
+      }
+      .subscribe-thank-you {
+        h1 {
+          border-bottom: none;
+          font-family: 'Roboto';
+          text-align: center;
+          font-size: 3.125rem;
+          line-height: 64px;
+          font-weight: 500;
+          margin-bottom: 1rem;
+          color: var(--color-1) !important;
+          @media (max-width: $breakpoint-md-max) {
+            line-height: 44px;
+            font-size: 2.25rem !important;
+          }
+        }
+        p {
+          margin-bottom: 0.5em;
+          text-align: left;
+          color: $black !important;
+          padding: 0 10%;
+          font-size: 14px;
+          line-height: 16px;
+          @media (max-width: $breakpoint-md-max) {
+            padding: 0 0%;
+            font-size: 1.125rem;
+            line-height: 25px;
+          }
+          a {
+            &.btn-default {
+              display: flex;
+              width: fit-content;
+              color: #fff !important;
+              font-size: 16px;
+              margin: 2rem auto 4rem;
+              font-family: 'Roboto';
+              font-weight: 500 !important;
+              box-sizing: border-box;
+              @media (max-width: $breakpoint-md-max) {
+                margin: 1rem auto 3rem;
+              }
+              &:hover {
+                color: #3252a5 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.reference-newsletter-signup-title {
+  .prepH__gigya--title {
+    margin-top: 0;
+    @media (max-width: $breakpoint-md-max) {
+      margin-bottom: 0;
+    }
+  }
+}
+.stay-connected-form {
+  .title {
+    font-size: 1.875rem;
+    margin-bottom: 9px;
+    @media (max-width: $breakpoint-md-max) {
+      margin-bottom: 35px;
+    }
+  }
+  .subtitle {
+    color: $color-6;
+    line-height: 23px;
+    @media (min-width: $breakpoint-md-min) {
+      padding-left: 2rem;
+    }
+  }
+  .prepH__gigya {
+    padding-bottom: 0;
+    .gigya-screen {
+      &.portrait {
+        @media (min-width: $breakpoint-md-min) {
+          min-width: 665px !important;
+          margin-top: 2.5rem;
+        }
+        .mobile {
+          margin-top: 1rem;
+        }
+      }
+      .gigya-composite-control {
+        &.gigya-composite-control-label {
+          margin-bottom: 0rem !important;
+          line-height: 23px;
+          padding-bottom: 0 !important;
+          position: absolute;
+          width: 102%;
+          left: 6rem;
+          margin-top: 0.8rem;
+          color: $color-6 !important;
+          @media (max-width: $breakpoint-md-max) {
+            position: inherit;
+            width: 100%;
+            left: 0;
+            text-align: center;
+          }
+          > a {
+            color: $color-6 !important;
+            &:hover,
+            &:focus {
+              background: none;
+            }
+          }
+        }
+        &.gigya-composite-control-textbox {
+          margin-bottom: 0.875rem !important;
+          .gigya-input-text {
+            font-size: 1.125rem !important;
+            padding-left: 1.5rem;
+            @media (max-width: $breakpoint-md-max) {
+              padding-left: 0.5rem;
+            }
+            &::placeholder {
+              /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: $color-8 !important;
+              font-weight: 500;
+              font-family: 'Roboto';
+            }
+
+            &:-ms-input-placeholder {
+              /* Internet Explorer 10-11 */
+              color: $color-8 !important;
+              font-weight: 500;
+              font-family: 'Roboto';
+            }
+
+            &::-ms-input-placeholder {
+              /* Microsoft Edge */
+              color: $color-8 !important;
+              font-weight: 500;
+              font-family: 'Roboto';
+            }
+          }
+        }
+        &.gigya-composite-control-submit {
+          position: relative;
+          top: 4.1rem;
+          left: 3rem;
+          margin-bottom: 1rem;
+          @media (max-width: $breakpoint-md-max) {
+            position: relative;
+            top: 1rem;
+            left: 0;
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+      .subscribe-thank-you {
+        @media (max-width: $breakpoint-md-max) {
+          margin-bottom: 1.5rem;
+        }
+        h1 {
+          border-bottom: none;
+          font-family: 'Roboto';
+          text-align: center;
+          font-size: 2.125rem;
+          line-height: 50px;
+          font-weight: 500;
+          margin-bottom: 1rem;
+          color: var(--color-1) !important;
+          @media (max-width: $breakpoint-md-max) {
+            line-height: 44px;
+            font-size: 2.25rem !important;
+            margin-top: 0rem;
+            margin-bottom: 0;
+          }
+        }
+        p {
+          margin-bottom: 0.5em;
+          text-align: left;
+          color: $black !important;
+          padding: 0 10%;
+          font-size: 0.875rem;
+          line-height: 16px;
+          @media (max-width: $breakpoint-md-max) {
+            padding: 0 0%;
+            font-size: 1.125rem;
+            line-height: 25px;
+          }
+          a {
+            &.btn-default {
+              color: $white !important;
+              font-size: 1rem;
+              margin: 1rem auto 0rem;
+              font-family: 'Roboto';
+              font-weight: 500 !important;
+              box-sizing: border-box;
+              display: inline;
+              max-width: 153px;
+              background: var(--color-1);
+              font-size: 18px;
+              border-radius: 6px;
+              @media (max-width: $breakpoint-md-max) {
+                margin: 1rem auto 0rem;
+              }
+              &:hover,
+              &:focus {
+                color: var(--color-1) !important;
+                background: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
