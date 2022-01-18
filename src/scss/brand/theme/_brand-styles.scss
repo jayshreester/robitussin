@@ -24,6 +24,7 @@
         padding-top: 6px;
         font-family: $font-family-medium;
       }
+<<<<<<< HEAD
     }
     .image.component {
       position: absolute;
@@ -31,6 +32,15 @@
       right: 20px;
       width: 260px;
     }
+=======
+    }
+    .image.component {
+      position: absolute;
+      top: -50px;
+      right: 20px;
+      width: 260px;
+    }
+>>>>>>> 52c1e7c9890d9b787865a996e9ef625a065d5baa
   }
   .richText {
     .text-center-d {
@@ -193,6 +203,7 @@
   line-height: 18px;
   font-weight: $font-weight-button;
   text-decoration: none;
+<<<<<<< HEAD
   position: relative;
   padding-right: 25px;
   &::after {
@@ -208,6 +219,8 @@
     top: -1px;
     position: relative;
   }
+=======
+>>>>>>> 52c1e7c9890d9b787865a996e9ef625a065d5baa
 }
 
 .cust-font-p14 {
@@ -218,6 +231,24 @@
 .cust-font-p18 {
   font-size: 18px;
   line-height: 28px;
+<<<<<<< HEAD
+=======
+}
+.cust-font-p20 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-item-decoration {
+  border: solid #008945;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin-left: 4px;
+  padding: 3px;
+  transform: rotate(-45deg);
+  top: -1px;
+  position: relative;
+>>>>>>> 52c1e7c9890d9b787865a996e9ef625a065d5baa
 }
 
 .max-content-width {
@@ -241,6 +272,13 @@
 }
 
 .drug-free-banner {
+<<<<<<< HEAD
+=======
+  &.white-tile-bg {
+    background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg')
+      no-repeat;
+  }
+>>>>>>> 52c1e7c9890d9b787865a996e9ef625a065d5baa
   h3 {
     &.title-h1-style2 {
       font-size: 28px;
@@ -249,6 +287,7 @@
         font-size: 38px;
         line-height: 38px;
       }
+<<<<<<< HEAD
     }
   }
   .cust-font-para {
@@ -260,6 +299,19 @@
       line-height: 48px;
     }
   }
+=======
+    }
+  }
+  .cust-font-para {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0;
+    @media (min-width: $breakpoint-md-min) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+  }
+>>>>>>> 52c1e7c9890d9b787865a996e9ef625a065d5baa
 }
 
 .order-reverse {
@@ -272,3 +324,45 @@
 .flex[class='align-center'] {
   align-items: center !important;
 }
+<<<<<<< HEAD
+=======
+.text-hover {
+  cursor: pointer;
+  display: inline-block;
+  p {
+    display: none;
+    margin: 0;
+  }
+  &:hover {
+    p {
+      display: block;
+    }
+    span {
+      display: none;
+    }
+  }
+  span {
+    color: $color-1;
+  }
+}
+
+.black-bg-new {
+  background-color: $black;
+}
+.light-green-bg {
+  background-color: $color-5;
+}
+.ovr-gr-box {
+  height: auto;
+  @media (min-width: $breakpoint-md-min) {
+    height: 250px;
+  }
+  .light-green-bg {
+    height: auto;
+    @media (min-width: $breakpoint-md-min) {
+      height: 370px;
+      margin-top: -60px;
+    }
+  }
+}
+>>>>>>> 52c1e7c9890d9b787865a996e9ef625a065d5baa
