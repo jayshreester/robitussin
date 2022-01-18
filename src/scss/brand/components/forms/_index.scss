@@ -85,7 +85,7 @@ body {
     .gigya-screen {
       .gigya-label-text {
         font-weight: bold !important;
-        font-family: 'Roboto', 'Helvetica Neue', arial, sans-serif !important;
+        font-family: $font-family-regular;
         font-size: 18px !important;
         color: #3252a5 !important;
         padding-bottom: 12px !important;
@@ -102,7 +102,7 @@ body {
           padding-bottom: 0 !important;
           .gigya-multi-choice-item label {
             font-weight: bold !important;
-            font-family: 'Roboto', 'Helvetica Neue', arial, sans-serif !important;
+            font-family: $font-family-regular;
             font-size: 18px !important;
             color: #3252a5 !important;
             padding-bottom: 12px !important;
@@ -195,7 +195,7 @@ body {
       width: auto;
       min-width: 153px !important;
       height: 29px;
-      font-family: 'Roboto';
+      font-family: $font-family-regular;
       font-size: 1rem;
       border-radius: 6px;
       padding: 0;
@@ -247,7 +247,7 @@ body {
       .subscribe-thank-you {
         h1 {
           border-bottom: none;
-          font-family: 'Roboto';
+          font-family: $font-family-regular;
           text-align: center;
           font-size: 3.125rem;
           line-height: 64px;
@@ -278,7 +278,7 @@ body {
               color: #fff !important;
               font-size: 16px;
               margin: 2rem auto 4rem;
-              font-family: 'Roboto';
+              font-family: $font-family-regular;
               font-weight: 500 !important;
               box-sizing: border-box;
               @media (max-width: $breakpoint-md-max) {
@@ -365,21 +365,21 @@ body {
               /* Chrome, Firefox, Opera, Safari 10.1+ */
               color: $color-8 !important;
               font-weight: 500;
-              font-family: 'Roboto';
+              font-family: $font-family-regular;
             }
 
             &:-ms-input-placeholder {
               /* Internet Explorer 10-11 */
               color: $color-8 !important;
               font-weight: 500;
-              font-family: 'Roboto';
+              font-family: $font-family-regular;
             }
 
             &::-ms-input-placeholder {
               /* Microsoft Edge */
               color: $color-8 !important;
               font-weight: 500;
-              font-family: 'Roboto';
+              font-family: $font-family-regular;
             }
           }
         }
@@ -402,7 +402,7 @@ body {
         }
         h1 {
           border-bottom: none;
-          font-family: 'Roboto';
+          font-family: $font-family-regular;
           text-align: center;
           font-size: 2.125rem;
           line-height: 50px;
@@ -433,7 +433,7 @@ body {
               color: $white !important;
               font-size: 1rem;
               margin: 1rem auto 0rem;
-              font-family: 'Roboto';
+              font-family: $font-family-regular;
               font-weight: 500 !important;
               box-sizing: border-box;
               display: inline;
@@ -464,39 +464,47 @@ body {
 
   &.gigya-composite-control.gigya-composite-control-textbox {
     margin-bottom: 0 !important;
+    font-family: $font-family-regular;
   }
   &.gigya-composite-control.gigya-composite-control-label{
     margin-bottom: 0 !important;
+    font-family: $font-family-regular;
   }
   &.gigya-composite-control.gigya-composite-control-label,
   a,
   a:hover {
+    font-family: $font-family-regular;
     font-size: $font-size-h5 !important;
     line-height: $line-height-22 !important;
   }
   form {
     .gigya-composite-control > label {
       color: $black !important;
+      font-family: $font-family-regular;
       font-size: $font-size-h5 !important;
       line-height: $line-height-22 !important;
       * {
+        font-family: $font-family-regular;
         color: $black !important;
         font-size: $font-size-h5 !important;
         line-height: $line-height-22 !important;
       }
     }
     label {
+      font-family: $font-family-regular;
       color: $black !important;
       font-size: $font-size-h5 !important;
       line-height: $line-height-22 !important;
     }
   }
   &.gigya-label {
+    font-family: $font-family-regular;
     color: $black !important;
     font-size: $font-size-h5 !important;
     line-height: $line-height-22 !important;
   }
   &.gigya-label-text {
+    font-family: $font-family-regular;
     color: $black !important;
     font-size: $font-size-h5 !important;
     line-height: $line-height-22 !important;
