@@ -17,10 +17,6 @@ body {
         margin-bottom: 2rem !important;
         line-height: 23px;
         padding-bottom: 0 !important;
-
-        form > label {
-          color: &black !important;
-        }
       }
       &.gigya-composite-control-textbox {
         margin-bottom: 2rem !important;
@@ -459,4 +455,27 @@ body {
       }
     }
   }
+}
+
+.gigya-screen {
+  label {
+    color: $black;
+  }
+  form {
+    .gigya-composite-control > label {
+      color: $black !important;
+      * {
+        color: $black !important;
+      }
+    }
+  }
+  &.gigya-label {
+    color: $black !important;
+  }
+  &.gigya-label-text {
+    color: $black !important;
+  }
+}
+body .gigya-screen form .gigya-composite-control>label, body .gigya-screen form .gigya-composite-control label * {
+  color: $black;
 }
