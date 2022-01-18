@@ -1,100 +1,94 @@
 .btn {
-  text-decoration: none;
-  font-family: $font-family-bold;
-  font-size: $font-size-button;
-  &:hover,
-  &:focus {
-    color: $color-2;
-  }
+    text-decoration: none;
+    font-family: $font-family-bold;
+    font-size: $font-size-button;
+    &:hover,
+    &:focus {
+        color: $color-2;
+        text-decoration: none;
+        font-size: $font-size-button;
+    }
 }
 
 .btn-primary {
-  border: $button-border-size solid $color-1;
-  color: $color-1;
-  border-radius: 99px;
-  padding: 13px 25px !important;
-
-  &:hover,
-  &:focus {
-    color: $white !important;
-    background-color: $color-1;
-  }
+    border: $button-border-size solid $color-1;
+    color: $color-1;
+    border-radius: 99px;
+    padding: 13px 25px !important;
+    &:hover,
+    &:focus {
+        color: $white !important;
+        background-color: $color-1;
+    }
 }
 
 .btn-primary-dark {
-  border: $button-border-size solid $white;
-  color: $white;
-  border-radius: 99px;
-  padding: 13px 25px !important;
-
-  &:hover,
-  &:focus {
-    color: $color-4 !important;
-    background-color: $color-4;
-    border-color: $color-4;
-  }
+    border: $button-border-size solid $white;
+    color: $white;
+    border-radius: 99px;
+    padding: 13px 25px !important;
+    &:hover,
+    &:focus {
+        color: $color-4 !important;
+        background-color: $color-4;
+        border-color: $color-4;
+    }
 }
 
 .btn-secondary {
-  color: $color-1;
-
-  &:hover,
-  &:focus {
-    color: $color-2 !important;
-  }
+    color: $color-1;
+    &:hover,
+    &:focus {
+        color: $color-2 !important;
+    }
 }
 
 .btn-secondary-dark {
-  color: $white;
-
-  &:hover,
-  &:focus {
-    color: $color-4 !important;
-  }
+    color: $white;
+    &:hover,
+    &:focus {
+        color: $color-4 !important;
+    }
 }
 
 a.cta-link {
-  display: block;
-  border: none;
-  color: $color-1;
-  text-decoration: underline;
-
-  &:hover,
-  &:focus {
+    display: block;
+    border: none;
     color: $color-1;
-    text-decoration: none;
-  }
-}
-[data-bv-show='rating_summary'] {
-  flex-basis: auto !important;
-}
-// Price spide button override
-
-body {
-  .ps-widget[ps-sku],
-  .ps-widget[data-ps-sku],
-  .ps-widget[ps-sku]:hover,
-  .ps-widget[data-ps-sku]:hover {
-    border-radius: 35px;
-    border: 2px solid $color-1;
-    box-sizing: border-box;
-    color: $color-1;
-
-    font-family: $font-family-bold;
-    font-size: $font-size-button;
-
-    line-height: initial;
-    padding: 12px 15px !important;
-
-    width: 124px;
-
-    > span.ps-button-label {
-      display: block !important;
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+        color: $color-1;
+        text-decoration: none;
     }
-  }
-  .ps-widget[ps-sku]:hover,
-  .ps-widget[data-ps-sku]:hover {
-    background-color: $color-1;
-    color: $white;
-  }
+}
+
+[data-bv-show='rating_summary'] {
+    flex-basis: auto !important;
+}
+
+// Price spide button override
+body {
+    .ps-widget[ps-sku],
+    .ps-widget[data-ps-sku],
+    .ps-widget[ps-sku]:hover,
+    .ps-widget[data-ps-sku]:hover {
+        border-radius: 35px;
+        border: 2px solid $color-1;
+        box-sizing: border-box;
+        color: $color-1;
+        font-family: $font-family-bold;
+        font-size: $font-size-button;
+        line-height: initial;
+        padding: 12px 15px !important;
+        width: 124px;
+        >span.ps-button-label {
+            display: block !important;
+        }
+    }
+    .ps-widget[ps-sku]:hover,
+    .ps-widget[data-ps-sku]:hover {
+        background-color: $color-1;
+        color: $white;
+    }
 }
