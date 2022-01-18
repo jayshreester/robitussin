@@ -204,6 +204,10 @@
   font-size: 18px;
   line-height: 28px;
 }
+.cust-font-p20 {
+  font-size: 20px;
+  line-height: 24px;
+}
 
 .navigation-item-decoration {
   border: solid #008945;
@@ -286,4 +290,11 @@
   span {
     color: $color-1;
   }
+}
+
+.bg-color-black {
+  background-color: $black;
+}
+.light-green-bg {
+  background-color: $color-5;
 }
