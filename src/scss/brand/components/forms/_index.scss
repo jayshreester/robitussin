@@ -461,7 +461,16 @@ body {
   label {
     color: $black;
   }
-  &.gigya-composite-control.gigya-composite-control-label {
+
+  &.gigya-composite-control.gigya-composite-control-textbox {
+    margin-bottom: 0 !important;
+  }
+  &.gigya-composite-control.gigya-composite-control-label{
+    margin-bottom: 0 !important;
+  }
+  &.gigya-composite-control.gigya-composite-control-label,
+  a,
+  a:hover {
     font-size: $font-size-h5 !important;
     line-height: $line-height-22 !important;
   }
