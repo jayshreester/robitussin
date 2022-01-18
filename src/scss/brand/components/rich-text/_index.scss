@@ -136,6 +136,7 @@ p {
   }
   &.article-para-reference {
     font-size: $font-size-body-small;
+    margin: 0;
     span {
       color: $color-2;
     }
