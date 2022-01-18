@@ -94,7 +94,7 @@
 
 .heading-bottom:before {
   position: absolute;
-  content: "";
+  content: '';
   background: #000;
   height: 10px;
   width: 80px;
@@ -242,7 +242,7 @@
 
 .drug-free-banner {
   &.white-tile-bg {
-    background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg")
+    background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg')
       no-repeat;
   }
   h3 {
@@ -273,7 +273,7 @@
   }
 }
 
-.flex[class="align-center"] {
+.flex[class='align-center'] {
   align-items: center !important;
 }
 .text-hover {
