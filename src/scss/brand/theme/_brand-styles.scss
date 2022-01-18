@@ -298,3 +298,16 @@
 .light-green-bg {
   background-color: $color-5;
 }
+.ovr-gr-box {
+  height: auto;
+  @media (min-width: $breakpoint-md-min) {
+    height: 250px;
+  }
+  .light-green-bg {
+    height: auto;
+    @media (min-width: $breakpoint-md-min) {
+      height: 370px;
+      margin-top: -60px;
+    }
+  }
+}
