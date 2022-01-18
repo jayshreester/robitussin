@@ -461,21 +461,41 @@ body {
   label {
     color: $black;
   }
+  &.gigya-composite-control.gigya-composite-control-label {
+    font-size: $font-size-h5 !important;
+    line-height: $line-height-28 !important;
+    margin: 1rem 0 0.5rem 0 !important;
+  }
   form {
     .gigya-composite-control > label {
       color: $black !important;
+      font-size: $font-size-h5 !important;
+      line-height: $line-height-28 !important;
+      margin: 1rem 0 0.5rem 0 !important;
       * {
         color: $black !important;
+        font-size: $font-size-h5 !important;
+        line-height: $line-height-28 !important;
+        margin: 1rem 0 0.5rem 0 !important;
       }
+    }
+    label {
+      color: $black !important;
+      font-size: $font-size-h5 !important;
+      line-height: $line-height-28 !important;
+      margin: 1rem 0 0.5rem 0 !important;
     }
   }
   &.gigya-label {
     color: $black !important;
+    font-size: $font-size-h5 !important;
+    line-height: $line-height-28 !important;
+    margin: 1rem 0 0.5rem 0 !important;
   }
   &.gigya-label-text {
     color: $black !important;
+    font-size: $font-size-h5 !important;
+    line-height: $line-height-28 !important;
+    margin: 1rem 0 0.5rem 0 !important;
   }
-}
-body .gigya-screen form .gigya-composite-control>label, body .gigya-screen form .gigya-composite-control label * {
-  color: $black;
 }
