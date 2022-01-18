@@ -94,7 +94,7 @@
 
 .heading-bottom:before {
   position: absolute;
-  content: '';
+  content: "";
   background: #000;
   height: 10px;
   width: 80px;
@@ -265,6 +265,25 @@
   }
 }
 
-.flex[class='align-center'] {
+.flex[class="align-center"] {
   align-items: center !important;
+}
+.text-hover {
+  cursor: pointer;
+  display: inline-block;
+  p {
+    display: none;
+    margin: 0;
+  }
+  &:hover {
+    p {
+      display: block;
+    }
+    span {
+      display: none;
+    }
+  }
+  span {
+    color: $color-1;
+  }
 }
