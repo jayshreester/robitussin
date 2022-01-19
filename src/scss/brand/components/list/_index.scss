@@ -38,7 +38,7 @@
       }
       ol {
         &.reference-notes {
-          margin: 0;
+          margin: 0 0 1rem 0;
 
           > li {
             color: $black;
@@ -72,6 +72,7 @@
             margin: 0 0 0.7rem 0;
             padding: 0 0 0 1rem;
             font-size: $font-size-h5;
+            line-height: $line-height-28;
 
             a,
             a:hover,
