@@ -1,9 +1,13 @@
 // body is used for overriding default component styles with same selecotr
+$accordion-plus-icon: get-icon('plus-icon', $color-1);
+$accordion-minus-icon: get-icon('minus-icon', $color-1);
 .new-product-tabs.mobile-tabs {
   padding: 0;
-  background-color: $white;
+
   .tabContent.component .component-content .richText-content {
-    padding: 20px;
+    @media (min-width: $breakpoint-md-min) {
+      padding: 20px;
+    }
   }
   .tabs-nav {
     z-index: 2;
@@ -46,8 +50,17 @@
     }
     .tabs-nav-item {
       width: 100%;
-      margin-bottom: 0;
-      border-bottom: 1px solid #e7e7e7;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $color-1;
+
+      &.is-active {
+        margin-bottom: 0;
+        border: none;
+      }
+      @media (min-width: $breakpoint-md-min) {
+        margin: 0;
+        border: none;
+      }
       padding: 1rem 0;
       text-align: left;
       &.is-active a::before,
@@ -92,13 +105,13 @@
           line-height: 24px;
           &::after {
             @include animate();
-            background-image: $accordion-closed-icon !important;
+            background-image: $accordion-plus-icon !important;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             bottom: 0;
             content: '';
-            height: 20px;
+            height: 40px;
             #{$start-direction}: auto;
             margin: 0;
             margin: auto;
@@ -106,7 +119,7 @@
             #{$end-direction}: $accordion-icon-offset;
             top: 0;
             vertical-align: middle;
-            width: 20px;
+            width: 40px;
           }
         }
       }
@@ -116,7 +129,7 @@
           .tabMenuItem {
             .text-wrapper {
               &::after {
-                background-image: $accordion-opened-icon !important;
+                background-image: $accordion-minus-icon !important;
               }
             }
           }
@@ -125,7 +138,7 @@
       &:focus-within {
         a .tabMenuItem .text-wrapper {
           &::after {
-            background-image: $accordion-opened-icon !important;
+            background-image: $accordion-minus-icon !important;
           }
         }
       }
@@ -133,20 +146,38 @@
   }
   .tabs {
     .tabs-content {
+      background-color: $gray-100;
       border: none;
-      padding: 0;
+      padding: 15px;
 
       width: 100%;
+
+      margin-bottom: 10px;
+      border-top: 1px solid $color-1;
+      &.is-hidden {
+        border-bottom: 1px solid $color-1;
+        border-top: 1px solid red;
+      }
+
+      @media (min-width: $breakpoint-md-min) {
+        padding: 0;
+        margin-bottom: 0;
+        border: none;
+        &.is-hidden {
+          border: none;
+        }
+      }
     }
   }
 }
 .b1-box-tabs {
-  background-color: $gray-100;
-  padding-top: 20px;
   @media (min-width: $breakpoint-md-min) {
-    .tabs-nav {
-      margin-bottom: 0;
-    }
+    background-color: $gray-100;
+  }
+  .tabs-nav {
+    margin-bottom: 0;
+  }
+  @media (min-width: $breakpoint-md-min) {
     .tabs-content {
       padding: 25px 0 25px 0;
     }
@@ -154,27 +185,61 @@
   .text-wrapper {
     font-size: 18px;
     line-height: 22px;
+    font-family: $font-family-bold;
     &:hover {
-      color: #000;
+      color: $black;
     }
   }
   .tabs-nav-item {
+    background-color: $gray-100;
+
+    @media (min-width: $breakpoint-md-min) {
+      width: 20%;
+      margin-bottom: 0;
+      padding: 20px 15px 20px 0;
+    }
+    a {
+      color: $grey-2;
+    }
     &.is-active {
       a {
-        color: #000;
+        color: $black;
       }
     }
   }
   .tabContent {
+    .richText {
+      .richText-content {
+        ul,
+        ol {
+          margin: 1rem 0 0;
+          font-size: $font-size-h5;
+
+          > li {
+            color: $black;
+            margin: 0 0 0.7rem 0;
+            padding: 0 0 0 1rem;
+            font-size: $font-size-h5;
+
+            a,
+            a:hover,
+            a:visited {
+              font-size: $font-size-h5;
+              text-decoration: underline;
+              color: $color-1;
+            }
+          }
+        }
+      }
+    }
     p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 20px;
-      @media (min-width: $breakpoint-md-min) {
+      font-size: 18px;
+      line-height: 24px;
+      /*@media (min-width: $breakpoint-md-min) {
         .tabs-nav {
           font-size: 14px;
         }
-      }
+      }*/
     }
   }
 }
