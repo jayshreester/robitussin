@@ -371,3 +371,18 @@
     height: 112px;
   }
 }
+.honey-ovr-box {
+  .ovr-gr-box {
+    @media (min-width: $breakpoint-md-min) {
+      height: 310px;
+    }
+    .light-green-bg {
+      @media (min-width: $breakpoint-md-min) {
+        height: 430px;
+      background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg") no-repeat;
+
+      }
+      background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg') no-repeat;
+    }
+  }
+}
