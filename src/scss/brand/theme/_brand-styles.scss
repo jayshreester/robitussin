@@ -105,7 +105,7 @@
 
 .heading-bottom:before {
   position: absolute;
-  content: '';
+  content: "";
   background: #000;
   height: 10px;
   width: 80px;
@@ -208,7 +208,7 @@
   padding-right: 25px;
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     right: 0;
     border: solid $color-1;
     border-width: 0 3px 3px 0;
@@ -269,7 +269,7 @@
 
 .drug-free-banner {
   &.white-tile-bg {
-    background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg')
+    background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg")
       no-repeat;
     background-size: cover;
   }
@@ -301,7 +301,7 @@
   }
 }
 
-.flex[class='align-center'] {
+.flex[class="align-center"] {
   align-items: center !important;
 }
 
@@ -353,14 +353,19 @@
     width: 100%;
     object-fit: contain;
   }
-  .richText-content {
-    max-width: 324px;
-    margin: 0 auto;
+  .box {
+    .box {
+      .box {
+        .richText-content {
+          max-width: 324px;
+          margin: 0 auto;
+        }
+      }
+    }
   }
-  
 }
 
-.green-box-icon-img{
+.green-box-icon-img {
   img {
     width: 112px;
     height: 112px;
