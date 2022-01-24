@@ -19,7 +19,7 @@
             }
 
             &.list-footnote-margin {
-              margin: 2rem 0;
+              margin: 1rem 0;
             }
 
             &.bottom-footnote-devider {
@@ -66,6 +66,9 @@
         &.article-para-list {
           margin: 1.5rem 0 2rem 0;
           font-size: $font-size-h5;
+          sup {
+            top: -0.7em !important;
+          }
 
           > li {
             color: $black;
@@ -73,6 +76,10 @@
             padding: 0 0 0 1rem;
             font-size: $font-size-h5;
             line-height: $line-height-28;
+
+            sup {
+              top: -0.7em !important;
+            }
 
             a,
             a:hover,

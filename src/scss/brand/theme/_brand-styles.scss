@@ -105,7 +105,7 @@
 
 .heading-bottom:before {
   position: absolute;
-  content: '';
+  content: "";
   background: #000;
   height: 10px;
   width: 80px;
@@ -208,7 +208,7 @@
   padding-right: 25px;
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     right: 0;
     border: solid $color-1;
     border-width: 0 3px 3px 0;
@@ -269,7 +269,7 @@
 
 .drug-free-banner {
   &.white-tile-bg {
-    background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg')
+    background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg")
       no-repeat;
     background-size: cover;
   }
@@ -301,7 +301,7 @@
   }
 }
 
-.flex[class='align-center'] {
+.flex[class="align-center"] {
   align-items: center !important;
 }
 
@@ -343,6 +343,65 @@
     @media (min-width: $breakpoint-md-min) {
       height: 370px;
       margin-top: -60px;
+    }
+  }
+}
+.reference-overlap-green-box {
+  img {
+    height: 263px;
+    max-width: 460px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .box {
+    .box {
+      .box {
+        .richText-content {
+          max-width: 324px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.green-box-icon-img {
+  img {
+    width: 112px;
+    height: 112px;
+  }
+}
+.honey-ovr-box {
+  &.ovr-gr-box {
+    @media (min-width: $breakpoint-md-min) {
+      height: 310px;
+    }
+    .light-green-bg {
+      @media (min-width: $breakpoint-md-min) {
+        height: 430px;
+        background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg")
+          no-repeat;
+      }
+      background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg")
+        no-repeat;
+    }
+  }
+}
+.real-honey-box {
+  .image {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 20%;
+      flex: 0 0 20%;
+    }
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+  .richText {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 80%;
+      flex: 0 0 80%;
     }
   }
 }

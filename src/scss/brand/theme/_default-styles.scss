@@ -74,8 +74,10 @@ body {
     }
     &.title-h1-style2 {
       font-size: $font-size-h3;
+      line-height: $line-height-1;
       @media (min-width: $breakpoint-md-min) {
         font-size: $font-size-h1-alt;
+        line-height: $line-height-1;
       }
     }
     &.title-h2-style {
