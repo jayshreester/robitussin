@@ -91,4 +91,16 @@ body {
     background-color: $color-1;
     color: $white;
   }
+  .ps-widget[ps-sku].ps-disabled {
+    display: none !important;
+  }
+  &.template-product-landing {
+    .ps-widget[ps-sku],
+    .ps-widget[data-ps-sku],
+    .ps-widget[ps-sku]:hover,
+    .ps-widget[data-ps-sku]:hover {
+      margin: 0 auto !important;
+      border: none;
+    }
+  }
 }
