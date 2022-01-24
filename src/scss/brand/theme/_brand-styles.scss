@@ -372,7 +372,7 @@
   }
 }
 .honey-ovr-box {
-  .ovr-gr-box {
+  &.ovr-gr-box {
     @media (min-width: $breakpoint-md-min) {
       height: 310px;
     }
@@ -392,22 +392,16 @@
     @media (min-width: $breakpoint-md-min) {
       max-width: 20%;
       flex: 0 0 20%;
-      .real-honey-box {
-        .image {
-          img {
-            width: auto;
-            height: auto;
-          }
-        }
-      }
+    }
+    img {
+      width: auto;
+      height: auto;
     }
   }
-  .real-honey-box {
-    .richText {
-      @media (min-width: $breakpoint-md-min) {
-        max-width: 80%;
-        flex: 0 0 80%;
-      }
+  .richText {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 80%;
+      flex: 0 0 80%;
     }
   }
 }
