@@ -1,0 +1,135 @@
+.your-stories-carousel {
+  background-color: var(--color-1);
+  .lSSlideOuter .lSPager.lSpg {
+    bottom: 2rem;
+    > li {
+      a {
+        width: 16px;
+        height: 16px;
+        border: solid #ffffff 2px;
+      }
+      &:hover,
+      &.active {
+        a {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+  .lSAction > a {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    opacity: 1;
+    &.lSPrev {
+      left: 0;
+      background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/left-arrow.png')
+        no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+    &.lSNext {
+      right: 0;
+      background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/right-arrow.png')
+        no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+  }
+  .quotes-img {
+    width: 28px;
+    margin: 0 auto;
+  }
+  .carousel-copy {
+    font-size: 24px;
+  }
+  .carousel-sub-copy {
+    font-size: 18px;
+  }
+  .flex[class*='align-'] * {
+    align-items: center !important;
+  }
+}
+
+.hero-banner-h5-v1 {
+  .lSSlideOuter .lSPager.lSpg {
+    bottom: 2rem;
+    > li {
+      a {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    h2 {
+      font-size: 32px;
+      line-height: 36px;
+      color: #000000;
+      margin-bottom: 30px;
+      span {
+        display: block;
+        &.pink-color {
+          color: #a3216f;
+        }
+        &.yellow-color {
+          color: #ef8b21;
+        }
+      }
+      @media (min-width: $breakpoint-md-min) {
+        font-size: 48px;
+        line-height: 44px;
+      }
+    }
+    @media (min-width: $breakpoint-md-min) {
+      width: 251px;
+      bottom: 50px;
+      left: 50px;
+    }
+    &.topposition {
+      width: 200px;
+      top: 30px;
+      bottom: inherit;
+      left: 5px;
+      @media (min-width: $breakpoint-md-min) {
+        width: 270px;
+        top: 30px;
+        bottom: inherit;
+        left: 30px;
+      }
+    }
+  }
+}
+
+.mousehover-section {
+  overflow: hidden;
+  .main-object {
+    transform: rotate(12deg);
+    margin-bottom: -65px;
+    z-index: 2;
+    width: 340px;
+  }
+  .object1 {
+    position: absolute;
+    width: 181px;
+    height: 191px !important;
+    top: 40px;
+    left: -70px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .object2 {
+    position: absolute;
+    width: 221px;
+    height: 202px;
+    bottom: 55px;
+    right: 75px !important;
+    z-index: 1;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+}
