@@ -49,16 +49,8 @@
     $(this).removeClass('external');
   });
 
-  if ($(window).width() >= 768) {
-    $('.object1, .object2, .absolute-img-right').mouseover(function() {
-      $(this)
-        .find('.tooltip-data')
-        .show();
-    });
-    $('.object1, .object2, .absolute-img-right').mouseout(function() {
-      $(this)
-        .find('.tooltip-data')
-        .hide();
-    });
-  }
+  $('body').on('click touchstart', '.filter-item-js', function(e) {
+    var seltext = $('.selected-item-js').text();
+    $('.filteredtext').text(seltext);
+  });
 })(Cog.jQuery());

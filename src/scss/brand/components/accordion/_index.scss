@@ -1,3 +1,25 @@
-p {
-  color: red;
+.accordion-slide {
+  background-color: $grey-4;
+  .accordion-head {
+    h3 {
+      line-height: 24px;
+      a {
+        line-height: 24px;
+        font-family: $font-family-bold;
+        padding: 0 30px 0 20px;
+        display: block;
+      }
+    }
+  }
+  .accordion-content {
+    > div {
+      padding: 0 30px 0 20px;
+      p,
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
