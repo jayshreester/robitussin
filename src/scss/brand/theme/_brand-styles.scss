@@ -379,11 +379,11 @@
     .light-green-bg {
       @media (min-width: $breakpoint-md-min) {
         height: 430px;
-        background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg")
-          no-repeat;
+        background-image: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg");
+        background-repeat: no-repeat;
       }
-      background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg")
-        no-repeat;
+      background-image: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg");
+      background-repeat: no-repeat;
     }
   }
 }
