@@ -2,11 +2,13 @@
   var mobileTarget = $('.tabs-nav-list');
   var desktopTarget = $('.tabs > .component-content');
   var productTabs = $('.new-product-tabs');
+
   function moveTabs(target) {
     $('.tabs-content').each(function(i, v) {
       target.append($(this));
     });
   }
+
   function tabsReWrap() {
     if ($(window).width() < 992) {
       moveTabs(mobileTarget);
