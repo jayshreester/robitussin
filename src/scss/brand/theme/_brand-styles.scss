@@ -372,7 +372,7 @@
   }
 }
 .honey-ovr-box {
-  .ovr-gr-box {
+  &.ovr-gr-box {
     @media (min-width: $breakpoint-md-min) {
       height: 310px;
     }
