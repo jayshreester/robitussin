@@ -2,11 +2,13 @@
   var mobileTarget = $('.tabs-nav-list');
   var desktopTarget = $('.tabs > .component-content');
   var productTabs = $('.new-product-tabs');
+
   function moveTabs(target) {
     $('.tabs-content').each(function(i, v) {
       target.append($(this));
     });
   }
+
   function tabsReWrap() {
     if ($(window).width() < 992) {
       moveTabs(mobileTarget);
@@ -46,4 +48,17 @@
   $('.country-selected').each(function() {
     $(this).removeClass('external');
   });
+
+  if ($(window).width() >= 768) {
+    $('.object1, .object2, .absolute-img-right').mouseover(function() {
+      $(this)
+        .find('.tooltip-data')
+        .show();
+    });
+    $('.object1, .object2, .absolute-img-right').mouseout(function() {
+      $(this)
+        .find('.tooltip-data')
+        .hide();
+    });
+  }
 })(Cog.jQuery());
