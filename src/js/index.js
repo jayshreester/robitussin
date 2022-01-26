@@ -43,6 +43,7 @@ import './components/bp-tab-indexer-bp1';
 //import './components/bp-content-loader';
 import './components/bp-toggler';
 import './utils/switchable-image';
+import './utils/product-filter';
 //import './utils/youtube-video';
 import './libs/lightslider';
 import './brand/index';

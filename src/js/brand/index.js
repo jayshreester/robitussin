@@ -46,4 +46,9 @@
   $('.country-selected').each(function() {
     $(this).removeClass('external');
   });
+
+  $('body').on('click touchstart', '.filter-item-js', function(e) {
+    var seltext = $('.selected-item-js').text();
+    $('.filteredtext').text(seltext);
+  });
 })(Cog.jQuery());

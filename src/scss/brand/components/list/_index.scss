@@ -2,6 +2,10 @@
 @if $include-list {
   .richText {
     .richText-content {
+      ul li,
+      ol li {
+        color: $black;
+      }
       ul {
         &.foot-notes {
           list-style-type: none;
