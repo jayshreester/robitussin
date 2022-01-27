@@ -7,13 +7,14 @@
       background: $black;
       color: $white;
       padding: 4px 8px;
-      font-size: 16px;
-      font-weight: $font-family-bold;
+
+      font-family: $font-family-bold;
+      &::after {
+        display: none;
+      }
     }
   }
   p {
-    font-size: 14px;
-    line-height: 20px;
     a {
       color: $black;
       font-size: 20px;
@@ -70,6 +71,13 @@
       &::after {
         background-color: $black;
       }
+    }
+  }
+}
+.reference-product-filter-menu {
+  .filterbox {
+    &::nth-child(1) {
+      opacity: 0.5;
     }
   }
 }

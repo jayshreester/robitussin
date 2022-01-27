@@ -13,11 +13,19 @@ $accordion-minus-icon: get-icon('minus-icon', $white);
     right: 10px;
     top: 0;
     content: '';
+    @media (min-width: $breakpoint-md-min) {
+      display: none;
+    }
   }
   &.active {
-    background-image: $accordion-minus-icon;
+    &::after {
+      background-image: $accordion-minus-icon;
+    }
   }
 }
 .filtercontent {
   display: none;
+  @media (min-width: $breakpoint-md-min) {
+    display: block !important;
+  }
 }

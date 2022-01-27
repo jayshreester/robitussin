@@ -115,7 +115,8 @@ body {
   .ps-widget[ps-sku].ps-disabled {
     display: none !important;
   }
-  &.template-product-landing {
+  &.template-product-landing,
+  &.template-product-listing {
     .ps-widget[ps-sku],
     .ps-widget[data-ps-sku],
     .ps-widget[ps-sku]:hover,

@@ -236,17 +236,6 @@
   line-height: 24px;
 }
 
-.navigation-item-decoration {
-  border: solid #008945;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  margin-left: 4px;
-  padding: 3px;
-  transform: rotate(-45deg);
-  top: -1px;
-  position: relative;
-}
-
 .max-content-width {
   &.max-content-570 {
     max-width: 570px !important;

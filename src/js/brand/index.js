@@ -27,6 +27,18 @@
       tabsReWrap();
     });
   }
+  function filtercon() {
+    $('.filteraccord').click(function() {
+      $('.filtercontent').slideToggle(), $(this).toggleClass('active');
+    });
+  }
+
+  if ($('.filteraccord').length) {
+    $(document).ready(function() {
+      filtercon();
+    });
+  }
+
   //accordion starts
   function customacc() {
     $('.accordion-head').click(function() {
