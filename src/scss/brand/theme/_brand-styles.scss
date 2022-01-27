@@ -105,7 +105,7 @@
 
 .heading-bottom:before {
   position: absolute;
-  content: "";
+  content: '';
   background: #000;
   height: 10px;
   width: 80px;
@@ -208,7 +208,7 @@
   padding-right: 25px;
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     right: 0;
     border: solid $color-1;
     border-width: 0 3px 3px 0;
@@ -258,7 +258,7 @@
 
 .drug-free-banner {
   &.white-tile-bg {
-    background: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg")
+    background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg')
       no-repeat;
     background-size: cover;
   }
@@ -290,7 +290,7 @@
   }
 }
 
-.flex[class="align-center"] {
+.flex[class='align-center'] {
   align-items: center !important;
 }
 
@@ -368,10 +368,10 @@
     .light-green-bg {
       @media (min-width: $breakpoint-md-min) {
         height: 430px;
-        background-image: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg");
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg');
         background-repeat: no-repeat;
       }
-      background-image: url("/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg");
+      background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg');
       background-repeat: no-repeat;
     }
   }
