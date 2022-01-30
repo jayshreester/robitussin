@@ -1,12 +1,24 @@
 // on home page
 .productwrap {
+  max-width: 500px;
   background: $white;
+  position: absolute;
+  top: 90%;
+  height: auto;
+  box-shadow: 0px 3px 6px #0000004d;
   opacity: 1;
   z-index: 1;
+  height: auto !important;
+  &.left-align-product {
+    right: 70px;
+  }
+  &.right-align-product {
+    left: 70px;
+  }
   .productwrap-comp {
-    padding: 0;
+    padding: 22px 0 0 30px;
     .richText {
-      max-width: 100%;
+      max-width: 190px;
       p {
         margin: 0;
         padding-top: 6px;
@@ -14,6 +26,9 @@
       }
     }
     .image.component {
+      position: absolute;
+      top: -50px;
+      right: 20px;
       width: 260px;
     }
   }
@@ -22,32 +37,6 @@
       margin: 24px 0 43px 0;
       p {
         margin: 0;
-      }
-    }
-  }
-  @media (min-width: $breakpoint-md-min) {
-    max-width: 500px;
-    position: absolute;
-    box-shadow: 0px 3px 6px #0000004d;
-    top: 90%;
-    height: auto;
-    height: auto !important;
-    &.left-align-product {
-      right: 70px;
-    }
-    &.right-align-product {
-      left: 70px;
-    }
-    .productwrap-comp {
-      padding: 22px 0 0 30px;
-      .richText {
-        max-width: 190px;
-      }
-      .image.component {
-        position: absolute;
-        top: -50px;
-        right: 20px;
-        width: 260px;
       }
     }
   }
@@ -204,21 +193,6 @@
   line-height: 18px;
   font-weight: $font-weight-button;
   text-decoration: none;
-  position: relative;
-  padding-right: 25px;
-  &::after {
-    position: absolute;
-    content: '';
-    right: 0;
-    border: solid $color-1;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    margin-left: 2px;
-    padding: 4px;
-    transform: rotate(-45deg);
-    top: -1px;
-    position: relative;
-  }
 }
 
 .cust-font-p14 {
@@ -229,11 +203,6 @@
 .cust-font-p18 {
   font-size: 18px;
   line-height: 28px;
-}
-
-.cust-font-p20 {
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .navigation-item-decoration {
@@ -268,11 +237,6 @@
 }
 
 .drug-free-banner {
-  &.white-tile-bg {
-    background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/homepage-naturals-category-bkgd-robitussin-desktop.jpg')
-      no-repeat;
-    background-size: cover;
-  }
   h3 {
     &.title-h1-style2 {
       font-size: 28px;
@@ -303,72 +267,4 @@
 
 .flex[class='align-center'] {
   align-items: center !important;
-}
-
-.text-hover {
-  cursor: pointer;
-  display: inline-block;
-  p {
-    display: none;
-    margin: 0;
-  }
-  &:hover {
-    p {
-      display: block;
-    }
-    span {
-      display: none;
-    }
-  }
-  span {
-    color: $color-1;
-  }
-}
-
-.black-bg-new {
-  background-color: $black;
-}
-
-.light-green-bg {
-  background-color: $color-5;
-}
-
-.ovr-gr-box {
-  height: auto;
-  @media (min-width: $breakpoint-md-min) {
-    height: 250px;
-  }
-  .light-green-bg {
-    height: auto;
-    @media (min-width: $breakpoint-md-min) {
-      height: 370px;
-      margin-top: -60px;
-    }
-  }
-}
-.reference-overlap-green-box {
-  img {
-    height: 263px;
-    max-width: 460px;
-    width: 100%;
-    object-fit: contain;
-  }
-  .richText-content {
-    max-width: 324px;
-    margin: 0 auto;
-  }
-  
-}
-
-.reference-powerful-relief{
-  img {
-    width: 112px;
-    height: 112px;
-  }
-}
-.reference-get-rid-of-cough {
-  img {
-    width: 112px;
-    height: 112px;
-  }
 }
