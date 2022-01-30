@@ -18,6 +18,9 @@ body {
       text-decoration: underline;
     }
   }
+  [class*='hero-banner-'] .image {
+    min-height: auto;
+  }
   .maxcontainer {
     float: none !important;
     width: 100% !important;

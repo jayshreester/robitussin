@@ -1,0 +1,49 @@
+.reference-sitemap {
+  ul {
+    list-style: none;
+    li {
+      list-style: none;
+
+      &:not(:last-child) {
+        padding-bottom: 30px;
+      }
+      a {
+        color: $black;
+        font-size: 20px;
+        font-family: $font-family-bold;
+        position: relative;
+        padding-left: 15px;
+        display: block;
+        &:hover {
+          color: $color-1;
+          text-decoration: underline;
+        }
+        &::before {
+          width: 7px;
+          height: 7px;
+          background-color: $color-1;
+          border-radius: 50%;
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 10px;
+        }
+      }
+      ul {
+        padding: 15px 0 0 25px;
+        li {
+          &:not(:last-child) {
+            padding-bottom: 20px;
+          }
+          a {
+            font-size: 18px;
+            font-family: $font-family-medium;
+            &::before {
+              top: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

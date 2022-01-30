@@ -124,10 +124,6 @@ p {
     font-size: $font-size-h5;
     line-height: $line-height-28;
     margin: 0.7rem 0 2rem 0;
-
-    sup {
-      top: 1;
-    }
   }
   &.story-subtext-style {
     font-size: $font-size-h3-mobile;
@@ -143,6 +139,7 @@ p {
     span img {
       width: 100%;
       height: auto;
+<<<<<<< HEAD
     }
     a,
     a:hover,
@@ -181,8 +178,15 @@ p {
     &.article-para-reference-indent {
       padding: 0 0 0 1em;
       font-size: $font-size-body-small;
+=======
+>>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122
     }
+  }
+  &.article-para-reference {
+    font-size: $font-size-body-small;
+    margin: 0;
     span {
+<<<<<<< HEAD
       &.image {
         display: inline-block;
       }
@@ -198,6 +202,34 @@ p {
       }
     }
   }
+=======
+      color: $color-2;
+    }
+  }
+  &.article-para-reference-indent {
+    padding: 0 0 0 1em;
+    font-size: $font-size-body-small;
+  }
+  span {
+    &.image {
+      display: inline-block;
+    }
+    &.text {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      margin: 0 2% 0 4%;
+      line-height: $line-height-25;
+      @media (min-width: $breakpoint-sm-min) {
+        width: 78%;
+        width: 100%;
+        @media (max-width: $breakpoint-sm-max) {
+          width: 78%;
+        }
+      }
+    }
+  }
+>>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122
 }
 
 .article-hero-image {

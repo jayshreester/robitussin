@@ -3,27 +3,25 @@
 */
 
 // SETTINGS
-$accordion-full-width-background: false;
+$accordion-full-width-background: true;
 $accordion-title-padding: 1rem;
-$accordion-content-padding: 1rem;
+$accordion-content-padding: 0;
 $accordion-title-padding-desktop: 1rem;
-$accordion-content-padding-desktop: 1rem;
-$accordion-closed-icon: get-icon('arrow-down', $color-4);
-$accordion-closed-icon-hover: get-icon('arrow-down', $color-4);
-$accordion-opened-icon: get-icon('arrow-up', $color-4);
-$accordion-opened-icon-hover: get-icon('arrow-up', $color-4);
-$accordion-icon-size: 0;
-$accordion-icon-size-desktop: 0;
+$accordion-content-padding-desktop: 0;
+$accordion-closed-icon: get-icon('plus-icon', $color-1);
+$accordion-closed-icon-hover: get-icon('plus-icon', $color-1);
+$accordion-opened-icon: get-icon('minus-icon', $color-1);
+$accordion-opened-icon-hover: get-icon('minus-icon', $color-1);
+$accordion-icon-size: 40px;
+$accordion-icon-size-desktop: 40px;
 $accordion-icon-offset: 1rem;
 
 // COLORS
-$accordion-link-color: $color-2;
-$accordion-background-color: $color-1;
+$accordion-link-color: $black;
+$accordion-background-color: $grey-4;
 $accordion-separator-color: $color-1;
 $accordion-separator-bottom-offset: 0%;
-$accordion-separator-width: calc(
-  100% - (#{$accordion-title-padding-desktop} * 2)
-);
+$accordion-separator-width: 100%;
 $accordion-list-color: $color-3;
 $accordion-plus-icon-color: $color-1;
 $accordion-minus-icon-color: $color-1;
@@ -32,5 +30,5 @@ $accordion-minus-icon-color: $color-1;
 $accordion-heading-spacing-t-b: $space-5;
 
 // ITEM FONT SIZES
-$accordion-link-font-size-m: $font-size-body-mobile;
-$accordion-link-font-size-d: $font-size-body;
+$accordion-link-font-size-m: 18px;
+$accordion-link-font-size-d: 18px;

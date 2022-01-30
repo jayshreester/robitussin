@@ -6,7 +6,6 @@ String.prototype.regexIndexOf = function(regex, startpos) {
   var indexOf = this.substring(startpos || 0).search(regex);
   return indexOf >= 0 ? indexOf + (startpos || 0) : indexOf;
 };
-// eslint-disable
 (function($) {
   //css selector for class filter component
   const filterSelector = '.class-filter',
@@ -50,6 +49,11 @@ String.prototype.regexIndexOf = function(regex, startpos) {
   // hadler for item selection
   function handleFilter(e) {
     if (e.keyCode && e.keyCode !== 13) return;
+    if (
+      e.currentTarget.matches('body.js-product-filter *') ||
+      e.currentTarget.matches('.reference-product-filter-menu *')
+    )
+      return;
     let t = $(e.target),
       rootItem = t.closest('.filter-item-js'),
       isDefault = t.is('.default-state-js'),
@@ -1218,4 +1222,3 @@ String.prototype.regexIndexOf = function(regex, startpos) {
     }
   });
 })(Cog.jQuery());
-// eslint-enable

@@ -205,6 +205,7 @@
   line-height: 28px;
 }
 
+<<<<<<< HEAD
 .navigation-item-decoration {
   border: solid #008945;
   border-width: 0 3px 3px 0;
@@ -214,6 +215,11 @@
   transform: rotate(-45deg);
   top: -1px;
   position: relative;
+=======
+.cust-font-p20 {
+  font-size: 20px;
+  line-height: 24px;
+>>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122
 }
 
 .max-content-width {
@@ -267,4 +273,108 @@
 
 .flex[class='align-center'] {
   align-items: center !important;
+<<<<<<< HEAD
 }
+=======
+}
+
+.text-hover {
+  cursor: pointer;
+  display: inline-block;
+  p {
+    display: none;
+    margin: 0;
+  }
+  &:hover {
+    p {
+      display: block;
+    }
+    span {
+      display: none;
+    }
+  }
+  span {
+    color: $color-1;
+  }
+}
+
+.black-bg-new {
+  background-color: $black;
+}
+
+.light-green-bg {
+  background-color: $color-5;
+}
+
+.ovr-gr-box {
+  height: auto;
+  @media (min-width: $breakpoint-md-min) {
+    height: 250px;
+  }
+  .light-green-bg {
+    height: auto;
+    @media (min-width: $breakpoint-md-min) {
+      height: 370px;
+      margin-top: -60px;
+    }
+  }
+}
+.reference-overlap-green-box {
+  img {
+    height: 263px;
+    max-width: 460px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .box {
+    .box {
+      .box {
+        .richText-content {
+          max-width: 324px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.green-box-icon-img {
+  img {
+    width: 112px;
+    height: 112px;
+  }
+}
+.honey-ovr-box {
+  &.ovr-gr-box {
+    @media (min-width: $breakpoint-md-min) {
+      height: 310px;
+    }
+    .light-green-bg {
+      @media (min-width: $breakpoint-md-min) {
+        height: 430px;
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg');
+        background-repeat: no-repeat;
+      }
+      background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg');
+      background-repeat: no-repeat;
+    }
+  }
+}
+.real-honey-box {
+  .image {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 20%;
+      flex: 0 0 20%;
+    }
+  }
+  .richText {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 80%;
+      flex: 0 0 80%;
+    }
+  }
+  .cust-font-p20 {
+    font-weight: $font-weight-button;
+  }
+}
+>>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122

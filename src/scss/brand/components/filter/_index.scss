@@ -1,0 +1,130 @@
+.article-filter {
+  figcaption {
+    position: absolute;
+    p {
+      display: inline-block;
+      width: auto;
+      background: $black;
+      color: $white;
+      padding: 4px 8px;
+
+      font-family: $font-family-bold;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  p {
+    a {
+      color: $black;
+      font-size: 20px;
+      line-height: 24px;
+      text-decoration: none;
+      &:hover {
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-1;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.reference-cough-and-cold-center-filter-div {
+  .ovr-gr-box {
+    background-color: transparent;
+    @media (min-width: $breakpoint-md-min) {
+      background-color: $black;
+      display: block;
+      height: 180px;
+      .light-green-bg {
+        height: 300px;
+      }
+    }
+  }
+  .class-filter[data-type='titles'] .filter-list-js {
+    display: block;
+    .filter-item-js {
+      display: block;
+      color: $color-1;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: $font-family-bold;
+      width: 100%;
+      max-width: 100%;
+      margin: 1rem 0 0;
+      @media (min-width: $breakpoint-md-min) {
+        display: inline-block;
+        width: 33%;
+        max-width: 33%;
+        margin: 1rem 0 0;
+      }
+      &:hover {
+        color: $black;
+      }
+      &.active-js {
+        color: $black;
+        &::after {
+          opacity: 0;
+        }
+      }
+      &::after {
+        background-color: $black;
+      }
+    }
+  }
+}
+.reference-product-filter-menu {
+  .filterbox {
+    &::nth-child(1) {
+      opacity: 0.5;
+    }
+  }
+}
+.reference-product-filter {
+  .class-filter[data-type='checkbox'] .filter-list-js {
+    display: block;
+    .filter-item-js {
+      display: block;
+      color: $white;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: $font-family-bold;
+      position: relative;
+      @media (min-width: $breakpoint-md-min) {
+        display: inline-block;
+        width: 25%;
+      }
+      &::before {
+        border: 2px solid $white;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        display: inline-block;
+        position: relative;
+        top: 7px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 17px;
+        left: 8px;
+        border-bottom: 3px solid $white;
+        width: 8px;
+        height: 16px;
+        border-right: 3px solid $white;
+        transform: rotate(45deg);
+        display: none;
+      }
+      &.active-js {
+        &::before {
+          border-color: $black;
+          background-color: $black;
+        }
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+}
