@@ -39,20 +39,21 @@
   color: $color-1;
   text-transform: uppercase;
   position: relative;
-}
-
-.btn-secondary-dark {
-  color: $white;
-  position: relative;
   &:hover,
   &:focus {
-    color: $color-4 !important;
+    color: $color-2 !important;
+    &::after {
+      border-color: $color-2;
+    }
   }
+}
+.btn-secondary,
+.btn-secondary-dark {
   &::after {
     position: absolute;
     content: '';
     right: 0;
-    border: solid $white;
+    border: solid $color-1;
     border-top-width: medium;
     border-right-width: medium;
     border-bottom-width: medium;
@@ -66,9 +67,25 @@
     top: -1px;
     position: relative;
   }
+}
+
+.btn-secondary-dark {
+  color: $white;
+  position: relative;
+  &:hover,
+  &:focus {
+    color: $color-4 !important;
+  }
+  &::after {
+    border-color: $white;
+  }
   &.filterbutton {
     text-transform: uppercase;
     margin-left: 30px;
+    &:hover,
+    &:focus {
+      color: $white !important;
+    }
   }
 }
 

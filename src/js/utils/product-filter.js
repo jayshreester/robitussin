@@ -1,204 +1,261 @@
 (function(global, $) {
-  /**
-   * To call it on document loaded
-   */
-  function init() {
-    let navProductFilter = $(
-      '.reference-product-filter-menu .filter-radio-as-list li'
-    );
-    let productFilter = $('.js-product-filter');
+  class ProductFilter {
+    static SELECTOR = '[class*="filterbox-"]';
+    static FILTER_ITEM_SELECTOR = '.filter-item-js';
 
-    if (navProductFilter.length || productFilter.length) {
-      // (1):[Product Category filter] Hide/Show filterBox - Navbar | product-filter.html
-      let findFilterCTA = $(
-        '.reference-product-filter-menu .btn-primary-dark, .js-product-filter [class*="reference-product-filter-"] .btn-primary-dark'
+    constructor(global, $, targetNode) {
+      this.global = global;
+      this.$targetNode = $(targetNode).closest('.paragraphSystem.content');
+      this.$navProductFilter = this.$targetNode
+        ?.closest('.reference-product-filter-menu')
+        .find('.filter-radio-as-list li');
+      this.$productFilter = $('.js-product-filter');
+      this.$findFilterCTA = this.$targetNode.find('.findmyrobitussinbtn');
+      this.$clearFilterCTA = this.$targetNode.find('.filterbutton');
+      this.$filterItems = this.$targetNode.find(
+        ProductFilter.FILTER_ITEM_SELECTOR
       );
-      let clearFilterCTA = $(
-        '.reference-product-filter-menu .btn-secondary-dark, .js-product-filter [class*="reference-product-filter-"] .btn-secondary-dark'
-      );
-      let filterItems = $(
-        '.js-product-filter .filter-item-js, [class*="reference-product-filter-"] .filter-item-js'
-      );
+      this.selectedCatgoryId = null;
 
-      findFilterCTA.each((i, el) => {
-        el.setAttribute('data-href', el.href);
-        el.removeAttribute('href');
-      });
-
-      navProductFilter.length &&
-        navProductFilter.on('click', categoryBoxFilter);
-      filterItems.length && filterItems.on('click', filterItemSelect);
-      findFilterCTA.length && findFilterCTA.on('click', findFilterCTAClick);
-      clearFilterCTA.length && clearFilterCTA.on('click', clearFilterCTAClick);
-
-      // (2):[Specific page filter] Hide/Show products
-      if (productFilter.length) {
-        // TO DO product filter
-        triggerURLParamFilter();
-      }
-    }
-  }
-
-  /**
-   * Help for category selection based on radio check
-   * @param {EventListenerObject} e
-   */
-  function categoryBoxFilter(e) {
-    e.preventDefault();
-    let selectedCatgory = $(e?.currentTarget);
-    let selectedCatgoryId = selectedCatgory[0].id;
-    let filterParentWrapper = e?.currentTarget?.closest(
-      '.paragraphSystem.content'
-    );
-    $(filterParentWrapper)
-      ?.find('.filter-radio-as-list li')
-      ?.removeClass('selected');
-    $(filterParentWrapper)
-      .find('[class*="filterbox-"]')
-      .removeClass('active')
-      .addClass('in-active');
-
-    if (filterParentWrapper) {
-      let filterBox = $(filterParentWrapper)?.find(
-        '.filterbox-' + selectedCatgoryId
-      );
-      filterBox.removeClass('in-active').addClass('active');
-      selectedCatgory.addClass('selected');
-    }
-  }
-
-  /**
-   * Help for items selection based on checkbox check and updated `selectedFilterItems[String]`
-   * @param {EventListenerObject} e
-   */
-  function filterItemSelect(e) {
-    e.preventDefault();
-    let selectedFilterItem = $(e?.currentTarget);
-    let filterItemsWrapper = selectedFilterItem?.closest(
-      '[class*="filterbox-"], [class*="reference-product-filter-"]'
-    );
-
-    if (selectedFilterItem && !selectedFilterItem.hasClass('active-js')) {
-      selectedFilterItem.addClass('active-js');
-      selectedFilterItem.attr('aria-selected', true);
-    } else {
-      selectedFilterItem.removeClass('active-js');
-      selectedFilterItem.attr('aria-selected', false);
-    }
-    let filterItems = filterItemsWrapper.find('.filter-item-js.active-js');
-
-    if (filterItems.length === 0) {
-      filterItemsWrapper.removeClass('enable-cta');
-    } else {
-      filterItemsWrapper.addClass('enable-cta');
-    }
-  }
-
-  /**
-   * Updated the `href` of CTA and redirect to selected given `href`
-   * @param {EventListenerObject} e
-   */
-  function findFilterCTAClick(e) {
-    e.preventDefault();
-    let _filterCTA = e?.currentTarget;
-    let _filterBox = _filterCTA?.closest(
-      '[class*="filterbox-"], [class*="reference-product-filter-"]'
-    );
-    let _selectedFilterItems = $(_filterBox).find('.filter-item-js.active-js');
-    let _link = _filterCTA.dataset.href;
-
-    _selectedFilterItems = _selectedFilterItems
-      .map((i, el) => {
-        return el.classList.item(1);
-      })
-      .toArray();
-
-    if ($('.js-product-filter').length > 0) {
-      triggerProductFilter(_selectedFilterItems);
-      return true;
+      this.init();
     }
 
-    if (_link.indexOf('?') > 0) {
-      _link =
-        _link +
-        '&selectedFilters=' +
-        encodeURIComponent(_selectedFilterItems.join());
-    } else {
-      _link =
-        _link +
-        '?selectedFilters=' +
-        encodeURIComponent(_selectedFilterItems.join());
-    }
-    global.location.href = _link;
-  }
+    /**
+     * Init() method to register all events
+     */
+    init() {
+      if (this.$navProductFilter.length || this.$productFilter.length) {
+        // (1):[Product Category filter] Hide/Show filterBox - Navbar | product-filter.html
+        this.$findFilterCTA.each((i, el) => {
+          el.setAttribute('data-href', el.href);
+          el.removeAttribute('href');
+        });
 
-  /**
-   * Reset filter to default
-   * @param {EventListenerObject} e
-   */
-  function clearFilterCTAClick(e) {
-    let _filterBox = e.currentTarget?.closest(
-      '[class*="filterbox-"], [class*="reference-product-filter-"]'
-    );
-    let _selectedFilterItems = $(_filterBox).find('.filter-item-js.active-js');
-    _selectedFilterItems.removeClass('active-js');
-    _selectedFilterItems.attr('aria-selected', false);
-    triggerProductFilter([]);
-  }
+        this.$navProductFilter.length &&
+          this.$navProductFilter.on('click', this.categoryBoxFilter.bind(this));
+        this.$filterItems.length &&
+          this.$filterItems.on('click', this.filterItemSelect.bind(this));
+        this.$findFilterCTA.length &&
+          this.$findFilterCTA.on('click', this.findFilterCTAClick.bind(this));
+        this.$clearFilterCTA.length &&
+          this.$clearFilterCTA.on('click', this.clearFilterCTAClick.bind(this));
 
-  /**
-   * Creates Array of classList from `window.location.href` searchParams
-   */
-  function triggerURLParamFilter() {
-    let url = new URL(window.location.href);
-    let selectedFilters = url.searchParams.get('selectedFilters');
-    if (selectedFilters !== null) {
-      selectedFilters = decodeURIComponent(selectedFilters);
-      selectedFilters = selectedFilters.split(',');
-      if (Array.isArray(selectedFilters) && selectedFilters.length) {
-        selectedFilters.forEach(el => $('.' + el).addClass('active-js'));
-        triggerProductFilter(selectedFilters);
-      }
-    } else {
-      triggerProductFilter([]);
-    }
-  }
-
-  /**
-   * Set the UI based on given `classList`
-   * @param {Array} selectedFilters Array[String]
-   */
-  function triggerProductFilter(selectedFilters) {
-    var products = $('.products-filter');
-    if (selectedFilters.length) {
-      products.each((i, el) => {
-        if (el.matches('.' + selectedFilters.join('.'))) {
-          el.style.display = 'block';
-        } else {
-          el.style.display = 'none';
+        // (2):[Specific page filter] Hide/Show products
+        if (this.$productFilter.length && this.$navProductFilter.length === 0) {
+          // TO DO product filter
+          this.selectedCatgoryId = $('.filterbox-adults').length
+            ? 'adults'
+            : $('.filterbox-children').length
+            ? 'children'
+            : $('.filterbox-naturals').length
+            ? 'naturals'
+            : null;
+          $('.cf-' + this.selectedCatgoryId)?.addClass('enable');
+          this.triggerURLParamFilter();
         }
-      });
-    } else {
-      $(products).css({ display: '' });
+      }
+    }
+
+    /**
+     * Help for category selection based on radio check
+     * @param {EventListenerObject} e
+     */
+    categoryBoxFilter(e) {
+      e.preventDefault();
+      let $selectedCatgory = $(e?.currentTarget);
+      this.selectedCatgoryId = $selectedCatgory[0].id;
+      this.$targetNode
+        ?.find('.filter-radio-as-list li')
+        ?.removeClass('selected');
+      this.$targetNode?.closest(ProductFilter.SELECTOR)?.addClass('active');
+
+      if (this.$targetNode) {
+        this.$filterItems?.removeClass('enable');
+        this.$targetNode
+          ?.find('.cf-' + this.selectedCatgoryId)
+          ?.addClass('enable');
+      }
+    }
+
+    /**
+     * Help for items selection based on checkbox check and updated `selectedFilterItems[String]`
+     * @param {EventListenerObject} e
+     */
+    filterItemSelect(e) {
+      e.preventDefault();
+      let $selectedFilterItem = $(e?.currentTarget);
+      if (
+        $selectedFilterItem
+          .closest(ProductFilter.SELECTOR)
+          .hasClass('active') &&
+        $selectedFilterItem.hasClass('enable')
+      ) {
+        let $filterItemsWrapper = $selectedFilterItem?.closest(
+          ProductFilter.SELECTOR
+        );
+
+        if ($selectedFilterItem && !$selectedFilterItem.hasClass('active-js')) {
+          $selectedFilterItem.addClass('active-js');
+          $selectedFilterItem.attr('aria-selected', true);
+        } else {
+          $selectedFilterItem.removeClass('active-js');
+          $selectedFilterItem.attr('aria-selected', false);
+        }
+        let filterItems = $filterItemsWrapper.find(
+          ProductFilter.FILTER_ITEM_SELECTOR + '.active-js'
+        );
+
+        if (filterItems.length === 0) {
+          $filterItemsWrapper.removeClass('enable-cta');
+        } else {
+          $filterItemsWrapper.addClass('enable-cta');
+        }
+      }
+    }
+
+    /**
+     * Updated the `href` of CTA and redirect to selected given `href`
+     * @param {EventListenerObject} e
+     */
+    findFilterCTAClick(e) {
+      e.preventDefault();
+      let _filterCTA = e?.currentTarget;
+      let _filterBox = _filterCTA?.closest(ProductFilter.SELECTOR);
+      let _$selectedFilterItems = $(_filterBox).find(
+        ProductFilter.FILTER_ITEM_SELECTOR + '.active-js'
+      );
+      let _link = null;
+
+      if (this.selectedCatgoryId) {
+        _link = _filterCTA.dataset[this.selectedCatgoryId + 'Href'];
+      } else {
+        _link = _filterCTA.dataset.href;
+      }
+
+      if (_filterBox.classList.contains('enable-cta')) {
+        _$selectedFilterItems = _$selectedFilterItems
+          .map((i, el) => {
+            return el.classList.item(1);
+          })
+          .toArray();
+
+        if (
+          this.$productFilter.length > 0 &&
+          this.$navProductFilter.length === 0
+        ) {
+          this.triggerProductFilter(_$selectedFilterItems);
+          return true;
+        }
+
+        if (_link.indexOf('?') > 0) {
+          _link =
+            _link +
+            '&selectedFilters=' +
+            encodeURIComponent(_$selectedFilterItems.join());
+        } else {
+          _link =
+            _link +
+            '?selectedFilters=' +
+            encodeURIComponent(_$selectedFilterItems.join());
+        }
+        global.location.href = _link;
+      }
+    }
+
+    /**
+     * Reset filter to default
+     * @param {EventListenerObject} e
+     */
+    clearFilterCTAClick(e) {
+      let _filterBox = e.currentTarget?.closest(ProductFilter.SELECTOR);
+      let _$selectedFilterItems = $(_filterBox).find(
+        ProductFilter.FILTER_ITEM_SELECTOR + '.active-js'
+      );
+      _$selectedFilterItems.removeClass('active-js');
+      _$selectedFilterItems.attr('aria-selected', false);
+      this.triggerProductFilter([]);
+    }
+
+    /**
+     * Creates Array of classList from `window.location.href` searchParams
+     */
+    triggerURLParamFilter() {
+      let that = this;
+      let url = new URL(window.location.href);
+      let selectedFilters = url.searchParams.get('selectedFilters');
+      if (selectedFilters !== null) {
+        selectedFilters = decodeURIComponent(selectedFilters);
+        selectedFilters = selectedFilters.split(',');
+        if (Array.isArray(selectedFilters) && selectedFilters.length) {
+          selectedFilters.forEach(el =>
+            that.$targetNode.find('.' + el).addClass('active-js')
+          );
+          that.$targetNode
+            .find(ProductFilter.SELECTOR + '.active')
+            .addClass('enable-cta');
+          that.triggerProductFilter(selectedFilters);
+        }
+      } else {
+        that.triggerProductFilter([]);
+      }
+    }
+
+    /**
+     * Set the UI based on given `classList`
+     * @param {Array} selectedFilters Array[String]
+     */
+    triggerProductFilter(selectedFilters) {
+      var products = this.$productFilter.find('.products-filter');
+      var that = this;
+      if (selectedFilters.length) {
+        $('.product-cat-title').addClass('hide');
+
+        products.each((i, el) => {
+          if (el.matches('.' + selectedFilters.join('.'))) {
+            el.classList.remove('hide');
+          } else {
+            el.classList.add('hide');
+          }
+        });
+
+        if ($('.products-filter:not(.hide)').length === 0) {
+          $('.no-result-title').removeClass('hide');
+          $('.result-product-title').addClass('hide');
+        } else {
+          let SelectedFiltersText = selectedFilters.map(selectedFilter => {
+            return that.$targetNode.find('.' + selectedFilter)[0].innerText;
+          });
+          $('.no-result-title').addClass('hide');
+          $('.result-product-title').removeClass('hide');
+          $('#selectedfilterstext').text(SelectedFiltersText.join(', '));
+        }
+      } else {
+        $('.product-cat-title').removeClass('hide');
+        $('.no-result-title').addClass('hide');
+        $('.result-product-title').addClass('hide');
+        $(products).removeClass('hide');
+      }
     }
   }
 
   function mutationHelper() {
-    let targetNode = document.querySelector(
-      '.reference-product-filter .class-filter.no-theme'
+    let targetNodes = document.querySelectorAll(
+      '[class*=filterbox-] .class-filter.no-theme'
     );
-    if (targetNode && !targetNode.classList.contains('initiated')) {
-      const callback = function(mutationsList, observer) {
-        if (mutationsList[0].type === 'attributes') {
-          init();
-          mo.disconnect();
-        }
-      };
-      let mo = new MutationObserver(callback);
-      mo.observe(targetNode, { attributes: true });
-    } else {
-      init();
-    }
+    targetNodes.forEach(targetNode => {
+      if (targetNode && !targetNode.classList.contains('initiated')) {
+        const callback = function(mutationsList, observer) {
+          if (mutationsList[0].type === 'attributes') {
+            new ProductFilter(global, $, targetNode);
+            mo.disconnect();
+          }
+        };
+        let mo = new MutationObserver(callback);
+        mo.observe(targetNode, { attributes: true });
+      } else {
+        new ProductFilter(global, $, targetNode);
+      }
+    });
   }
 
   // Call `init` based on document state

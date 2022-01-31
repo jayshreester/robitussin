@@ -6,10 +6,9 @@ body {
     color: $black;
     font-size: $font-size-regular;
     line-height: $line-height-24;
-    &.smalltext {
-      color: $black;
+    &.small {
       font-size: $font-size-body-small;
-      line-height: $line-height-24;
+      line-height: $line-height-body-small;
     }
     a,
     a:hover,
@@ -18,35 +17,25 @@ body {
       text-decoration: underline;
     }
   }
+  .medium {
+    font-family: $font-family-medium;
+  }
+  .bold {
+    font-family: $font-family-bold;
+  }
   [class*='hero-banner-'] .image {
     min-height: auto;
   }
-  .maxcontainer {
-    float: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 15px !important;
-    margin: 0 auto !important;
-    @media (min-width: 576px) {
-      max-width: 540px !important;
-    }
-    @media (min-width: $breakpoint-sm-min) {
-      max-width: 720px !important;
-    }
-    @media (min-width: $breakpoint-md-min) {
-      max-width: 960px !important;
-    }
-    @media (min-width: $breakpoint-lg-min) {
-      max-width: 1140px !important;
-    }
-  }
+
   .flex > div > div .component-content {
     height: auto;
   }
   .text-white * {
     color: $white !important;
   }
-
+  sup {
+    top: -0.5em;
+  }
   // headers
 
   h4,
@@ -55,6 +44,12 @@ body {
       line-height: $line-height-h4-mobile;
       font-size: $font-size-h4-mobile;
     }
+  }
+
+  h5,
+  .h5 {
+    font-size: $font-size-h5;
+    line-height: $line-height-h5;
   }
 
   h1,

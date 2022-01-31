@@ -6,6 +6,7 @@ String.prototype.regexIndexOf = function(regex, startpos) {
   var indexOf = this.substring(startpos || 0).search(regex);
   return indexOf >= 0 ? indexOf + (startpos || 0) : indexOf;
 };
+// eslint-disable
 (function($) {
   //css selector for class filter component
   const filterSelector = '.class-filter',
@@ -1222,3 +1223,4 @@ String.prototype.regexIndexOf = function(regex, startpos) {
     }
   });
 })(Cog.jQuery());
+// eslint-enable

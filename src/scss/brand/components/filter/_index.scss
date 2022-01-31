@@ -1,30 +1,17 @@
 .article-filter {
-  figcaption {
-    position: absolute;
+  .anchor-box {
     p {
-      display: inline-block;
-      width: auto;
-      background: $black;
-      color: $white;
-      padding: 4px 8px;
-
-      font-family: $font-family-bold;
-      &::after {
-        display: none;
-      }
-    }
-  }
-  p {
-    a {
-      color: $black;
-      font-size: 20px;
-      line-height: 24px;
-      text-decoration: none;
-      &:hover {
+      a {
+        color: $black;
         font-size: 20px;
         line-height: 24px;
-        color: $color-1;
-        text-decoration: underline;
+        text-decoration: none;
+        &:hover {
+          font-size: 20px;
+          line-height: 24px;
+          color: $color-1;
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -85,14 +72,28 @@
   .class-filter[data-type='checkbox'] .filter-list-js {
     display: block;
     .filter-item-js {
+      * {
+        font-family: $font-family-bold;
+        color: $white;
+      }
       display: block;
       color: $white;
       font-size: 18px;
       line-height: 24px;
       font-family: $font-family-bold;
       position: relative;
+      padding: 3px 0;
+      opacity: 0.5;
+      cursor: auto;
+      &.enable {
+        opacity: 1;
+        cursor: pointer;
+      }
       @media (min-width: $breakpoint-md-min) {
         display: inline-block;
+        width: 50%;
+      }
+      @media (min-width: $breakpoint-md-min) {
         width: 25%;
       }
       &::before {
@@ -107,7 +108,7 @@
       &::after {
         content: '';
         position: absolute;
-        top: 17px;
+        top: 13px;
         left: 8px;
         border-bottom: 3px solid $white;
         width: 8px;
@@ -123,6 +124,55 @@
         }
         &::after {
           display: block;
+        }
+      }
+    }
+  }
+}
+.richText-content {
+  ul.filter-radio-as-list {
+    padding-top: 15px;
+    li {
+      font-size: 18px;
+      font-family: $font-family-bold;
+
+      cursor: pointer;
+      padding-left: 40px;
+      position: relative;
+      padding-bottom: 15px;
+      @media (min-width: $breakpoint-sm-min) {
+        display: inline-block;
+        width: 25%;
+        clear: none;
+        float: left;
+        &:last-child {
+          width: 48%;
+        }
+      }
+      &::before {
+        width: 24px;
+        height: 24px;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 2px solid #fff;
+        border-radius: 50%;
+      }
+      &.active {
+        &::before {
+          border-color: $black;
+        }
+        &::after {
+          border-radius: 50%;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          background-color: $black;
+          border: 1px solid $black;
+          width: 16px;
+          height: 16px;
+          content: '';
         }
       }
     }

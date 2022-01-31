@@ -1,0 +1,17 @@
+.card-title-divider-reverse {
+  figcaption {
+    position: absolute;
+    p {
+      display: inline-block;
+      width: auto;
+      background: $black;
+      color: $white;
+      padding: 4px 8px;
+
+      font-family: $font-family-bold;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}

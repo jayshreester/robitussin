@@ -22,4 +22,9 @@
       }
     }
   }
+  &.is-active {
+    .accordion-content-wrapper {
+      max-height: 100% !important;
+    }
+  }
 }
