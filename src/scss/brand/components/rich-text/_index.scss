@@ -139,70 +139,12 @@ p {
     span img {
       width: 100%;
       height: auto;
-<<<<<<< HEAD
-    }
-    a,
-    a:hover,
-    a:visited {
-      font-size: $font-size-h5;
-      text-decoration: underline;
-    }
-    &.article-para {
-      font-size: $font-size-h5;
-      line-height: $line-height-28;
-      margin: 0.7rem 0 2rem 0;
-    }
-    &.story-subtext-style {
-      font-size: $font-size-h3-mobile;
-      line-height: $line-height-32;
-      margin: 0.5rem 0;
-    }
-    &.quote-wrapper {
-      width: 70%;
-      font-size: $font-size-h3-mobile;
-      color: $color-1;
-      margin: 0 auto;
-      line-height: $line-height-38;
-      span img {
-        width: 100%;
-        height: auto;
-      }
-    }
-    &.article-para-reference {
-      font-size: $font-size-body-small;
-      margin: 0;
-      span {
-        color: $color-2;
-      }
-    }
-    &.article-para-reference-indent {
-      padding: 0 0 0 1em;
-      font-size: $font-size-body-small;
-=======
->>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122
     }
   }
   &.article-para-reference {
     font-size: $font-size-body-small;
     margin: 0;
     span {
-<<<<<<< HEAD
-      &.image {
-        display: inline-block;
-      }
-      &.text {
-        display: inline-block;
-        vertical-align: top;
-        width: 100%;
-        margin: 0 2% 0 4%;
-        line-height: $line-height-25;
-        @media (min-width: $breakpoint-sm-min) {
-          width: 78% !important;
-        }
-      }
-    }
-  }
-=======
       color: $color-2;
     }
   }
@@ -229,7 +171,6 @@ p {
       }
     }
   }
->>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122
 }
 
 .article-hero-image {
@@ -374,4 +315,8 @@ p {
 .article-table td {
   border: 1px solid #000000;
   padding: 0.7rem;
+}
+
+sup{
+  top: -0.5em !important;
 }
