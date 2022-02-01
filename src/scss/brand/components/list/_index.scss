@@ -16,8 +16,8 @@
             color: $grey-1;
             margin: 0 0 0.7rem 0;
             padding: 0;
-            font-size: $font-size-body-small;
-            line-height: $line-height-18;
+            font-size: $font-size-h5;
+            line-height: $line-height-24;
             &::before {
               display: none;
             }
@@ -34,7 +34,7 @@
             a,
             a:hover,
             a:visited {
-              font-size: $font-size-body-small;
+              font-size: $font-size-h5;
               text-decoration: underline;
             }
           }
@@ -48,8 +48,8 @@
             color: $black;
             margin: 0 0 0.7rem 0;
             padding: 0 0 0 21px;
-            font-size: $font-size-body-small;
-            line-height: $line-height-22;
+            font-size: $font-size-h5;
+            line-height: $line-height-24;
 
             span {
               display: block;
@@ -58,7 +58,7 @@
             a,
             a:hover,
             a:visited {
-              font-size: $font-size-body-small;
+              font-size: $font-size-h5;
               text-decoration: underline;
             }
             &::before {
