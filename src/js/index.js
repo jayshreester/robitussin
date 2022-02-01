@@ -35,6 +35,7 @@ import './components/fullbox';
 import './components/revtrax';
 import './components/forms';
 import './components/bp-sharer';
+import './components/popup-youtube-video';
 //import './components/action-link';
 //import './components/bp-video-player';
 //import './components/bp-font-resizer';

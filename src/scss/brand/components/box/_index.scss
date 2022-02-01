@@ -1,10 +1,25 @@
 $accordion-plus-icon: get-icon('plus-icon', $white);
 $accordion-minus-icon: get-icon('minus-icon', $white);
 .filterlogo {
-  width: 178px;
+  display: none;
+  @media (min-width: $breakpoint-md-min) {
+    display: block;
+  }
+  img {
+    width: 178px !important;
+  }
 }
 .filteraccord {
   position: relative;
+  padding-right: 30%;
+  line-height: 28px;
+  @media (min-width: $breakpoint-sm-min) {
+    padding-right: 0;
+    padding-top: 12px;
+  }
+  @media (min-width: $breakpoint-md-min) {
+    padding-top: 0;
+  }
   &::after {
     background-image: $accordion-plus-icon;
     width: 40px;
@@ -27,5 +42,28 @@ $accordion-minus-icon: get-icon('minus-icon', $white);
   display: none;
   @media (min-width: $breakpoint-md-min) {
     display: block !important;
+  }
+}
+.findmyrobitussinbtn,
+.filterbutton {
+  opacity: 0.5;
+  cursor: auto;
+}
+.enable-cta {
+  .findmyrobitussinbtn,
+  .filterbutton {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+.reference-product-filter-adults,
+.reference-product-filter-children {
+  @media (min-width: $breakpoint-md-min) {
+    .black-bg-new {
+      height: 320px;
+      .bg-color-1 {
+        margin-top: -60px;
+      }
+    }
   }
 }
