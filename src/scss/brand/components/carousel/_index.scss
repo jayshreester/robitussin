@@ -232,3 +232,42 @@
     }
   }
 }
+.reference-whats-shot {
+  .lSAction > a {
+    top: 43%;
+    background-color: $color-3;
+    background-image: none;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    &.lSPrev,
+    &.lSNext {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border: solid $white;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(-45deg);
+
+        width: 6px;
+        height: 6px;
+      }
+    }
+    &.lSPrev {
+      left: 16px;
+      &::before {
+        transform: rotate(135deg);
+      }
+    }
+    &.lSNext {
+      right: 16px;
+    }
+  }
+}

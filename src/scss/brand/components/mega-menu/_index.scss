@@ -89,6 +89,7 @@
     &.activesubmenu {
       opacity: 1;
       transform: scaleY(1);
+      height: auto;
       @media (min-width: $breakpoint-md-min) {
         opacity: 0;
         transform: scaleY(0);
@@ -212,6 +213,9 @@
         display: flex;
       }
       > a {
+        @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-max) {
+          font-size: $font-size-body-small;
+        }
         font-family: $font-family-bold;
         text-transform: uppercase;
         display: inline-block;
