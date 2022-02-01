@@ -1,0 +1,17 @@
+.searchResults-number {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.searchbox-results {
+  width: 265px;
+  margin: 50px auto !important;
+  .button {
+    height: 25px;
+    width: 40px;
+    top: 6px;
+    border: none;
+    &::before {
+      width: 0;
+    }
+  }
+}

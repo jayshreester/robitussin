@@ -42,12 +42,12 @@
       }
       ol {
         &.reference-notes {
-          margin: 0 0 1rem 0;
+          margin: 1rem 0 1rem 0;
 
           > li {
             color: $black;
             margin: 0 0 0.7rem 0;
-            padding: 0 0 0 1rem;
+            padding: 0 0 0 21px;
             font-size: $font-size-body-small;
             line-height: $line-height-22;
 
@@ -60,6 +60,9 @@
             a:visited {
               font-size: $font-size-body-small;
               text-decoration: underline;
+            }
+            &::before {
+              line-height: 1.375;
             }
           }
         }
@@ -99,7 +102,9 @@
   }
 }
 
-.accordion-slide .accordion-content > div li a,
-a:hover {
+.accordion-slide .accordion-content > div li a {
   text-decoration: underline !important;
+  &:hover {
+    text-decoration: underline !important;
+  }
 }

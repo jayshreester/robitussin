@@ -125,7 +125,51 @@
   });
 
   $('body').on('click touchstart', '.filter-item-js', function(e) {
-    var seltext = $('.selected-item-js').text();
+    var seltext = $(e.currentTarget).text();
     $('.filteredtext').text(seltext);
   });
+
+  let page = $('.page-cough-cold-center');
+  function init(topicToShow, moTarget) {
+    moTarget.find('.' + topicToShow).click();
+    page
+      ?.find('.filteredtext')
+      ?.closest('.box.component')[0]
+      ?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+  }
+
+  function mutationHelper(page) {
+    if (page) {
+      let moTargets = $('.reference-bp-filter .class-filter.no-theme');
+      let moTarget = moTargets[0];
+      var urlObj = new URL(window.location.href);
+      let topicToShow = urlObj?.searchParams?.get('topic');
+      if (topicToShow) {
+        if (moTarget && !moTarget.classList.contains('initiated')) {
+          const callback = function(mutationsList, observer) {
+            if (mutationsList[0].type === 'attributes') {
+              init(topicToShow, moTargets);
+            }
+          };
+          let mo = new MutationObserver(callback);
+          mo.observe(moTarget, { attributes: true });
+        } else {
+          init(topicToShow, moTargets);
+        }
+      }
+    }
+  }
+
+  if (document.readyState !== 'loading') {
+    mutationHelper(page);
+  } else {
+    document.addEventListener(
+      'DOMContentLoaded',
+      mutationHelper.bind(this, page)
+    );
+  }
 })(Cog.jQuery());

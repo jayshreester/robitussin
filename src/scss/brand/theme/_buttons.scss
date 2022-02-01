@@ -130,7 +130,13 @@ body {
     color: $white;
   }
   .ps-widget[ps-sku].ps-disabled {
-    display: none !important;
+    padding: 0 !important;
+    width: 200px;
+    span.ps-button-label {
+      line-height: 40px;
+      color: $white;
+      background-color: $color-1;
+    }
   }
   &.template-product-landing,
   &.template-product-listing {

@@ -1,24 +1,12 @@
 // on home page
 .productwrap {
-  max-width: 500px;
   background: $white;
-  position: absolute;
-  top: 90%;
-  height: auto;
-  box-shadow: 0px 3px 6px #0000004d;
   opacity: 1;
   z-index: 1;
-  height: auto !important;
-  &.left-align-product {
-    right: 70px;
-  }
-  &.right-align-product {
-    left: 70px;
-  }
   .productwrap-comp {
-    padding: 22px 0 0 30px;
+    padding: 0;
     .richText {
-      max-width: 190px;
+      max-width: 100%;
       p {
         margin: 0;
         padding-top: 6px;
@@ -26,9 +14,6 @@
       }
     }
     .image.component {
-      position: absolute;
-      top: -50px;
-      right: 20px;
       width: 260px;
     }
   }
@@ -37,6 +22,32 @@
       margin: 24px 0 43px 0;
       p {
         margin: 0;
+      }
+    }
+  }
+  @media (min-width: $breakpoint-md-min) {
+    max-width: 500px;
+    position: absolute;
+    box-shadow: 0px 3px 6px #0000004d;
+    top: 90%;
+    height: auto;
+    height: auto !important;
+    &.left-align-product {
+      right: 70px;
+    }
+    &.right-align-product {
+      left: 70px;
+    }
+    .productwrap-comp {
+      padding: 22px 0 0 30px;
+      .richText {
+        max-width: 190px;
+      }
+      .image.component {
+        position: absolute;
+        top: -50px;
+        right: 20px;
+        width: 260px;
       }
     }
   }
