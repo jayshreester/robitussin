@@ -156,8 +156,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        border: 2px solid #fff;
+        border: 2px solid $white;
         border-radius: 50%;
+        box-sizing: border-box;
       }
       &.active {
         &::before {
@@ -170,9 +171,10 @@
           left: 5px;
           background-color: $black;
           border: 1px solid $black;
-          width: 16px;
-          height: 16px;
+          width: 14px;
+          height: 14px;
           content: '';
+          box-sizing: border-box;
         }
       }
     }
