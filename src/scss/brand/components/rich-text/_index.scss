@@ -142,7 +142,7 @@ p {
     }
   }
   &.article-para-reference {
-    font-size: $font-size-body-small;
+    font-size: $font-size-h5;
     margin: 0;
     span {
       color: $color-2;
@@ -150,7 +150,7 @@ p {
   }
   &.article-para-reference-indent {
     padding: 0 0 0 1em;
-    font-size: $font-size-body-small;
+    font-size: $font-size-h5;
   }
   span {
     &.image {
