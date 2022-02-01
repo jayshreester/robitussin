@@ -185,11 +185,11 @@
 
 .cta-link1 {
   &:hover {
-    font-size: $font-size-h4;
+    font-size: $font-size-h4 !important;
     text-decoration: none;
     color: $color-1;
   }
-  font-size: 16px;
+  font-size: $font-size-h4 !important;
   line-height: 18px;
   font-weight: $font-weight-button;
   text-decoration: none;
@@ -205,21 +205,9 @@
   line-height: 28px;
 }
 
-<<<<<<< HEAD
-.navigation-item-decoration {
-  border: solid #008945;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  margin-left: 4px;
-  padding: 3px;
-  transform: rotate(-45deg);
-  top: -1px;
-  position: relative;
-=======
 .cust-font-p20 {
   font-size: 20px;
   line-height: 24px;
->>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122
 }
 
 .max-content-width {
@@ -273,9 +261,6 @@
 
 .flex[class='align-center'] {
   align-items: center !important;
-<<<<<<< HEAD
-}
-=======
 }
 
 .text-hover {
@@ -377,4 +362,3 @@
     font-weight: $font-weight-button;
   }
 }
->>>>>>> 4298f6cfe7548144f693638c590c0cb5d3cad122
