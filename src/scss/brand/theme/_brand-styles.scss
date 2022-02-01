@@ -196,11 +196,11 @@
 
 .cta-link1 {
   &:hover {
-    font-size: $font-size-h4;
+    font-size: $font-size-h4 !important;
     text-decoration: none;
     color: $color-1;
   }
-  font-size: 16px;
+  font-size: $font-size-h4 !important;
   line-height: 18px;
   font-weight: $font-weight-button;
   text-decoration: none;
@@ -214,6 +214,11 @@
 .cust-font-p18 {
   font-size: 18px;
   line-height: 28px;
+}
+
+.cust-font-p20 {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .max-content-width {
