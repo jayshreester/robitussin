@@ -26,16 +26,16 @@
     .image {
       min-height: auto;
       img {
-        max-width: 60px;
+        max-width: 60px !important;
       }
       &.caroimage {
         img {
-          max-width: 300px;
+          max-width: 300px !important;
           @media (min-width: $breakpoint-xm-min) {
-            max-width: 400px;
+            max-width: 400px !important;
           }
           @media (min-width: $breakpoint-lg-min) {
-            max-width: 450px;
+            max-width: 450px !important;
           }
         }
       }

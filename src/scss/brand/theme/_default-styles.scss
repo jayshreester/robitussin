@@ -17,7 +17,7 @@ body {
       text-decoration: underline;
     }
   }
-  
+
   .medium {
     font-family: $font-family-medium;
   }
@@ -37,6 +37,7 @@ body {
   sup {
     top: -0.5em;
   }
+
   // headers
 
   h4,
@@ -183,7 +184,9 @@ body {
       }
     }
   }
-
+  #ot-sdk-btn.ot-sdk-show-settings {
+    background-color: $white !important;
+  }
   #onetrust-consent-sdk #onetrust-accept-btn-handler {
     background-color: $white;
     border-radius: 25px;
