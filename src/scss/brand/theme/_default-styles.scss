@@ -17,7 +17,7 @@ body {
       text-decoration: underline;
     }
   }
-  
+
   .medium {
     font-family: $font-family-medium;
   }
@@ -102,10 +102,10 @@ body {
     }
     &.title-h3-style {
       font-size: $font-size-h3-mobile;
-      line-height: $line-height-24;
+      line-height: $line-height-22;
       @media (min-width: $breakpoint-md-min) {
         font-size: $font-size-h3;
-        line-height: $line-height-24;
+        line-height: $line-height-22;
       }
     }
     &.title-h4-style {
