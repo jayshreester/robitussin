@@ -103,10 +103,10 @@ body {
     }
     &.title-h3-style {
       font-size: $font-size-h3-mobile;
-      line-height: $line-height-24;
+      line-height: $line-height-22;
       @media (min-width: $breakpoint-md-min) {
         font-size: $font-size-h3;
-        line-height: $line-height-24;
+        line-height: $line-height-22;
       }
     }
     &.title-h4-style {
@@ -187,7 +187,7 @@ body {
   #ot-sdk-btn.ot-sdk-show-settings {
     background-color: $white !important;
   }
-  #onetrust-consent-sdk #onetrust-accept-btn-handler {
+  #onetrust-consent-sdk #onetrust--btn-handler {
     background-color: $white;
     border-radius: 25px;
     border: 2px solid $color-1;
