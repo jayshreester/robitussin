@@ -155,6 +155,7 @@
       color: #000000;
       margin: 0;
       font-family: $font-family-medium;
+      line-height: 18px;
     }
   }
   .object1 {
@@ -186,10 +187,11 @@
     cursor: pointer;
     h4 {
       color: #ef8b21;
+      width: 80%;
     }
     .tooltip-data {
       top: inherit;
-      bottom: -35px;
+      bottom: -50px;
       left: 175px;
       &:before {
         top: inherit;
@@ -202,7 +204,7 @@
       }
     }
     @media (min-width: $breakpoint-md-min) {
-      width: 221px;
+      width: 225px;
       height: 202px !important;
       bottom: 70px;
       right: 100px;

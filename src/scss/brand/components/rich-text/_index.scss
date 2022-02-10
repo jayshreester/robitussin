@@ -51,44 +51,6 @@
   }
 }
 
-.reference-cards-c2 {
-  .max-content-width {
-    max-width: 753px !important;
-    .box.first {
-      .richText {
-        h5 {
-          max-height: 200px;
-        }
-      }
-    }
-    .box.last {
-      .richText {
-        h5 {
-          max-height: 280px;
-        }
-      }
-    }
-    .richText {
-      margin-top: $spacer-sm;
-      p {
-        margin: 0;
-        font-size: $font-size-h5;
-        line-height: $line-height-18;
-        margin-bottom: $space-10;
-      }
-      h5 {
-        font-weight: normal;
-        font-size: $font-size-h5;
-        line-height: $line-height-28;
-        @media (min-width: $breakpoint-md-min) {
-          font-size: $font-size-h5;
-          line-height: $line-height-24;
-        }
-      }
-    }
-  }
-}
-
 .reference-copy-block-c2-v0 {
   .richText {
     margin-bottom: $space-10;
@@ -114,12 +76,6 @@
 }
 
 p {
-  a,
-  a:hover,
-  a:visited {
-    font-size: $font-size-h5;
-    text-decoration: underline;
-  }
   &.article-para {
     font-size: $font-size-h5;
     line-height: $line-height-28;
@@ -267,15 +223,11 @@ p {
 }
 
 .subbanner-text {
-  font-size: $font-size-h4;
-  line-height: $line-height-22;
   color: $white;
   width: 100%;
   text-align: center;
   padding: 0 15%;
   @media (min-width: $breakpoint-md-min) {
-    font-size: $font-size-h3-mobile;
-    line-height: $line-height-22;
     width: 48%;
     margin: 1% 0 0 50%;
     text-align: left;
@@ -319,9 +271,4 @@ p {
 
 sup {
   top: -0.5em !important;
-}
-
-.article-box-subtext {
-  font-size: $font-size-body-small;
-  line-height: $line-height-24;
 }

@@ -26,7 +26,10 @@
           content: '';
           position: absolute;
           left: 0;
-          top: 10px;
+          top: 6px;
+          @media (min-width: $breakpoint-md-min) {
+            top: 10px;
+          }
         }
       }
       ul {
@@ -39,7 +42,10 @@
             font-size: 18px;
             font-family: $font-family-medium;
             &::before {
-              top: 7px;
+              top: 5px;
+              @media (min-width: $breakpoint-md-min) {
+                top: 7px;
+              }
             }
           }
         }

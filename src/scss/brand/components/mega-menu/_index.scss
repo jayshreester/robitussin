@@ -9,6 +9,10 @@
       padding-bottom: 8px;
       padding-left: 0;
       margin-left: -12px;
+      text-align: center;
+      @media (min-width: $breakpoint-md-min) {
+        text-align: left;
+      }
       &::before {
         display: none;
       }
@@ -17,6 +21,8 @@
   .cc-dropdown-card {
     width: 265px;
     margin: 0 auto !important;
+    float: none;
+    clear: both;
     @media (min-width: $breakpoint-md-min) {
       float: left;
       clear: none;
@@ -85,11 +91,21 @@
     transform: scaleY(0);
     width: 100%;
     z-index: 99;
-
+    .content {
+      background-color: $megamenu-submenu-background;
+      @media (min-width: $breakpoint-md-min) {
+        background-color: transparent;
+      }
+    }
+    &.content-product-finder {
+      .content {
+        background-color: $color-1;
+      }
+    }
     &.activesubmenu {
       opacity: 1;
       transform: scaleY(1);
-      height: auto;
+
       @media (min-width: $breakpoint-md-min) {
         opacity: 0;
         transform: scaleY(0);
@@ -266,23 +282,31 @@
     }
   }
 }
-
 .backsubmenu {
-  border: solid $black;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  margin-left: 8px;
-  padding: 6px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  font-size: 0;
-
-  cursor: pointer;
   @media (min-width: $breakpoint-md-min) {
     display: none;
   }
-  &.white {
-    border-color: $white;
+}
+.reference-backsubmenu {
+  @media (min-width: $breakpoint-md-min) {
+    display: none;
+  }
+
+  .backsubmenu {
+    border: solid $black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    margin-left: 8px;
+    padding: 6px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    font-size: 0;
+
+    cursor: pointer;
+
+    &.white {
+      border-color: $white;
+    }
   }
 }
 body.page-product-finder {

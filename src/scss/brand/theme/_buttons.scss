@@ -29,9 +29,9 @@
   padding: 13px 25px !important;
   &:hover,
   &:focus {
-    color: $white !important;
+    color: $color-4;
     background-color: transparent;
-    border-color: $white;
+    border-color: $color-4;
   }
 }
 
@@ -39,6 +39,7 @@
   color: $color-1;
   text-transform: uppercase;
   position: relative;
+  padding-left: 0 !important;
   &:hover,
   &:focus {
     color: $color-2 !important;
@@ -61,7 +62,7 @@
     border-width: 0 3px 3px 0;
     display: inline-block;
     margin-left: 2px;
-    padding: 4px;
+    padding: 3.5px;
 
     transform: rotate(-45deg);
     top: -1px;

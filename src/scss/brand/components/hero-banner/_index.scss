@@ -6,11 +6,11 @@
     }
   }
   .max-content-width {
-    .banner-content {
-      .hero-paragraph {
-        font-family: $font-family-medium;
-      }
+    h1 {
+      font-size: 32px;
+      line-height: 36px;
     }
+
     @media (min-width: $breakpoint-md-min) {
       position: absolute;
       top: 50%;
@@ -19,9 +19,10 @@
       .banner-content {
         h1 {
           max-width: 394px;
+          font-size: 60px;
+          line-height: 60px;
         }
-        .hero-paragraph {
-          padding: 12px 0 24px;
+        p:nth-child(2) {
           max-width: 240px;
         }
       }

@@ -123,7 +123,7 @@
 .coupon-box {
   .dark-green-box {
     background: $color-1;
-    .box {
+    .snippetReference {
       width: 70%;
       flex: 0 0 70%;
     }
@@ -134,7 +134,7 @@
   }
   .light-green-box {
     background: $color-3;
-    .box {
+    .snippetReference {
       width: 70%;
       flex: 0 0 70%;
     }
@@ -163,14 +163,14 @@
     p {
       color: $white;
       font-size: 17px;
-      font-weight: $font-weight-button;
+      font-family: $font-family-bold;
       margin-block-start: 0;
       @media (min-width: $breakpoint-md-min) {
         font-size: 28px;
       }
       span {
         font-size: 26px;
-        font-weight: $font-weight-button;
+
         @media (min-width: $breakpoint-md-min) {
           font-size: 48px;
         }
@@ -219,6 +219,7 @@
 .cust-font-p20 {
   font-size: 20px;
   line-height: 24px;
+  font-family: $font-family-medium;
 }
 
 .max-content-width {
@@ -353,6 +354,7 @@
       }
       background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg');
       background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }

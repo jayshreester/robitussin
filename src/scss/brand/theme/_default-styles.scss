@@ -4,26 +4,31 @@ html {
 body {
   p {
     color: $black;
-    font-size: $font-size-regular;
-    line-height: $line-height-24;
+    font-size: $font-size-body;
+    line-height: $line-height-body;
     &.small {
       font-size: $font-size-body-small;
       line-height: $line-height-body-small;
     }
-    a,
+    &.large {
+      font-size: $font-size-body-large-mobile;
+      line-height: $line-height-body-large-mobile;
+      @media (min-width: $breakpoint-md-min) {
+        font-size: $font-size-body-large;
+        line-height: $line-height-body-large;
+      }
+    }
+
     a:hover,
     a:visited {
-      font-size: $font-size-h5;
       text-decoration: underline;
+    }
+    strong {
+      font-family: $font-family-medium;
+      font-weight: normal;
     }
   }
 
-  .medium {
-    font-family: $font-family-medium;
-  }
-  .bold {
-    font-family: $font-family-bold;
-  }
   [class*='hero-banner-'] .image {
     min-height: auto;
   }
@@ -37,20 +42,39 @@ body {
   sup {
     top: -0.5em;
   }
-  // headers
 
-  h4,
-  .h4 {
-    @media (min-width: $breakpoint-sm-min) {
-      line-height: $line-height-h4-mobile;
-      font-size: $font-size-h4-mobile;
+  // headers
+  h4 a,
+  .h4 a {
+    color: $black;
+    font-family: $font-family-bold;
+    font-size: $font-size-h4-mobile;
+    line-height: $line-height-h4-mobile;
+    @media (min-width: $breakpoint-md-min) {
+      font-size: $font-size-h4;
+      line-height: $line-height-h4;
+    }
+    &:hover {
+      color: $color-1;
     }
   }
-
   h5,
   .h5 {
     font-size: $font-size-h5;
     line-height: $line-height-h5;
+    a {
+      color: $black;
+      font-family: $font-family-bold;
+      font-size: $font-size-h5;
+      line-height: $line-height-h5;
+      &:hover {
+        color: $color-1;
+      }
+    }
+  }
+
+  h2 span {
+    color: $color-9;
   }
 
   h1,
@@ -63,7 +87,7 @@ body {
     margin: 0;
     color: $black;
 
-    &.title-h1-style {
+    /*&.title-h1-style {
       font-size: $font-size-h1-mobile;
       line-height: $line-height-36;
       @media (min-width: $breakpoint-md-min) {
@@ -123,7 +147,7 @@ body {
         font-size: $font-size-h5;
         line-height: $line-height-22;
       }
-    }
+    }*/
   }
   // header ends
 
@@ -183,8 +207,10 @@ body {
       }
     }
   }
-
-  #onetrust-consent-sdk #onetrust-accept-btn-handler {
+  #ot-sdk-btn.ot-sdk-show-settings {
+    background-color: $white !important;
+  }
+  #onetrust-consent-sdk #onetrust--btn-handler {
     background-color: $white;
     border-radius: 25px;
     border: 2px solid $color-1;
@@ -205,5 +231,10 @@ body {
   // cookies ends
   .container-fluid {
     max-width: 2800px;
+  }
+  .reference-our-stories-cards {
+    a {
+      line-height: 0;
+    }
   }
 }
