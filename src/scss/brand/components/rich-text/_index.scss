@@ -189,8 +189,7 @@ p {
     height: 380px;
     background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/our-stories/story-hero-bg.jpg')
       no-repeat 0 0;
-    //background-image: url('file:///C:/Users/Ramesh/Desktop/work/story-hero-bg.jpg');
-    //background-image: url('file:///C:/Users/jaysh/Downloads/story-hero-bg.jpg');
+
     background-repeat: no-repeat;
     position: absolute;
     top: -25%;
@@ -271,4 +270,10 @@ p {
 
 sup {
   top: -0.5em !important;
+}
+.dropdowncatlink {
+  @media (min-width: $breakpoint-md-min) {
+    position: absolute;
+    bottom: 0;
+  }
 }

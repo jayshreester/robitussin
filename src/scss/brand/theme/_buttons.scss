@@ -40,6 +40,7 @@
   text-transform: uppercase;
   position: relative;
   padding-left: 0 !important;
+  padding-right: 13px !important;
   &:hover,
   &:focus {
     color: $color-2 !important;
@@ -122,7 +123,7 @@ body {
     padding: 12px 15px !important;
     width: 124px;
     > span.ps-button-label {
-      display: block !important;
+      display: inline-block !important;
     }
   }
   .ps-widget[ps-sku]:hover,
@@ -147,6 +148,46 @@ body {
     .ps-widget[data-ps-sku]:hover {
       margin: 0 auto !important;
       border: none;
+      position: relative;
+      background: none;
+      color: $color-1;
+      padding: 12px 20px !important;
+      &.ps-disabled {
+        padding: 0 !important;
+        background: $grey-1;
+        @media (min-width: $breakpoint-md-min) {
+          margin-top: -35px !important;
+          top: 35px;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        border: solid $color-1;
+        border-top-width: medium;
+        border-right-width: medium;
+        border-bottom-width: medium;
+        border-left-width: medium;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        margin-left: 2px;
+        padding: 3.5px;
+
+        transform: rotate(-45deg);
+        top: -1px;
+        position: relative;
+      }
+    }
+    .ps-widget[ps-sku]:hover,
+    .ps-widget[data-ps-sku]:hover {
+      color: $color-2;
+      &::after {
+        border-color: $color-2;
+      }
     }
   }
 }

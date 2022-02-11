@@ -81,3 +81,27 @@ $accordion-minus-icon: get-icon('minus-icon', $white);
     max-width: 190px !important;
   }
 }
+.reference-about-natural {
+  .box.flex {
+    img {
+      max-width: 100px !important;
+    }
+    p {
+      font-family: $font-family-bold;
+    }
+  }
+}
+@media (min-width: $breakpoint-md-min) {
+  .product-rel-box {
+    padding-bottom: 260px;
+    position: relative;
+  }
+  .product-abs-box {
+    position: absolute;
+    bottom: 0;
+    height: auto !important;
+    &.nops {
+      bottom: 45px;
+    }
+  }
+}

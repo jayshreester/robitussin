@@ -220,7 +220,10 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
             margin: 0 0 0.7rem 0;
             padding: 0 0 0 1rem;
             font-size: $font-size-h5;
-
+            &::before {
+              top: -1px;
+              color: $black;
+            }
             a,
             a:hover,
             a:visited {

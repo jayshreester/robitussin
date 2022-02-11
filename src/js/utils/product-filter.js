@@ -71,6 +71,7 @@
 
       if (this.$targetNode) {
         this.$filterItems?.removeClass('enable');
+        this.$filterItems?.removeClass('active-js'); // J
         this.$targetNode
           ?.find('.cf-' + this.selectedCatgoryId)
           ?.addClass('enable');

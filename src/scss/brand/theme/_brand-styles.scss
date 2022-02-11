@@ -141,6 +141,17 @@
     .image {
       width: 30%;
       flex: 0 0 30%;
+      &.bee {
+        right: 32%;
+        width: 41px;
+        flex: initial;
+        position: absolute;
+
+        top: 40%;
+        @media (min-width: $breakpoint-sm-min) {
+          width: 51px;
+        }
+      }
     }
   }
   .flex {
@@ -318,7 +329,7 @@
 }
 .reference-overlap-green-box {
   img {
-    height: 263px;
+    height: 255px;
     max-width: 460px;
     width: 100%;
     object-fit: contain;

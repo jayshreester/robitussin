@@ -3,7 +3,7 @@ import './utils/class-to-data-attr';
 import './utils/global-methods';
 import './components/_bp-components-object';
 import './utils/ie-checker';
-import './components/gsk-global-gtm-ga-tagging';
+//import './components/gsk-global-gtm-ga-tagging';
 import './components/exit-notification';
 // import './libs/hammer'
 import './libs/slugify';
