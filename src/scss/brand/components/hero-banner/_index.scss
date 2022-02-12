@@ -5,7 +5,7 @@
       min-height: 300px;
     }
   }
-  .max-content-width {
+  .hero-banner-content {
     h1 {
       font-size: 32px;
       line-height: 36px;
@@ -28,4 +28,48 @@
       }
     }
   }
+  .prod-find-modal {
+    position: absolute;
+
+    width: 100%;
+    top: 0;
+    @media (min-width: $breakpoint-md-min) {
+      top: 100px;
+    }
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: none;
+    z-index: 101;
+  }
+  .prodfindlightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 0.8;
+    display: none;
+    z-index: 100;
+    top: 0;
+  }
+  .prod-find-close {
+    display: block;
+    @media (min-width: $breakpoint-md-min) {
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+    p {
+      display: inline-block;
+      font-family: $font-family-medium;
+      font-size: 28px;
+      cursor: pointer;
+    }
+  }
+  .backsubmenupf {
+    display: none;
+  }
+}
+.prod-find-close {
+  display: none;
 }

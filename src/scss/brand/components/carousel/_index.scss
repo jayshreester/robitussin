@@ -110,16 +110,7 @@
 }
 
 .mousehover-section {
-  .main-object {
-    transform: rotate(12deg);
-    z-index: 2;
-    width: 250px;
-    margin: 0 auto -55px;
-    @media (min-width: $breakpoint-md-min) {
-      width: 340px;
-      margin: 0 0 -65px;
-    }
-  }
+  
   .tooltip-data {
     position: absolute;
     top: -95px;
@@ -172,8 +163,8 @@
     @media (min-width: $breakpoint-md-min) {
       width: 181px;
       height: 191px !important;
-      top: 40px;
-      left: -70px;
+      top: 60px;
+      left: 0;
     }
   }
   .object2 {
@@ -207,11 +198,31 @@
       width: 225px;
       height: 202px !important;
       bottom: 70px;
-      right: 100px;
+      right: 0;
     }
   }
+
   .absolute-img-right {
     cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    max-width: 120px;
+    right: 0;
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 180px;
+      top: 30%;
+    }
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 140px;
+      top: 0;
+    }
+    @media (min-width: $breakpoint-lg-min) {
+      max-width: 175px;
+    }
+    @media (min-width: $breakpoint-xl-min) {
+      max-width: 256px;
+    }
     .tooltip-data {
       position: absolute;
       top: 40px;

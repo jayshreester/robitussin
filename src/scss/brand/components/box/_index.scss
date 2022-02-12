@@ -105,3 +105,16 @@ $accordion-minus-icon: get-icon('minus-icon', $white);
     }
   }
 }
+.reference-100-Percent-Drug-Free-Family-banner {
+  background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/naturals/naturals-hero-bkgd-robitussin-mobile.jpg');
+  @media (min-width: $breakpoint-md-min) {
+    background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/naturals/naturals-hero-bkgd-robitussin-desktop.jpg');
+  }
+  background-size: cover;
+  background-repeat: repeat;
+  img {
+    max-width: 415px !important;
+    display: block;
+    margin: 0 auto;
+  }
+}

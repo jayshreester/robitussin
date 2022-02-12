@@ -63,7 +63,7 @@
     $(this).removeClass('external');
   });
 
-  if ($(window).width() >= 768) {
+  if ($(window).width() >= 1201) {
     $('.object1, .object2, .absolute-img-right').mouseover(function() {
       $(this)
         .find('.tooltip-data')
@@ -75,6 +75,16 @@
         .hide();
     });
   }
+
+  // lightbox
+
+  $('.prodfindbtn').click(function() {
+    $('.prod-find-modal, .prodfindlightbox').show();
+  });
+  $('.prod-find-close p').click(function() {
+    $('.prod-find-modal, .prodfindlightbox').hide();
+  });
+  // lightbox ends
 
   $('.megamenu-main-nav')
     .has('ul.navigation-root')

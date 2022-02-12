@@ -89,11 +89,15 @@
         opacity: 1;
         cursor: pointer;
       }
-      @media (min-width: $breakpoint-md-min) {
+      @media (min-width: $breakpoint-sm-min) {
         display: inline-block;
         width: 50%;
       }
       @media (min-width: $breakpoint-md-min) {
+        display: inline-block;
+        width: 33%;
+      }
+      @media (min-width: $breakpoint-lg-min) {
         width: 25%;
       }
       &::before {
