@@ -9,16 +9,19 @@ $accordion-minus-icon: get-icon('minus-icon', $white);
     width: 178px !important;
   }
 }
-.filteraccord {
+#content .filteraccord {
   position: relative;
   padding-right: 30%;
-  line-height: 28px;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
   @media (min-width: $breakpoint-sm-min) {
     padding-right: 0;
     padding-top: 12px;
   }
   @media (min-width: $breakpoint-md-min) {
     padding-top: 0;
+    font-size: $font-size-h3;
+    line-height: $line-height-h3;
   }
   &::after {
     background-image: $accordion-plus-icon;
@@ -33,6 +36,12 @@ $accordion-minus-icon: get-icon('minus-icon', $white);
     }
   }
   &.active {
+    font-size: $font-size-h3-mobile;
+    line-height: $line-height-h3-mobile;
+    @media (min-width: $breakpoint-md-min) {
+      font-size: $font-size-h3;
+      line-height: $line-height-h3;
+    }
     &::after {
       background-image: $accordion-minus-icon;
     }
@@ -116,5 +125,22 @@ $accordion-minus-icon: get-icon('minus-icon', $white);
     max-width: 415px !important;
     display: block;
     margin: 0 auto;
+  }
+}
+#content {
+  .reference-taste-the-real-honey {
+    img {
+      width: auto;
+      margin: 0 0 0 30px;
+      @media (min-width: $breakpoint-md-min) {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+  }
+  .reference-our-stories-relief-beyond {
+    p.large {
+      margin: 10px 0 25px;
+    }
   }
 }

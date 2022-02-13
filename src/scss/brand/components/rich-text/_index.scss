@@ -13,18 +13,6 @@
   width: 240px;
 }
 
-.absolute-img-right {
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  max-width: 120px;
-  right: 0;
-  @media (min-width: $breakpoint-md-min) {
-    max-width: 256px;
-    top: 0;
-  }
-}
-
 .reference-cards-block {
   .richText {
     margin-top: 20px;
@@ -96,6 +84,22 @@ p {
       width: 100%;
       height: auto;
     }
+    span {
+      &.image {
+        display: inline-block;
+      }
+      &.text {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        margin: 0 2% 0 4%;
+        font-family: $font-family-medium;
+
+        @media (min-width: $breakpoint-sm-min) {
+          width: 78%;
+        }
+      }
+    }
   }
   &.article-para-reference {
     font-size: $font-size-h5;
@@ -107,25 +111,6 @@ p {
   &.article-para-reference-indent {
     padding: 0 0 0 1em;
     font-size: $font-size-h5;
-  }
-  span {
-    &.image {
-      display: inline-block;
-    }
-    &.text {
-      display: inline-block;
-      vertical-align: top;
-      width: 100%;
-      margin: 0 2% 0 4%;
-      line-height: $line-height-25;
-      @media (min-width: $breakpoint-sm-min) {
-        width: 78%;
-        width: 100%;
-        @media (max-width: $breakpoint-sm-max) {
-          width: 78%;
-        }
-      }
-    }
   }
 }
 
