@@ -35,7 +35,21 @@ $grays: map-merge(
 );
 
 //--------------------------------------------------------------
-
+:root {
+  --color-1: #008945;
+  --color-2: #006a35;
+  --color-3: #2ea85d;
+  --color-4: #52cf81;
+  --color-5: #edfaf2;
+  --color-6: #313131;
+  --color-7: #ef8b21;
+  --color-8: #e76468;
+  --color-9: #a3216f;
+  --grey-1: #606060;
+  --grey-2: #bcbcbc;
+  --grey-3: #f4f6f6;
+  --grey-4: #fafafa;
+}
 /*
 ** BASE THEME COLORS
 */
@@ -49,7 +63,7 @@ $color-6: #313131;
 $color-7: #ef8b21;
 $color-8: #e76468;
 $color-9: #a3216f;
-
+$color-10: #a32161;
 $grey-1: #606060;
 $grey-2: #bcbcbc;
 $grey-3: #f4f6f6;
@@ -65,9 +79,13 @@ $theme-colors: map-merge(
     '5': $color-5,
     '6': $color-6,
     '7': $color-7,
-    '8': $grey-1,
-    '9': $grey-2,
-    '10': $grey-3
+    '8': $color-8,
+    '9': $color-9,
+    '10': $color-10,
+    '11': $grey-1,
+    '12': $grey-2,
+    '13': $grey-3,
+    '14': $grey-4
   ),
   $theme-colors
 );
@@ -86,7 +104,13 @@ $filter-theme-colors: (
 $text-theme-colors: (
   '1': $color-1,
   '2': $color-2,
-  '3': $color-3
+  '3': $color-3,
+  '4': $color-4,
+  '5': $color-5,
+  '6': $color-6,
+  '7': $color-7,
+  '8': $color-8,
+  '9': $color-9
 );
 
 $background-theme-colors: (

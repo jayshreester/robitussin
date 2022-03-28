@@ -9,6 +9,11 @@
     ).each((ind, el) => {
       let t = $(el);
       if (!t.is('[tabindex]')) {
+        /*if (t.is('.bv-content-search-btn')) {
+          el.tabIndex = -1;
+          return;
+        }*/
+
         if (t.is('.select-country')) {
           //el.tabIndex = index;
           //index++;

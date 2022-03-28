@@ -1,3 +1,10 @@
+.whbottlevideoimg {
+  img {
+    max-width: 809px;
+    margin: 0 auto;
+    display: block;
+  }
+}
 .your-stories-carousel {
   background-color: var(--color-1);
   .lSSlideOuter .lSPager.lSpg {
@@ -6,12 +13,12 @@
       a {
         width: 16px;
         height: 16px;
-        border: solid #ffffff 2px;
+        border: solid $white 2px;
       }
       &:hover,
       &.active {
         a {
-          background-color: #ffffff;
+          background-color: $white;
         }
       }
     }
@@ -21,16 +28,19 @@
     height: 60px;
     margin-top: -30px;
     opacity: 1;
+    span {
+      display: none;
+    }
     &.lSPrev {
       left: 0;
-      background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/left-arrow.png')
+      background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/left-arrow.png?auto=format')
         no-repeat;
       background-size: cover;
       background-position: 0 0;
     }
     &.lSNext {
       right: 0;
-      background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/right-arrow.png')
+      background: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/src/right-arrow.png?auto=format')
         no-repeat;
       background-size: cover;
       background-position: 0 0;
@@ -42,10 +52,9 @@
   }
   .carousel-copy {
     font-size: 24px;
+    line-height: 1.17;
   }
-  .carousel-sub-copy {
-    font-size: 18px;
-  }
+
   .flex[class*='align-'] * {
     align-items: center !important;
   }
@@ -68,25 +77,33 @@
     width: 200px;
     h2 {
       font-size: 32px;
-      line-height: 36px;
-      color: #000000;
+      line-height: 1.15;
+      color: $black;
       margin-bottom: 30px;
       span {
         display: block;
         &.pink-color {
-          color: #a3216f;
+          color: var(--color-9);
         }
         &.yellow-color {
-          color: #ef8b21;
+          color: var(--color-7);
         }
       }
-      @media (min-width: $breakpoint-md-min) {
+      @media (min-width: $breakpoint-sm-min) {
         font-size: 48px;
-        line-height: 44px;
+        line-height: 0.92;
       }
     }
-    @media (min-width: $breakpoint-md-min) {
+    @media (min-width: $breakpoint-sm-min) {
       width: 251px;
+      bottom: 50px;
+      left: 50px;
+    }
+    @media (min-width: $breakpoint-md-min) {
+      bottom: 0;
+      left: 10px;
+    }
+    @media (min-width: $breakpoint-lg-min) {
       bottom: 50px;
       left: 50px;
     }
@@ -95,7 +112,7 @@
       top: 30px;
       bottom: inherit;
       left: 5px;
-      @media (min-width: $breakpoint-md-min) {
+      @media (min-width: $breakpoint-sm-min) {
         width: 270px;
         top: 30px;
         bottom: inherit;
@@ -118,7 +135,7 @@
     display: none;
     &:before {
       content: '';
-      background: #000000;
+      background: $black;
       width: 1px;
       height: 140px;
       position: absolute;
@@ -127,7 +144,7 @@
     }
     &::after {
       content: '';
-      background: #000000;
+      background: $black;
       width: 3px;
       height: 3px;
       position: absolute;
@@ -138,14 +155,14 @@
     h4 {
       font-size: 16px;
       padding-bottom: 5px;
-      font-family: $font-family-bold;
+      font-family: var(--font-family-bold);
     }
     p {
       font-size: 14px;
-      color: #000000;
+      color: $black;
       margin: 0;
-      font-family: $font-family-medium;
-      line-height: 18px;
+      font-family: var(--font-family-medium);
+      line-height: 1.125;
     }
   }
   .object1 {
@@ -176,7 +193,7 @@
     z-index: 1;
     cursor: pointer;
     h4 {
-      color: #ef8b21;
+      color: var(--color-7);
       width: 80%;
     }
     .tooltip-data {
@@ -229,7 +246,7 @@
       padding-left: 0 !important;
       padding-bottom: 15px !important;
       h4 {
-        color: #a3216f;
+        color: var(--color-9);
       }
       &:before {
         width: 90%;
@@ -247,7 +264,7 @@
 .reference-whats-shot {
   .lSAction > a {
     top: 43%;
-    background-color: $color-3;
+    background-color: var(--color-3);
     background-image: none;
     width: 40px;
     height: 40px;
@@ -282,4 +299,11 @@
       right: 16px;
     }
   }
+}
+.carousel-slides {
+  align-items: flex-end;
+}
+.hero-banner-h5-v1 li .carousel-content > .paragraphSystem > .box {
+  position: relative;
+  display: block;
 }

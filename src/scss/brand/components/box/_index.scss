@@ -1,146 +1,347 @@
-$accordion-plus-icon: get-icon('plus-icon', $white);
-$accordion-minus-icon: get-icon('minus-icon', $white);
-.filterlogo {
-  display: none;
-  @media (min-width: $breakpoint-md-min) {
-    display: block;
+#content {
+  .pdpavailabeimagebox {
+    max-width: 285px !important;
+    margin: 0 auto !important;
   }
-  img {
-    width: 178px !important;
-  }
-}
-#content .filteraccord {
-  position: relative;
-  padding-right: 30%;
-  font-size: $font-size-body;
-  line-height: $line-height-body;
-  @media (min-width: $breakpoint-sm-min) {
-    padding-right: 0;
-    padding-top: 12px;
-  }
-  @media (min-width: $breakpoint-md-min) {
-    padding-top: 0;
-    font-size: $font-size-h3;
-    line-height: $line-height-h3;
-  }
-  &::after {
-    background-image: $accordion-plus-icon;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 10px;
-    top: 0;
-    content: '';
-    @media (min-width: $breakpoint-md-min) {
-      display: none;
+  .reference-natural-ingredients {
+    img {
+      max-width: 190px !important;
     }
   }
-  &.active {
-    font-size: $font-size-h3-mobile;
-    line-height: $line-height-h3-mobile;
-    @media (min-width: $breakpoint-md-min) {
-      font-size: $font-size-h3;
-      line-height: $line-height-h3;
-    }
-    &::after {
-      background-image: $accordion-minus-icon;
-    }
-  }
-}
-.filtercontent {
-  display: none;
-  @media (min-width: $breakpoint-md-min) {
-    display: block !important;
-  }
-}
-.findmyrobitussinbtn,
-.filterbutton {
-  opacity: 0.5;
-  cursor: auto;
-}
-.enable-cta {
-  .findmyrobitussinbtn,
-  .filterbutton {
-    opacity: 1;
-    cursor: pointer;
-  }
-}
-.reference-product-filter-adults,
-.reference-product-filter-children {
-  @media (min-width: $breakpoint-md-min) {
-    .black-bg-new {
-      height: 320px;
-      .bg-color-1 {
-        margin-top: -60px;
+  .reference-about-natural {
+    .box.flex {
+      img {
+        max-width: 100px !important;
+      }
+      p {
+        font-family: var(--font-family-bold);
       }
     }
   }
-}
-.article-box {
-  img {
-    margin-top: 10px;
-  }
-}
-.pdpavailabeimagebox {
-  max-width: 285px !important;
-  margin: 0 auto !important;
-}
-.reference-natural-ingredients {
-  img {
-    max-width: 190px !important;
-  }
-}
-.reference-about-natural {
-  .box.flex {
-    img {
-      max-width: 100px !important;
-    }
-    p {
-      font-family: $font-family-bold;
-    }
-  }
-}
-@media (min-width: $breakpoint-md-min) {
+
   .product-rel-box {
-    padding-bottom: 260px;
-    position: relative;
+    @media (min-width: $breakpoint-md-min) {
+      padding-bottom: 260px;
+      position: relative;
+      img {
+        width: 99%;
+      }
+    }
   }
   .product-abs-box {
-    position: absolute;
-    bottom: 0;
-    height: auto !important;
-    &.nops {
-      bottom: 45px;
+    @media (min-width: $breakpoint-md-min) {
+      position: absolute;
+      bottom: 0;
+      height: auto !important;
+      &.nops {
+        bottom: 45px;
+      }
     }
   }
-}
-.reference-100-Percent-Drug-Free-Family-banner {
-  background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/naturals/naturals-hero-bkgd-robitussin-mobile.jpg');
-  @media (min-width: $breakpoint-md-min) {
-    background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/naturals/naturals-hero-bkgd-robitussin-desktop.jpg');
+
+  .reference-100-Percent-Drug-Free-Family-banner {
+    background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/naturals/naturals-hero-bkgd-robitussin-mobile.jpg?auto=format');
+    @media (min-width: $breakpoint-md-min) {
+      background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/pages/naturals/naturals-hero-bkgd-robitussin-desktop.jpg?auto=format');
+    }
+    background-size: cover;
+    background-repeat: repeat;
+    img {
+      max-width: 415px !important;
+      margin: 0 auto;
+      display: block;
+    }
+    .logo-img-width {
+      img {
+        max-width: 186px !important;
+        margin: 0;
+        @media (min-width: $breakpoint-md-min) {
+          max-width: 213px !important;
+        }
+      }
+    }
   }
-  background-size: cover;
-  background-repeat: repeat;
-  img {
-    max-width: 415px !important;
-    display: block;
-    margin: 0 auto;
-  }
-}
-#content {
+
   .reference-taste-the-real-honey {
     img {
-      width: auto;
+      width: 95px;
       margin: 0 0 0 30px;
       @media (min-width: $breakpoint-md-min) {
         margin: 0 auto;
-        width: 100%;
+
+        display: block;
       }
     }
   }
   .reference-our-stories-relief-beyond {
     p.large {
       margin: 10px 0 25px;
+    }
+  }
+}
+.coupon-box {
+  .dark-green-box {
+    background: var(--color-1);
+    .snippetReference {
+      width: 70%;
+      flex: 0 0 70%;
+    }
+    .image {
+      width: 30%;
+      flex: 0 0 30%;
+    }
+  }
+  .light-green-box {
+    background: var(--color-3);
+    .snippetReference {
+      width: 70%;
+      flex: 0 0 70%;
+    }
+    .image {
+      width: 30%;
+      flex: 0 0 30%;
+      &.bee {
+        right: 32%;
+        width: 41px;
+        flex: initial;
+        position: absolute;
+
+        top: 40%;
+        @media (min-width: $breakpoint-sm-min) {
+          width: 51px;
+        }
+      }
+    }
+  }
+  .flex {
+    &.cols-d-2 {
+      &.s-d-1 > {
+        div > {
+          .content {
+            gap: 0;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  .btn-primary {
+    color: $white;
+    border-color: $white;
+  }
+  .richText-content {
+    p {
+      color: $white;
+      font-size: 17px;
+      font-family: var(--font-family-bold);
+      margin-block-start: 0;
+      @media (min-width: $breakpoint-md-min) {
+        font-size: 28px;
+        line-height: 1;
+      }
+      span {
+        font-size: 26px;
+
+        @media (min-width: $breakpoint-md-min) {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+}
+.real-honey-box {
+  .image {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 20%;
+      flex: 0 0 20%;
+    }
+  }
+  .richText {
+    @media (min-width: $breakpoint-md-min) {
+      max-width: 80%;
+      flex: 0 0 80%;
+    }
+  }
+}
+.ovr-gr-box {
+  height: auto;
+  @media (min-width: $breakpoint-md-min) {
+    height: 250px;
+  }
+  .light-green-bg {
+    height: auto;
+    @media (min-width: $breakpoint-md-min) {
+      height: 370px;
+      margin-top: -60px;
+    }
+  }
+}
+.reference-overlap-green-box {
+  img {
+    height: 255px;
+    max-width: 460px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .box {
+    .box {
+      .box {
+        .richText-content {
+          max-width: 324px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.green-box-icon-img {
+  img {
+    width: 112px;
+    height: 112px;
+  }
+}
+#content .light-green-bg p {
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: var(--font-family-medium);
+}
+.honey-ovr-box {
+  &.ovr-gr-box {
+    @media (min-width: $breakpoint-md-min) {
+      height: 310px;
+    }
+    .light-green-bg {
+      @media (min-width: $breakpoint-md-min) {
+        height: 430px;
+        background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/desktop/honey-honeycomb-bkgd-robitussin-desktop.jpg?auto=format');
+        background-repeat: no-repeat;
+      }
+      background-image: url('/content/dam/cf-consumer-healthcare/bp-robitussin-v2/en_US/products/product-01/mobile/honey-honeycomb-bkgd-robitussin-mobile.jpg?auto=format');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+.productwrap {
+  background: $white;
+  opacity: 1;
+  z-index: 1;
+  .productwrap-comp {
+    padding: 0;
+    .richText {
+      max-width: 100%;
+      p {
+        margin: 0;
+        padding-top: 6px;
+        font-family: var(--font-family-medium);
+      }
+    }
+    .image.component {
+      width: 260px;
+    }
+  }
+  .richText {
+    .text-center-d {
+      margin: 24px 0 43px 0;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  @media (min-width: $breakpoint-md-min) {
+    max-width: 500px;
+    position: absolute;
+    box-shadow: 0px 3px 6px #0000004d;
+    top: 90%;
+    height: auto;
+    height: auto !important;
+
+    .productwrap-comp {
+      padding: 22px 0 0 30px;
+      .richText {
+        max-width: 190px;
+      }
+      .image.component {
+        position: absolute;
+        top: -50px;
+        right: 20px;
+        width: 260px;
+      }
+    }
+  }
+  @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-max) {
+    &.left-align-product,
+    &.right-align-product {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  @media (min-width: $breakpoint-lg-min) {
+    &.left-align-product {
+      right: 70px;
+    }
+    &.right-align-product {
+      left: 70px;
+    }
+  }
+}
+
+// DM products
+.dm-products {
+  .box {
+    &.component {
+      &.section {
+        justify-content: center;
+      }
+    }
+  }
+  .image {
+    .component-content {
+      &.left {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Natural products
+.reference-products-Natural-products {
+  .max-content-width {
+    max-width: 825px !important;
+  }
+  .image {
+    .component-content {
+      &.left {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.reference-products-12hr-products {
+  .max-content-width {
+    max-width: 570px !important;
+  }
+  .image {
+    .component-content {
+      &.left {
+        text-align: center;
+      }
+    }
+  }
+}
+.reference-our-stories-cards {
+  img {
+    margin-bottom: -10px;
+  }
+}
+.mhbanner {
+  img {
+    min-height: 230px;
+    @media (min-width: $breakpoint-md-min) {
+      min-height: 330px;
     }
   }
 }

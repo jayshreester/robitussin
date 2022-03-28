@@ -13,7 +13,7 @@
 
           > li {
             list-style-type: none;
-            color: $grey-1;
+            color: var(--color-11);
             margin: 0 0 0.7rem 0;
             padding: 0;
             font-size: $font-size-body-small;
@@ -27,7 +27,7 @@
             }
 
             &.bottom-footnote-devider {
-              border: 1px solid #606060;
+              border: 1px solid var(--color-11);
               padding: 1rem;
             }
 
@@ -47,12 +47,16 @@
           > li {
             color: $black;
             margin: 0 0 0.7rem 0;
-            padding: 0 0 0 21px;
+            padding: 0 0 0 27px;
             font-size: $font-size-h5;
-            line-height: $line-height-24;
+            line-height: 1.5;
 
             span {
               display: block;
+            }
+            &::before {
+              line-height: 0;
+              top: 14px;
             }
 
             a,
@@ -62,9 +66,6 @@
               text-decoration: underline;
               word-break: break-word;
             }
-            &::before {
-              /*line-height: 1.375;*/
-            }
           }
         }
       }
@@ -72,7 +73,7 @@
       ul,
       ol {
         &.article-para-list {
-          margin: 1.5rem 0 2rem 0;
+          margin: 1rem 0;
           font-size: $font-size-h5;
           sup {
             top: -0.7em !important;
@@ -80,26 +81,24 @@
 
           > li {
             color: $black;
-            margin: 0 0 0.7rem 0;
+            margin: 0 0 0.5rem 0;
             padding: 0 0 0 1rem;
             font-size: $font-size-h5;
-            line-height: $line-height-28;
+            line-height: 1.75;
 
             sup {
               top: -0.7em !important;
             }
             &::before {
-              top: 3px;
-              @media (min-width: $breakpoint-md-min) {
-                top: 5px;
-              }
+              line-height: 1;
+              top: 1px;
             }
             a,
             a:hover,
             a:visited {
               font-size: $font-size-h5;
               text-decoration: underline;
-              color: $color-1;
+              color: var(--color-1);
             }
           }
         }

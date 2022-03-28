@@ -9,8 +9,8 @@ import './components/exit-notification';
 import './libs/slugify';
 // import './libs/jquery.ui.touch-punch'
 
-import './utils/clickable-box';
-import './utils/gtm-tracker';
+//import './utils/clickable-box';
+//import './utils/gtm-tracker';
 import './utils/in-viewport';
 import './utils/interval';
 
@@ -34,15 +34,15 @@ import './components/fullbox';
 //import './components/table';
 import './components/revtrax';
 import './components/forms';
-import './components/bp-sharer';
+//import './components/bp-sharer';
 import './components/popup-youtube-video';
 //import './components/action-link';
 //import './components/bp-video-player';
 //import './components/bp-font-resizer';
-import './components/bp-share-container';
+//import './components/bp-share-container';
 import './components/bp-tab-indexer-bp1';
 //import './components/bp-content-loader';
-import './components/bp-toggler';
+//import './components/bp-toggler';
 import './utils/switchable-image';
 import './utils/product-filter';
 //import './utils/youtube-video';

@@ -24,7 +24,7 @@
     prevHtml: '',
     nextHtml: '',
     rtl: false,
-    adaptiveHeight: false,
+    adaptiveHeight: true,
     vertical: false,
     verticalHeight: 500,
     vThumbWidth: 100,
@@ -205,9 +205,9 @@
       controls: function() {
         if (settings.controls) {
           $el.after(
-            '<div class="lSAction"><a class="lSPrev">' +
+            '<div class="lSAction"><a role="button" aria-label="Previous" class="lSPrev"><span aria-hidden="true"><<</span>' +
               settings.prevHtml +
-              '</a><a class="lSNext">' +
+              '</a><a role="button" aria-label="Next" class="lSNext"><span aria-hidden="true">>></span>' +
               settings.nextHtml +
               '</a></div>'
           );
@@ -440,14 +440,16 @@
                 thumb +
                 '" /></a></li>';
             } else {
-              pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
+              pagers +=
+                '<li><a href="#" role="button">' + (i + 1) + '</a></li>';
             }
             if (settings.mode === 'slide') {
               if (v >= w - elSize - settings.slideMargin) {
                 i = i + 1;
                 var minPgr = 2;
                 if (settings.autoWidth) {
-                  pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
+                  pagers +=
+                    '<li><a href="#" role="button">' + (i + 1) + '</a></li>';
                   minPgr = 1;
                 }
                 if (i < minPgr) {
@@ -486,6 +488,7 @@
           }
           var $pager = $cSouter.find('.lSPager').find('li');
           $pager.first().addClass('active');
+
           $pager.on('click', function() {
             if (settings.loop === true && settings.mode === 'slide') {
               scene =
@@ -582,6 +585,7 @@
         var sc = 0;
         if (scene * settings.slideMove < length) {
           ob.removeClass('active');
+          ob.find('a').removeAttr('aria-selected');
           if (!this.doCss() && settings.mode === 'fade' && t === false) {
             ob.fadeOut(settings.speed);
           }
@@ -621,8 +625,12 @@
             ob.eq(sc).fadeIn(settings.speed);
           }
           ob.eq(sc).addClass('active');
+          ob.eq(sc)
+            .find('a')
+            .attr('aria-selected', true);
         } else {
           ob.removeClass('active');
+
           ob.eq(ob.length - 1).addClass('active');
           if (!this.doCss() && settings.mode === 'fade' && t === false) {
             ob.fadeOut(settings.speed);

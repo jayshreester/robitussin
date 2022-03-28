@@ -6,11 +6,6 @@
     }
   }
   .hero-banner-content {
-    h1 {
-      font-size: 32px;
-      line-height: 36px;
-    }
-
     @media (min-width: $breakpoint-md-min) {
       position: absolute;
       top: 50%;
@@ -20,7 +15,7 @@
         h1 {
           max-width: 394px;
           font-size: 60px;
-          line-height: 60px;
+          line-height: 1;
         }
         p:nth-child(2) {
           max-width: 240px;
@@ -61,7 +56,7 @@
     }
     p {
       display: inline-block;
-      font-family: $font-family-medium;
+      font-family: var(--font-family-medium);
       font-size: 28px;
       cursor: pointer;
     }
@@ -117,6 +112,21 @@
     @media (min-width: $breakpoint-md-min) {
       height: 700px;
       object-fit: cover;
+    }
+  }
+}
+.drug-free-banner {
+  .h1 span {
+    display: block;
+  }
+  .h2 {
+    font-family: var(--font-family-medium) !important;
+    font-weight: normal;
+    padding-top: 10px;
+  }
+  p {
+    span {
+      font-family: var(--font-family-bold);
     }
   }
 }

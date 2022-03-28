@@ -127,6 +127,11 @@
         if (isLink || isContentMenu) {
           unbindAll();
         }
+      })
+      .on('keyup', e => {
+        if (e.keyCode == 27) {
+          unbindAll();
+        }
       });
   }
 

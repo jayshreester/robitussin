@@ -1,24 +1,24 @@
 .btn {
   text-decoration: none;
-  font-family: $font-family-bold;
+  font-family: var(--font-family-bold);
   font-size: $font-size-button;
   &:hover,
   &:focus {
-    color: $color-2;
+    color: var(--color-2);
     text-decoration: none;
     font-size: $font-size-button;
   }
 }
 
 .btn-primary {
-  border: $button-border-size solid $color-1;
-  color: $color-1;
+  border: $button-border-size solid var(--color-1);
+  color: var(--color-1);
   border-radius: 99px;
   padding: 13px 25px !important;
   &:hover,
   &:focus {
     color: $white !important;
-    background-color: $color-1;
+    background-color: var(--color-1);
   }
 }
 
@@ -29,23 +29,23 @@
   padding: 13px 25px !important;
   &:hover,
   &:focus {
-    color: $color-4;
+    color: var(--color-4);
     background-color: transparent;
-    border-color: $color-4;
+    border-color: var(--color-4);
   }
 }
 
 .btn-secondary {
-  color: $color-1;
+  color: var(--color-1);
   text-transform: uppercase;
   position: relative;
   padding-left: 0 !important;
   padding-right: 13px !important;
   &:hover,
   &:focus {
-    color: $color-2 !important;
+    color: var(--color-2) !important;
     &::after {
-      border-color: $color-2;
+      border-color: var(--color-2);
     }
   }
 }
@@ -55,7 +55,7 @@
     position: absolute;
     content: '';
     right: 0;
-    border: solid $color-1;
+    border: solid var(--color-1);
     border-top-width: medium;
     border-right-width: medium;
     border-bottom-width: medium;
@@ -76,7 +76,7 @@
   position: relative;
   &:hover,
   &:focus {
-    color: $color-4 !important;
+    color: var(--color-4) !important;
   }
   &::after {
     border-color: $white;
@@ -94,11 +94,11 @@
 a.cta-link {
   display: block;
   border: none;
-  color: $color-1;
+  color: var(--color-1);
   text-decoration: underline;
   &:hover,
   &:focus {
-    color: $color-1;
+    color: var(--color-1);
     text-decoration: none;
   }
 }
@@ -114,10 +114,10 @@ body {
   .ps-widget[ps-sku]:hover,
   .ps-widget[data-ps-sku]:hover {
     border-radius: 35px;
-    border: 2px solid $color-1;
+    border: 2px solid var(--color-1);
     box-sizing: border-box;
-    color: $color-1;
-    font-family: $font-family-bold;
+    color: var(--color-1);
+    font-family: var(--font-family-bold);
     font-size: $font-size-button;
     line-height: initial;
     padding: 12px 15px !important;
@@ -128,16 +128,16 @@ body {
   }
   .ps-widget[ps-sku]:hover,
   .ps-widget[data-ps-sku]:hover {
-    background-color: $color-1;
+    background-color: var(--color-1);
     color: $white;
   }
   .ps-widget[ps-sku].ps-disabled {
     padding: 0 !important;
     width: 200px;
     span.ps-button-label {
-      line-height: 40px;
+      line-height: 2.25;
       color: $white;
-      background-color: $color-1;
+      background-color: var(--color-1);
     }
   }
   &.template-product-landing,
@@ -150,11 +150,11 @@ body {
       border: none;
       position: relative;
       background: none;
-      color: $color-1;
+      color: var(--color-1);
       padding: 12px 20px !important;
       &.ps-disabled {
         padding: 0 !important;
-        background: $grey-1;
+        background: var(--color-11);
         @media (min-width: $breakpoint-md-min) {
           margin-top: -35px !important;
           top: 35px;
@@ -167,7 +167,7 @@ body {
         position: absolute;
         content: '';
         right: 0;
-        border: solid $color-1;
+        border: solid var(--color-1);
         border-top-width: medium;
         border-right-width: medium;
         border-bottom-width: medium;
@@ -184,9 +184,9 @@ body {
     }
     .ps-widget[ps-sku]:hover,
     .ps-widget[data-ps-sku]:hover {
-      color: $color-2;
+      color: var(--color-2);
       &::after {
-        border-color: $color-2;
+        border-color: var(--color-2);
       }
     }
   }

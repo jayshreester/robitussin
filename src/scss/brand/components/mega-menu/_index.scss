@@ -38,12 +38,12 @@
   h4,
   h5,
   h6 {
-    font-family: $font-family-bold;
+    font-family: var(--font-family-bold);
   }
   .btn-primary,
   .btn-secondary {
-    font-family: $font-family-bold;
-    color: $color-1;
+    font-family: var(--font-family-bold);
+    color: var(--color-1);
   }
   .menu-dropdown-product {
     img {
@@ -52,7 +52,7 @@
     p {
       margin: 0;
       a {
-        font-family: $font-family-bold;
+        font-family: var(--font-family-bold);
         font-size: $font-size-body-small;
         line-height: $line-height-body-small;
         text-decoration: none;
@@ -99,7 +99,7 @@
     }
     &.content-product-finder {
       .content {
-        background-color: $color-1;
+        background-color: var(--color-1);
       }
     }
     &.activesubmenu {
@@ -145,7 +145,7 @@
   }
   &-logo {
     &::after {
-      background-color: $color-1;
+      background-color: var(--color-1);
     }
     > * {
       /*MAIN LOGO CONTAINER*/
@@ -164,7 +164,7 @@
 
   .country-selected,
   a.top-bar-link {
-    font-family: $font-family-secondary;
+    font-family: var(--font-family-alt);
     border: none;
     &:hover {
       text-decoration: underline !important;
@@ -183,7 +183,7 @@
       }
     }
     * {
-      color: $color-6;
+      color: var(--color-6);
     }
     > .inner {
       > * {
@@ -194,7 +194,7 @@
                 font-size: $font-size-body-small;
                 padding: 10px 0;
                 &:hover {
-                  color: $color-1;
+                  color: var(--color-1);
                   text-decoration: underline;
                 }
               }
@@ -230,9 +230,10 @@
       }
       > a {
         @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-lg-max) {
-          font-size: $font-size-body-small;
+          font-size: 13px;
+          font-family: var(--font-family-medium);
         }
-        font-family: $font-family-bold;
+        font-family: var(--font-family-bold);
         text-transform: uppercase;
         display: inline-block;
         width: auto;
@@ -247,9 +248,16 @@
         .navigation-item-decoration {
           display: none;
         }
+        &.outlined {
+          @media (min-width: $breakpoint-md-min) {
+            background-color: $white;
+            color: var(--color-1);
+            outline: none;
+          }
+        }
       }
       .mobilesubnavicon {
-        border: solid $color-1;
+        border: solid var(--color-1);
         border-width: 0 3px 3px 0;
         display: inline-block;
         margin-left: 8px;

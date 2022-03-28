@@ -4,12 +4,12 @@
       a {
         color: $black;
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.5;
         text-decoration: none;
         &:hover {
           font-size: 20px;
-          line-height: 24px;
-          color: $color-1;
+          line-height: 1.5;
+          color: var(--color-1);
           text-decoration: underline;
         }
       }
@@ -33,10 +33,10 @@
     display: block;
     .filter-item-js {
       display: block;
-      color: $color-1;
+      color: var(--color-1);
       font-size: 18px;
-      line-height: 24px;
-      font-family: $font-family-bold;
+      line-height: 1.5;
+      font-family: var(--font-family-bold);
       width: 100%;
       max-width: 100%;
       margin: 1rem 0 0;
@@ -73,14 +73,14 @@
     display: block;
     .filter-item-js {
       * {
-        font-family: $font-family-bold;
+        font-family: var(--font-family-bold);
         color: $white;
       }
       display: block;
       color: $white;
       font-size: 18px;
-      line-height: 24px;
-      font-family: $font-family-bold;
+      line-height: 1.5;
+      font-family: var(--font-family-bold);
       position: relative;
       padding: 3px 0;
       opacity: 0.5;
@@ -138,7 +138,7 @@
     padding-top: 15px;
     li {
       font-size: 18px;
-      font-family: $font-family-bold;
+      font-family: var(--font-family-bold);
 
       cursor: pointer;
       padding-left: 40px;
@@ -180,6 +180,46 @@
           content: '';
           box-sizing: border-box;
         }
+      }
+    }
+  }
+}
+
+.filterlogo {
+  display: none;
+  @media (min-width: $breakpoint-md-min) {
+    display: block;
+  }
+  img {
+    width: 178px !important;
+  }
+}
+
+.filtercontent {
+  display: none;
+  @media (min-width: $breakpoint-md-min) {
+    display: block !important;
+  }
+}
+.findmyrobitussinbtn,
+.filterbutton {
+  opacity: 0.5;
+  cursor: auto;
+}
+.enable-cta {
+  .findmyrobitussinbtn,
+  .filterbutton {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+.reference-product-filter-adults,
+.reference-product-filter-children {
+  @media (min-width: $breakpoint-md-min) {
+    .black-bg-new {
+      height: 320px;
+      .bg-color-1 {
+        margin-top: -60px;
       }
     }
   }

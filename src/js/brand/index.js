@@ -78,6 +78,8 @@
 
   // lightbox
 
+  //$('.bv-content-search-btn').attr('tabindex', '-1');
+
   $('.prodfindbtn').click(function() {
     $('.prod-find-modal, .prodfindlightbox').show();
   });

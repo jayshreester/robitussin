@@ -4,12 +4,12 @@
 
 // GLOBAL INPUT
 // default-unit: px
-$input-font-family: $font-family-default;
+$input-font-family: var(--font-family-default);
 $input-font-size-desktop: 16px;
 $input-font-size-mobile: 14px;
 $input-font-color: $grey-1;
-$input-line-height-desktop: 20px;
-$input-line-height-mobile: 18px;
+$input-line-height-desktop: 1.125;
+$input-line-height-mobile: 1.125;
 $input-background-default: $white;
 $input-background-active: $white;
 $input-background-hover: $white;
@@ -58,7 +58,7 @@ $input-select-dropdown-button-left-border: 3px solid $color-1;
 /*CHECKBOX | RADIO*/
 $input-checkbox-size: 20px;
 $input-checkbox-checked-icon: get-icon('check-mark-icon', $color-1);
-$input-checkbox-checked-icon-hover: get-icon('check-mark-icon', $color-2);
+$input-checkbox-checked-icon-hover: get-icon('check-mark-icon', $color-1);
 $input-checkbox-background: $white;
 $input-checkbox-background-hover: $color-1;
 $input-checkbox-checked-background: $color-1;
@@ -71,8 +71,8 @@ $input-button-padding-y-mobile: 13px;
 $input-button-padding-x-mobile: 25px;
 $input-button-font-size-desktop: 16px;
 $input-button-font-size-mobile: 14px;
-$input-button-line-height-desktop: 20px;
-$input-button-line-height-mobile: 18px;
+$input-button-line-height-desktop: 1.125;
+$input-button-line-height-mobile: 1.125;
 $input-button-border-size: 2px;
 $input-button-min-width: 180px;
 $input-button-max-width: 180px;
@@ -91,11 +91,11 @@ $input-button-border-color-active: $color-1;
 $input-button-border-color-disabled: transparent;
 
 /*LABELS*/
-$input-label-font-family: $font-family-default;
+$input-label-font-family: var(--font-family-default);
 $input-label-font-color: $grey-1;
 $input-label-font-size-desktop: 16px;
 $input-label-font-size-mobile: 14px;
 $input-label-position: top; /*top,left,right,under*/
-$input-label-line-height-desktop: 20px;
-$input-label-line-height-mobile: 18px;
+$input-label-line-height-desktop: 1.125;
+$input-label-line-height-mobile: 1.125;
 $input-label-spacing: 5px;

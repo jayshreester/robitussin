@@ -75,25 +75,20 @@
       // current page breadcrumb
       &.is-current,
       &.is-current a {
-        color: $black;
-        font-size: $font-size-body-small;
-        line-height: $line-height-18;
+        color: $breadcrumbs-current-color;
       }
     }
 
     a {
-      color: $color-8;
-      font-size: $font-size-body-small;
-      line-height: $line-height-18;
-      //color: $breadcrumbs-parent-color;
+      color: $breadcrumbs-parent-color;
       max-width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       text-transform: $breadcrumbs-text-transform;
       white-space: nowrap;
-      //font-size: $breadcrumbsfont-size-m;
-      //font-weight: $font-weight-breadcrumbs;
-      //line-height: $line-height-breadcrumbs;
+      font-size: $breadcrumbsfont-size-m;
+      font-weight: $font-weight-breadcrumbs;
+      line-height: $line-height-breadcrumbs;
       text-decoration: none;
     }
 
@@ -111,9 +106,9 @@
       background: none;
 
       a {
-        color: $color-8;
-        font-size: $font-size-body-small;
-        line-height: $line-height-18;
+        font-size: $breadcrumbsfont-size-d !important;
+        font-weight: $font-weight-breadcrumbs;
+        line-height: $line-height-breadcrumbs;
       }
     }
     // breadcrumbs behavior styles

@@ -24,7 +24,7 @@ body {
       text-decoration: underline;
     }
     strong {
-      font-family: $font-family-medium;
+      font-family: var(--font-family-medium);
       font-weight: normal;
     }
   }
@@ -47,7 +47,7 @@ body {
   h4 a,
   .h4 a {
     color: $black;
-    font-family: $font-family-bold;
+    font-family: var(--font-family-bold);
     font-size: $font-size-h4-mobile;
     line-height: $line-height-h4-mobile;
     @media (min-width: $breakpoint-md-min) {
@@ -55,7 +55,7 @@ body {
       line-height: $line-height-h4;
     }
     &:hover {
-      color: $color-1;
+      color: var(--color-1);
     }
   }
   h5,
@@ -64,90 +64,30 @@ body {
     line-height: $line-height-h5;
     a {
       color: $black;
-      font-family: $font-family-bold;
+      font-family: var(--font-family-bold);
       font-size: $font-size-h5;
       line-height: $line-height-h5;
       &:hover {
-        color: $color-1;
+        color: var(--color-1);
       }
     }
-  }
-
-  h2 span {
-    color: $color-7;
   }
 
   h1,
+  .h1,
   h2,
+  .h2,
   h3,
+  .h3,
   h4,
+  .h4,
   h5,
-  h6 {
-    font-family: $font-family-bold;
+  .h5,
+  h6,
+  .h6 {
+    font-family: var(--font-family-bold);
     margin: 0;
     color: $black;
-
-    /*&.title-h1-style {
-      font-size: $font-size-h1-mobile;
-      line-height: $line-height-36;
-      @media (min-width: $breakpoint-md-min) {
-        font-size: $font-size-h1;
-        line-height: $line-height-1;
-      }
-    }
-    &.title-h1-style2 {
-      font-size: $font-size-h3;
-      line-height: $line-height-1;
-      @media (min-width: $breakpoint-md-min) {
-        font-size: $font-size-h1-alt;
-        line-height: $line-height-1;
-      }
-    }
-    &.title-h2-style {
-      font-size: $font-size-h2-mobile;
-      line-height: $line-height-34;
-      @media (min-width: $breakpoint-md-min) {
-        font-size: $font-size-h2;
-        line-height: $line-height-36;
-      }
-      &.lineheight-low {
-        font-size: $font-size-h3-mobile;
-        line-height: $line-height-24;
-        @media (min-width: $breakpoint-md-min) {
-          font-size: $font-size-h3-mobile;
-          line-height: $line-height-22;
-        }
-        span {
-          &.h2-block {
-            display: block;
-          }
-        }
-      }
-    }
-    &.title-h3-style {
-      font-size: $font-size-h3-mobile;
-      line-height: $line-height-22;
-      @media (min-width: $breakpoint-md-min) {
-        font-size: $font-size-h3;
-        line-height: $line-height-22;
-      }
-    }
-    &.title-h4-style {
-      font-size: $font-size-h4-mobile;
-      line-height: $line-height-24;
-      @media (min-width: $breakpoint-md-min) {
-        font-size: $font-size-h4;
-        line-height: $line-height-24;
-      }
-    }
-    &.title-h5-style {
-      font-size: $font-size-h5-mobile;
-      line-height: $line-height-22;
-      @media (min-width: $breakpoint-md-min) {
-        font-size: $font-size-h5;
-        line-height: $line-height-22;
-      }
-    }*/
   }
   // header ends
 
@@ -167,16 +107,16 @@ body {
         height: auto;
         overflow: auto;
         border: none;
-        border-bottom: 2px solid $color-3;
+        border-bottom: 2px solid var(--color-3);
         outline: none;
         font-size: $font-size-body;
-        color: $color-3;
+        color: var(--color-3);
         font-weight: 600;
         &:focus,
         &:active,
         &:visited {
           background: $white;
-          color: $color-3;
+          color: var(--color-3);
           font-size: $font-size-body;
           height: auto;
 
@@ -185,7 +125,7 @@ body {
           padding: 8px 0;
         }
         &:hover {
-          color: $color-1;
+          color: var(--color-1);
         }
       }
     }
@@ -194,15 +134,15 @@ body {
   // cookies starts
   #onetrust-consent-sdk #onetrust-policy-text {
     font-size: $font-size-body !important;
-    font-family: $font-family-default !important;
+    font-family: var(--font-family-default) !important;
     line-height: $line-height-body !important;
     color: $body-color;
     a {
-      color: $color-3 !important;
+      color: var(--color-3) !important;
       cursor: pointer;
       font-weight: $font-weight-body;
       &:hover {
-        color: $color-1 !important;
+        color: var(--color-1) !important;
         text-decoration: underline;
       }
     }
@@ -213,17 +153,17 @@ body {
   #onetrust-consent-sdk #onetrust--btn-handler {
     background-color: $white;
     border-radius: 25px;
-    border: 2px solid $color-1;
+    border: 2px solid var(--color-1);
     height: 50px;
     padding: 15px;
     box-sizing: border-box;
     font-size: $font-size-body;
     font-weight: 500;
-    color: $color-1;
+    color: var(--color-1);
     width: 150px;
     &:hover {
-      background-color: $color-1;
-      border-color: $color-1;
+      background-color: var(--color-1);
+      border-color: var(--color-1);
       opacity: 1;
       color: $white;
     }
@@ -231,10 +171,5 @@ body {
   // cookies ends
   .container-fluid {
     max-width: 2800px;
-  }
-  .reference-our-stories-cards {
-    a {
-      line-height: 0;
-    }
   }
 }

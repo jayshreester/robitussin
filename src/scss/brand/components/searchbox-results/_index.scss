@@ -1,8 +1,128 @@
-.searchResults-number {
-  margin-left: 0;
-  margin-bottom: 0;
+#content {
+  .searchResults {
+    margin: 2rem 0;
+  }
+  .searchResults-number {
+    margin-left: 0;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
+  .searchbox-results {
+    margin-bottom: 0 !important;
+
+    .form-search {
+      align-items: center;
+      display: flex;
+      flex-direction: $row-direction;
+      justify-content: center;
+    }
+
+    .searchBox-label {
+      width: 100%;
+      display: block;
+    }
+
+    .search-query {
+      border: 1px solid $search-box-border-color;
+      border-#{$end-direction}-width: 0;
+      font-size: $font-size-body;
+      height: 54px;
+      padding: 15px;
+      width: 100%;
+
+      @media (min-width: $breakpoint-sm-min) {
+        font-size: $font-size-body;
+        height: 80px;
+      }
+      &.outlined {
+        outline: 1px solid var(--color-1);
+      }
+    }
+
+    .button {
+      background-color: transparent;
+      border: 1px solid $search-box-border-color;
+      border-#{$start-direction}-width: 0;
+      border-radius: 0;
+      font-size: 0;
+      height: 54px;
+      padding: 5px;
+      position: relative;
+      width: 54px;
+
+      &::before {
+        background-color: $search-box-border-color;
+        content: '';
+        display: inline-block;
+        height: 42px;
+        #{$start-direction}: 0;
+        position: absolute;
+        top: 5px;
+        width: 1px;
+
+        @media (min-width: $breakpoint-sm-min) {
+          height: 60px;
+          top: 10px;
+        }
+      }
+
+      &::after {
+        background: get-icon('search-icon', $navigation-search-icon-color);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        display: inline-block;
+        height: 19px;
+        width: 19px;
+
+        @media (min-width: $breakpoint-sm-min) {
+          height: 26px;
+          width: 26px;
+        }
+      }
+
+      @media (min-width: $breakpoint-sm-min) {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    @media (min-width: $breakpoint-sm-min) {
+      margin-bottom: 100px;
+      margin-top: 50px;
+    }
+
+    @each $key, $value in $all-colors {
+      &.theme-#{$key} {
+        .button {
+          border-bottom: 1px solid $value;
+          border-#{$start-direction}: 1px solid transparent;
+          border-#{$end-direction}: 1px solid $value;
+          border-top: 1px solid $value;
+
+          &::before {
+            background-color: $value;
+          }
+
+          &::after {
+            background: get-icon('search-icon', $value);
+            background-repeat: no-repeat;
+          }
+        }
+
+        form {
+          input {
+            border-bottom: 1px solid $value;
+            border-#{$start-direction}: 1px solid $value;
+            border-top: 1px solid $value;
+          }
+        }
+      }
+    }
+  }
 }
-.searchbox-results {
+/*.searchbox-results {
   width: 265px;
   margin: 50px auto !important;
   .button {
@@ -14,4 +134,4 @@
       width: 0;
     }
   }
-}
+}*/

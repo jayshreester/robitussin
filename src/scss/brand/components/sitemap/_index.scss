@@ -10,25 +10,25 @@
       a {
         color: $black;
         font-size: 20px;
-        font-family: $font-family-bold;
+        font-family: var(--font-family-bold);
         position: relative;
         padding-left: 15px;
         display: block;
         &:hover {
-          color: $color-1;
+          color: var(--color-1);
           text-decoration: underline;
         }
         &::before {
           width: 7px;
           height: 7px;
-          background-color: $color-1;
+          background-color: var(--color-1);
           border-radius: 50%;
           content: '';
           position: absolute;
           left: 0;
-          top: 6px;
+          top: 8px;
           @media (min-width: $breakpoint-md-min) {
-            top: 10px;
+            top: 12px;
           }
         }
       }
@@ -40,11 +40,11 @@
           }
           a {
             font-size: 18px;
-            font-family: $font-family-medium;
+            font-family: var(--font-family-medium);
             &::before {
-              top: 5px;
+              top: 7px;
               @media (min-width: $breakpoint-md-min) {
-                top: 7px;
+                top: 9px;
               }
             }
           }

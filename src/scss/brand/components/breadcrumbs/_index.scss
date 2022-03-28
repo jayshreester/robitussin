@@ -1,20 +1,25 @@
 .breadcrumbs {
   margin: 0 auto !important;
-  background-color: $grey-4;
+  background-color: var(--color-14);
   li {
     flex: initial !important;
     a {
-      color: $grey-1;
+      color: var(--color-11);
     }
     // current page breadcrumb
     &.is-current,
     &.is-current a {
       color: $black;
       font-size: $font-size-body-small;
-      line-height: $line-height-18;
+      line-height: 1.125;
     }
     &:not(:nth-last-of-type(1)) {
       min-width: auto;
+    }
+    &:nth-of-type(1) a {
+      &.outlined {
+        margin-left: 3px;
+      }
     }
     a {
       white-space: normal;

@@ -51,7 +51,7 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
     .tabs-nav-item {
       width: 100%;
       margin-bottom: 10px;
-      border-bottom: 1px solid $color-1;
+      border-bottom: 1px solid var(--color-1);
 
       &.is-active {
         margin-bottom: 0;
@@ -96,13 +96,13 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
 
       a {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 1.5;
         height: auto;
         padding: 0 3rem 0 1rem;
         position: relative;
         .tabMenuItem .text-wrapper {
           font-size: 18px;
-          line-height: 24px;
+          line-height: 1.5;
           &::after {
             @include animate();
             background-image: $accordion-plus-icon !important;
@@ -153,10 +153,10 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
       width: 100%;
 
       margin-bottom: 10px;
-      border-top: 1px solid $color-1;
+      border-top: 1px solid var(--color-1);
       &.is-hidden {
-        border-bottom: 1px solid $color-1;
-        border-top: 1px solid red;
+        border-bottom: 1px solid var(--color-1);
+        border-top: 1px solid var(--color-8);
       }
 
       @media (min-width: $breakpoint-md-min) {
@@ -184,8 +184,8 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
   }
   .text-wrapper {
     font-size: 18px;
-    line-height: 22px;
-    font-family: $font-family-bold;
+    line-height: 1.5;
+    font-family: var(--font-family-bold);
     &:hover {
       color: $black;
     }
@@ -199,7 +199,7 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
       padding: 20px 15px 20px 0;
     }
     a {
-      color: $grey-2;
+      color: var(--color-12);
     }
     &.is-active {
       a {
@@ -221,15 +221,19 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
             padding: 0 0 0 1rem;
             font-size: $font-size-h5;
             &::before {
-              top: -1px;
+              top: -7px;
+              @media (min-width: $breakpoint-md-min) {
+                top: -1px;
+              }
               color: $black;
+              line-height: 1;
             }
             a,
             a:hover,
             a:visited {
               font-size: $font-size-h5;
               text-decoration: underline;
-              color: $color-1;
+              color: var(--color-1);
             }
           }
         }
@@ -237,12 +241,7 @@ $accordion-minus-icon: get-icon('minus-icon', $color-1);
     }
     p {
       font-size: 18px;
-      line-height: 24px;
-      /*@media (min-width: $breakpoint-md-min) {
-        .tabs-nav {
-          font-size: 14px;
-        }
-      }*/
+      line-height: 1.5;
     }
   }
 }

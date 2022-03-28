@@ -32,7 +32,7 @@ $links: (
     font-color-hover: $megamenu-top-bar-link-color-hover,
     font-size-desktop: $font-size-body-small,
     font-size-mobile: $font-size-body-small,
-    font-family: $font-family-secondary,
+    font-family: var(--font-family-secondary),
     line-height: 1.3,
     bg-color: transparent,
     bg-hover-color: transparent,
